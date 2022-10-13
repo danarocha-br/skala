@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "token-transform-light": "npx token-transformer src/data/figma-tokens.json src/data/build/light.json global,light,theme global",
+    "token-transform-dark": "npx token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
+    "token-transform-global": "npx token-transformer src/data/figma-tokens.json src/data/build/global.json global",
+    "transform-tokens": "yarn token-transform-global && yarn token-transform-dark && yarn token-transform-light",
+    "build-tokens": "yarn style-dictionary build --config ./style-dictionary-config.js"
   },
   "keywords": [],
   "author": "Dana Rocha",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "style-dictionary": "^3.7.1"
+  }
 }

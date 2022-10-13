@@ -1,0 +1,320 @@
+{
+  "dark": {
+    "background": {
+      "default": {
+        "value": "#151c1e",
+        "type": "color"
+      }
+    },
+    "surface": {
+      "base": {
+        "default": {
+          "value": "#202a2d",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "#323d43",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#151c1e",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "#151c1e",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "#323d43",
+          "type": "color"
+        },
+        "border": {
+          "value": "#323d43",
+          "type": "color"
+        },
+        "constrast": {
+          "value": "#ffffff",
+          "type": "color"
+        }
+      },
+      "success": {
+        "default": {
+          "value": "#37b135",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "#6ec95e",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#0a8708",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "#137311",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "#b0e29c",
+          "type": "color"
+        },
+        "border": {
+          "value": "#37b135",
+          "type": "color"
+        },
+        "contrast": {
+          "value": "#00240f",
+          "type": "color"
+        }
+      },
+      "warning": {
+        "default": {
+          "value": "#fba94b",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "#fcb564",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#fb9e2d",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "#e48901",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "#fff5eb",
+          "type": "color"
+        },
+        "border": {
+          "value": "#f7d1a6",
+          "type": "color"
+        },
+        "constrast": {
+          "value": "#151c1e",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "default": {
+          "value": "#f55c56",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "#f1786f",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#d63d29",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "#c33218",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "#fabbb7",
+          "type": "color"
+        },
+        "border": {
+          "value": "#f79792",
+          "type": "color"
+        },
+        "constrast": {
+          "value": "#151c1e",
+          "type": "color"
+        }
+      },
+      "action": {
+        "primary": {
+          "default": {
+            "value": "#f6f6f4",
+            "type": "color"
+          },
+          "subdued": {
+            "value": "#e0e1e0",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#e0e1e0",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "#c0c5c9",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#323d43",
+            "type": "color"
+          },
+          "border": {
+            "value": "#8b969c",
+            "type": "color"
+          },
+          "constrast": {
+            "value": "#151c1e",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "#37b135",
+            "type": "color"
+          },
+          "subdued": {
+            "value": "#6ec95e",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#0a8708",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "#137311",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#b0e29c",
+            "type": "color"
+          },
+          "border": {
+            "value": "#37b135",
+            "type": "color"
+          },
+          "constrast": {
+            "value": "#00240f",
+            "type": "color"
+          }
+        }
+      },
+      "interative": {
+        "default": {
+          "value": "#405fed",
+          "type": "color"
+        },
+        "subdued": {
+          "value": "#799ff6",
+          "type": "color"
+        },
+        "hover": {
+          "value": "#3b41e8",
+          "type": "color"
+        },
+        "pressed": {
+          "value": "#271ed2",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "#b5cffd",
+          "type": "color"
+        },
+        "border": {
+          "value": "#405fed",
+          "type": "color"
+        },
+        "constrast": {
+          "value": "#f0f7ff",
+          "type": "color"
+        }
+      }
+    },
+    "text": {
+      "body": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "subtext": {
+        "value": "#c0c5c9",
+        "type": "color"
+      },
+      "caption": {
+        "value": "#8b969c",
+        "type": "color"
+      },
+      "danger": {
+        "value": "#f55c56",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#fcb564",
+        "type": "color"
+      },
+      "success": {
+        "value": "#37b135",
+        "type": "color"
+      },
+      "onInteractive": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "inverted": {
+        "value": "#202a2d",
+        "type": "color"
+      }
+    },
+    "form": {
+      "background": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "border": {
+        "value": "#e0e1e0",
+        "type": "color"
+      },
+      "subdued": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "hover": {
+        "value": "#3b41e8",
+        "type": "color"
+      },
+      "focus": {
+        "value": "#271ed2",
+        "type": "color"
+      },
+      "error": {
+        "value": "#d63d29",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "#f6f6f4",
+        "type": "color"
+      }
+    },
+    "loading": {
+      "default": {
+        "value": "#c0c5c9",
+        "type": "color"
+      },
+      "subdued": {
+        "value": "#e0e1e0",
+        "type": "color"
+      }
+    },
+    "overlay": {
+      "default": {
+        "value": "#151c1e",
+        "type": "color"
+      },
+      "subdued": {
+        "value": "#202a2d",
+        "type": "color"
+      }
+    },
+    "gradient": {
+      "primary": {
+        "value": "linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%)",
+        "type": "color"
+      }
+    },
+    "brand": {
+      "primary": {
+        "value": "#f1786f",
+        "type": "color"
+      }
+    }
+  }
+}
