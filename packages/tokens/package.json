@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "token-transform-light": "npx token-transformer src/data/figma-tokens.json src/data/build/light.json global,light,theme global",
-    "token-transform-dark": "npx token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
-    "token-transform-global": "npx token-transformer src/data/figma-tokens.json src/data/build/global.json global",
+    "token-transform-light": "yarn token-transformer src/data/figma-tokens.json src/data/build/light.json global,light,theme global",
+    "token-transform-dark": "yarn token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
+    "token-transform-global": "yarn token-transformer src/data/figma-tokens.json src/data/build/global.json global --expandTypography=true --resolveReferences=math --expandShadow=true",
     "transform-tokens": "yarn token-transform-global && yarn token-transform-dark && yarn token-transform-light",
     "build-tokens": "yarn style-dictionary build --config ./style-dictionary-config.js"
   },
@@ -15,6 +15,8 @@
   "author": "Dana Rocha",
   "license": "ISC",
   "devDependencies": {
-    "style-dictionary": "^3.7.1"
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.27",
+    "typescript": "^4.8.4"
   }
 }
