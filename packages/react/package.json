@@ -7,8 +7,7 @@
     "dev": "tsup src/index.ts --form esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "lint": "eslint src/**/*.ts* --fix --max-warnings=0",
-    "commit": "git-cz",
-    "prepare": "husky install"
+    "commit": "git-cz"
   },
   "lint-staged": {
     "src/**/*": [
@@ -29,8 +28,7 @@
     "lint-staged": "^13.0.3",
     "react": "^18.2.0",
     "tsup": "^6.2.3",
-    "typescript": "^4.8.4",
-    "husky": "^8.0.0"
+    "typescript": "^4.8.4"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8"
