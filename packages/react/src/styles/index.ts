@@ -6,6 +6,7 @@ import {
   lineHeight,
   radii,
   spacing,
+  fontFamilies,
 } from '@skala/design-tokens';
 
 export const {
@@ -20,6 +21,7 @@ export const {
 } = createStitches({
   theme: {
     colors: colors,
+    fonts: fontFamilies,
     fontSizes: fontSize,
     fontWeights: fontWeight,
     lineHeights: lineHeight,

@@ -1,4 +1,5 @@
 export * from './tokens/colors';
+export * from './tokens/fontFamilies';
 export * from './tokens/fontSize';
 export * from './tokens/fontWeight';
 export * from './tokens/lineHeight';

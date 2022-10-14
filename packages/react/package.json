@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsup src/index.ts --form esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "lint": "eslint src/**/*.ts* --fix"
+    "lint": "eslint src/**/*.ts* --fix",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "Dana Rocha",
@@ -17,11 +18,18 @@
     "@skala/ts-config": "*",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-emoji": "^1.3.2-canary.2",
     "react": "^18.2.0",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
   }
 }
