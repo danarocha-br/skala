@@ -1,0 +1,27 @@
+{
+  "name": "@skala/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsup src/index.ts --form esm,cjs --dts --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "keywords": [],
+  "author": "Dana Rocha",
+  "license": "ISC",
+  "devDependencies": {
+    "@skala/design-tokens": "*",
+    "@skala/eslint-config": "*",
+    "@skala/ts-config": "*",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
+  }
+}
