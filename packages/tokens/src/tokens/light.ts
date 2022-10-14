@@ -1,4 +1,4 @@
-export default {
+export const  light = {
 	"backgroundDefault": "#f6f6f4",
 	"surfaceBaseDefault": "#ffffff",
 	"surfaceBaseSubdued": "#f6f6f4",

@@ -2,7 +2,7 @@ const StyleDictionary = require("style-dictionary");
 
 const buildPath = "./src/tokens/";
 
-const coreAndSemanticTokens = [
+const coreAndThemeTokens = [
   "fontSize",
   "fontWeight",
   "lineHeight",
@@ -15,19 +15,19 @@ const coreAndSemanticTokens = [
   "dark",
 ];
 
-const tokenFilter = (cat) => (token) => {
+const filterTokens = (tokenCategory) => (token) => {
   const { category, type } = token.attributes;
 
-  return ["core", "semantic"].includes(category)
-    ? type === cat
-    : category === cat;
+  return ["tokens"].includes(category)
+    ? type === tokenCategory
+    : category === tokenCategory;
 };
 
-const generatrFilesArr = (tokensCategories, ext, format) => {
-  return tokensCategories.map((cat) => {
+const getTokens = (tokensCategories, extension) => {
+  return tokensCategories.map((tokenCategory) => {
     return {
-      filter: tokenFilter(cat),
-      destination: `${buildPath}${cat}.${ext}`,
+      filter: filterTokens(tokenCategory),
+      destination: `${buildPath}${tokenCategory}.${extension}`,
       options: {
         outputReferences: true,
       },
@@ -62,8 +62,8 @@ StyleDictionary.registerTransform({
 
 StyleDictionary.registerFormat({
   name: "custom",
-  formatter: function ({ dictionary }) {
-    return `export default {${dictionary.allTokens.map(
+  formatter: function ({ dictionary, tokenCategory }) {
+    return `export const ${Object.keys(dictionary.tokens)} = {${dictionary.allTokens.map(
       (token) => `\n\t"${token.name}": "${token.value}"`
     )}\n};`;
   },
@@ -105,7 +105,7 @@ module.exports = {
       ],
       prefix: "",
       buildPath: "",
-      files: generatrFilesArr(coreAndSemanticTokens, "ts", "javascript/es6"),
+      files: getTokens(coreAndThemeTokens, "ts", "javascript/es6"),
     },
   },
 };

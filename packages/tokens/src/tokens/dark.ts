@@ -1,4 +1,4 @@
-export default {
+export const  dark = {
 	"backgroundDefault": "#151c1e",
 	"surfaceBaseDefault": "#202a2d",
 	"surfaceBaseSubdued": "#323d43",

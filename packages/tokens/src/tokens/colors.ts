@@ -1,4 +1,4 @@
-export default {
+export const  colors = {
 	"neutral100": "#f6f6f4",
 	"neutral200": "#e0e1e0",
 	"neutral300": "#c0c5c9",

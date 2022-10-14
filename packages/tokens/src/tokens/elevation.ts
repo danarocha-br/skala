@@ -1,4 +1,4 @@
-export default {
+export const  elevation = {
 	"low0X": "0",
 	"low0Y": "0.8",
 	"low0Blur": "1.3",

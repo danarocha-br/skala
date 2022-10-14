@@ -1,11 +1,10 @@
-
-export * as colors from "./tokens/colors";
-export * as fontSize from "./tokens/fontSize";
-export * as fontWeight from "./tokens/fontWeight";
-export * as lineHeight from "./tokens/lineHeight";
-export * as radii from "./tokens/radii";
-export * as borderWidth from "./tokens/borderWidth";
-export * as elevation from "./tokens/elevation";
-export * as spacing from "./tokens/spacing";
-export * as lightTheme from "./tokens/light";
-export * as darkTheme from "./tokens/dark";
+export * from "./tokens/colors";
+export * from "./tokens/fontSize";
+export * from "./tokens/fontWeight";
+export * from "./tokens/lineHeight";
+export * from "./tokens/radii";
+export * from "./tokens/borderWidth";
+export * from "./tokens/elevation";
+export * from "./tokens/spacing";
+export * from "./tokens/light";
+export * from "./tokens/dark";

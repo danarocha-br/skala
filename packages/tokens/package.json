@@ -2,21 +2,27 @@
   "name": "@skala/design-tokens",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "token-transform-light": "yarn token-transformer src/data/figma-tokens.json src/data/build/light.json global,light,theme global",
     "token-transform-dark": "yarn token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
     "token-transform-global": "yarn token-transformer src/data/figma-tokens.json src/data/build/global.json global --expandTypography=true --resolveReferences=math --expandShadow=true",
     "transform-tokens": "yarn token-transform-global && yarn token-transform-dark && yarn token-transform-light",
-    "build-tokens": "yarn style-dictionary build --config ./style-dictionary-config.js"
+    "build-tokens": "yarn style-dictionary build --config ./style-dictionary-config.js",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
   "author": "Dana Rocha",
   "license": "ISC",
   "devDependencies": {
+    "@skala/ts-config": "*",
     "style-dictionary": "^3.7.1",
     "token-transformer": "^0.0.27",
+    "tsup": "^6.2.3",
     "typescript": "^4.8.4"
   }
 }
