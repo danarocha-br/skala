@@ -8,6 +8,11 @@
       "path": "cz-emoji"
     }
   },
+  "lint-staged": {
+    "src/**/*": [
+      "npm run lint"
+    ]
+  },
   "devDependencies": {
     "husky": "^8.0.0"
   },
