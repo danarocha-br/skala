@@ -7,11 +7,11 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
-    "token-transform-light": "yarn token-transformer src/data/figma-tokens.json src/data/build/light.json global,light,theme global",
-    "token-transform-dark": "yarn token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
-    "token-transform-global": "yarn token-transformer src/data/figma-tokens.json src/data/build/global.json global --expandTypography=true --resolveReferences=math --expandShadow=true",
-    "transform-tokens": "yarn token-transform-global && yarn token-transform-dark && yarn token-transform-light",
-    "build-tokens": "yarn style-dictionary build --config ./style-dictionary-config.js",
+    "token-transform-light": "npx token-transformer src/data/figma-tokens.json src/data/build/light.json global,light,theme global",
+    "token-transform-dark": "npx token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
+    "token-transform-global": "npx token-transformer src/data/figma-tokens.json src/data/build/global.json global --expandTypography=true --resolveReferences=math --expandShadow=true",
+    "transform-tokens": "npm run token-transform-global && npm run token-transform-dark && npm run token-transform-light",
+    "build-tokens": "npx style-dictionary build --config ./style-dictionary-config.js && npm run lint",
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint src/**/*.ts* --fix"
   },
