@@ -15,7 +15,7 @@ const coreAndThemeTokens = [
   'elevation',
   'light',
   'dark',
-  'gradient'
+  'gradient',
 ];
 
 const filterTokens = (tokenCategory) => (token) => {
@@ -56,7 +56,9 @@ StyleDictionary.registerTransform({
   name: 'font-size/rem',
   type: 'value',
   matcher: function (prop) {
-    return ['fontSize'].includes(prop.attributes.category);
+    return ['fontSize', 'lineHeight', 'borderWidth'].includes(
+      prop.attributes.category
+    );
   },
   transformer: function (prop) {
     return parseFloat(prop.original.value / 16) + 'rem';

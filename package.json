@@ -13,7 +13,8 @@
     "lint-staged": "^13.0.3"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "dependencies": {}
 }

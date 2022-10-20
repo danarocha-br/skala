@@ -3,17 +3,22 @@ import './styles.css';
 type TokensTableProps = {
   tokens: Record<string, string>;
   isSpacing?: boolean;
+  unity?: 'px' | 'rem' | 'none';
 };
 
-export function TokensTable({ tokens, isSpacing }: TokensTableProps) {
+export function TokensTable({
+  tokens,
+  unity = 'rem',
+  isSpacing,
+}: TokensTableProps) {
   return (
     <table className="tokens-table">
       <thead>
         <tr>
           <th>Name</th>
           {isSpacing && <th></th>}
-          <th>Pixel</th>
-          <th>Rem</th>
+          <th>{unity !== 'none' ? 'Pixel' : 'Value'}</th>
+          {unity !== 'none' && <th>Rem</th>}
         </tr>
       </thead>
 
@@ -34,7 +39,13 @@ export function TokensTable({ tokens, isSpacing }: TokensTableProps) {
                 </td>
               )}
               <td>{value}</td>
-              <td>{Number(value.replace('px', '')) / 16} rem</td>
+              {unity !== 'none' && (
+                <td>
+                  {unity !== 'rem'
+                    ? Number(value.replace('px', '')) / 16 + 'rem'
+                    : Number(value.replace('rem', '')) * 16 + 'px'}
+                </td>
+              )}
             </tr>
           );
         })}

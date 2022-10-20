@@ -1,20 +1,20 @@
 /**
  * Do not edit directly
- * Generated on Thu, 20 Oct 2022 08:55:36 GMT
+ * Generated on Thu, 20 Oct 2022 09:16:10 GMT
  */
 
 :root {
   --font-families-effra: Effra;
   --font-families-sans: 'effra', -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --line-height-1: 17px;
-  --line-height-2: 19.2px;
-  --line-height-3: 22.4px;
-  --line-height-4: 29px;
-  --line-height-5: 34.68px;
-  --line-height-6: 41.62px;
-  --line-height-7: 49.95px;
-  --line-height-8: 59.92px;
-  --line-height-9: 50.76px;
+  --line-height-1: 1.0625rem;
+  --line-height-2: 1.2rem;
+  --line-height-3: 1.4rem;
+  --line-height-4: 1.8125rem;
+  --line-height-5: 2.1675rem;
+  --line-height-6: 2.60125rem;
+  --line-height-7: 3.121875rem;
+  --line-height-8: 3.745rem;
+  --line-height-9: 3.1725rem;
   --font-weight-light: Light;
   --font-weight-regular: Regular;
   --font-weight-medium: Medium;
@@ -32,7 +32,7 @@
   --paragraph-spacing-0: 0;
   --typography-xxs-light-font-family: Effra;
   --typography-xxs-light-font-weight: Light;
-  --typography-xxs-light-line-height: 17px;
+  --typography-xxs-light-line-height: 1.0625rem;
   --typography-xxs-light-font-size: 0.625rem;
   --typography-xxs-light-letter-spacing: 0%;
   --typography-xxs-light-paragraph-spacing: 0;
@@ -40,7 +40,7 @@
   --typography-xxs-light-text-decoration: none;
   --typography-xxs-regular-font-family: Effra;
   --typography-xxs-regular-font-weight: Regular;
-  --typography-xxs-regular-line-height: 17px;
+  --typography-xxs-regular-line-height: 1.0625rem;
   --typography-xxs-regular-font-size: 0.625rem;
   --typography-xxs-regular-letter-spacing: 0%;
   --typography-xxs-regular-paragraph-spacing: 0;
@@ -48,7 +48,7 @@
   --typography-xxs-regular-text-decoration: none;
   --typography-xxs-medium-font-family: Effra;
   --typography-xxs-medium-font-weight: Medium;
-  --typography-xxs-medium-line-height: 17px;
+  --typography-xxs-medium-line-height: 1.0625rem;
   --typography-xxs-medium-font-size: 0.625rem;
   --typography-xxs-medium-letter-spacing: 0%;
   --typography-xxs-medium-paragraph-spacing: 0;
@@ -56,7 +56,7 @@
   --typography-xxs-medium-text-decoration: none;
   --typography-xxs-semibold-font-family: Effra;
   --typography-xxs-semibold-font-weight: Bold;
-  --typography-xxs-semibold-line-height: 17px;
+  --typography-xxs-semibold-line-height: 1.0625rem;
   --typography-xxs-semibold-font-size: 0.625rem;
   --typography-xxs-semibold-letter-spacing: 0%;
   --typography-xxs-semibold-paragraph-spacing: 0;
@@ -64,7 +64,7 @@
   --typography-xxs-semibold-text-decoration: none;
   --typography-xs-light-font-family: Effra;
   --typography-xs-light-font-weight: Light;
-  --typography-xs-light-line-height: 19.2px;
+  --typography-xs-light-line-height: 1.2rem;
   --typography-xs-light-font-size: 0.8rem;
   --typography-xs-light-letter-spacing: 0%;
   --typography-xs-light-paragraph-spacing: 0;
@@ -72,7 +72,7 @@
   --typography-xs-light-text-decoration: none;
   --typography-xs-regular-font-family: Effra;
   --typography-xs-regular-font-weight: Regular;
-  --typography-xs-regular-line-height: 19.2px;
+  --typography-xs-regular-line-height: 1.2rem;
   --typography-xs-regular-font-size: 0.8rem;
   --typography-xs-regular-letter-spacing: 0%;
   --typography-xs-regular-paragraph-spacing: 0;
@@ -80,7 +80,7 @@
   --typography-xs-regular-text-decoration: none;
   --typography-xs-medium-font-family: Effra;
   --typography-xs-medium-font-weight: Medium;
-  --typography-xs-medium-line-height: 19.2px;
+  --typography-xs-medium-line-height: 1.2rem;
   --typography-xs-medium-font-size: 0.8rem;
   --typography-xs-medium-letter-spacing: 0%;
   --typography-xs-medium-paragraph-spacing: 0;
@@ -88,7 +88,7 @@
   --typography-xs-medium-text-decoration: none;
   --typography-xs-semibold-font-family: Effra;
   --typography-xs-semibold-font-weight: Bold;
-  --typography-xs-semibold-line-height: 19.2px;
+  --typography-xs-semibold-line-height: 1.2rem;
   --typography-xs-semibold-font-size: 0.8rem;
   --typography-xs-semibold-letter-spacing: 0%;
   --typography-xs-semibold-paragraph-spacing: 0;
@@ -96,7 +96,7 @@
   --typography-xs-semibold-text-decoration: none;
   --typography-sm-light-font-family: Effra;
   --typography-sm-light-font-weight: Light;
-  --typography-sm-light-line-height: 22.4px;
+  --typography-sm-light-line-height: 1.4rem;
   --typography-sm-light-font-size: 0.885625rem;
   --typography-sm-light-letter-spacing: 0%;
   --typography-sm-light-paragraph-spacing: 0;
@@ -104,7 +104,7 @@
   --typography-sm-light-text-decoration: none;
   --typography-sm-regular-font-family: Effra;
   --typography-sm-regular-font-weight: Regular;
-  --typography-sm-regular-line-height: 22.4px;
+  --typography-sm-regular-line-height: 1.4rem;
   --typography-sm-regular-font-size: 0.885625rem;
   --typography-sm-regular-letter-spacing: 0%;
   --typography-sm-regular-paragraph-spacing: 0;
@@ -112,7 +112,7 @@
   --typography-sm-regular-text-decoration: none;
   --typography-sm-medium-font-family: Effra;
   --typography-sm-medium-font-weight: Medium;
-  --typography-sm-medium-line-height: 22.4px;
+  --typography-sm-medium-line-height: 1.4rem;
   --typography-sm-medium-font-size: 0.885625rem;
   --typography-sm-medium-letter-spacing: 0%;
   --typography-sm-medium-paragraph-spacing: 0;
@@ -120,7 +120,7 @@
   --typography-sm-medium-text-decoration: none;
   --typography-sm-semibold-font-family: Effra;
   --typography-sm-semibold-font-weight: Bold;
-  --typography-sm-semibold-line-height: 22.4px;
+  --typography-sm-semibold-line-height: 1.4rem;
   --typography-sm-semibold-font-size: 0.885625rem;
   --typography-sm-semibold-letter-spacing: 0%;
   --typography-sm-semibold-paragraph-spacing: 0;
@@ -128,7 +128,7 @@
   --typography-sm-semibold-text-decoration: none;
   --typography-md-light-font-family: Effra;
   --typography-md-light-font-weight: Light;
-  --typography-md-light-line-height: 29px;
+  --typography-md-light-line-height: 1.8125rem;
   --typography-md-light-font-size: 1.0625rem;
   --typography-md-light-letter-spacing: 0%;
   --typography-md-light-paragraph-spacing: 0;
@@ -136,7 +136,7 @@
   --typography-md-light-text-decoration: none;
   --typography-md-regular-font-family: Effra;
   --typography-md-regular-font-weight: Regular;
-  --typography-md-regular-line-height: 29px;
+  --typography-md-regular-line-height: 1.8125rem;
   --typography-md-regular-font-size: 1.0625rem;
   --typography-md-regular-letter-spacing: 0%;
   --typography-md-regular-paragraph-spacing: 0;
@@ -144,7 +144,7 @@
   --typography-md-regular-text-decoration: none;
   --typography-md-medium-font-family: Effra;
   --typography-md-medium-font-weight: Medium;
-  --typography-md-medium-line-height: 29px;
+  --typography-md-medium-line-height: 1.8125rem;
   --typography-md-medium-font-size: 1.0625rem;
   --typography-md-medium-letter-spacing: 0%;
   --typography-md-medium-paragraph-spacing: 0;
@@ -152,7 +152,7 @@
   --typography-md-medium-text-decoration: none;
   --typography-md-semibold-font-family: Effra;
   --typography-md-semibold-font-weight: Bold;
-  --typography-md-semibold-line-height: 29px;
+  --typography-md-semibold-line-height: 1.8125rem;
   --typography-md-semibold-font-size: 1.0625rem;
   --typography-md-semibold-letter-spacing: 0%;
   --typography-md-semibold-paragraph-spacing: 0;
@@ -160,7 +160,7 @@
   --typography-md-semibold-text-decoration: none;
   --typography-lg-light-font-family: Effra;
   --typography-lg-light-font-weight: Light;
-  --typography-lg-light-line-height: 34.68px;
+  --typography-lg-light-line-height: 2.1675rem;
   --typography-lg-light-font-size: 1.275rem;
   --typography-lg-light-letter-spacing: 0%;
   --typography-lg-light-paragraph-spacing: 0;
@@ -168,7 +168,7 @@
   --typography-lg-light-text-decoration: none;
   --typography-lg-regular-font-family: Effra;
   --typography-lg-regular-font-weight: Regular;
-  --typography-lg-regular-line-height: 34.68px;
+  --typography-lg-regular-line-height: 2.1675rem;
   --typography-lg-regular-font-size: 1.275rem;
   --typography-lg-regular-letter-spacing: 0%;
   --typography-lg-regular-paragraph-spacing: 0;
@@ -176,7 +176,7 @@
   --typography-lg-regular-text-decoration: none;
   --typography-lg-medium-font-family: Effra;
   --typography-lg-medium-font-weight: Medium;
-  --typography-lg-medium-line-height: 34.68px;
+  --typography-lg-medium-line-height: 2.1675rem;
   --typography-lg-medium-font-size: 1.275rem;
   --typography-lg-medium-letter-spacing: 0%;
   --typography-lg-medium-paragraph-spacing: 0;
@@ -184,7 +184,7 @@
   --typography-lg-medium-text-decoration: none;
   --typography-lg-semibold-font-family: Effra;
   --typography-lg-semibold-font-weight: Bold;
-  --typography-lg-semibold-line-height: 34.68px;
+  --typography-lg-semibold-line-height: 2.1675rem;
   --typography-lg-semibold-font-size: 1.275rem;
   --typography-lg-semibold-letter-spacing: 0%;
   --typography-lg-semibold-paragraph-spacing: 0;
@@ -192,7 +192,7 @@
   --typography-lg-semibold-text-decoration: none;
   --typography-xl-light-font-family: Effra;
   --typography-xl-light-font-weight: Light;
-  --typography-xl-light-line-height: 41.62px;
+  --typography-xl-light-line-height: 2.60125rem;
   --typography-xl-light-font-size: 1.53rem;
   --typography-xl-light-letter-spacing: 0%;
   --typography-xl-light-paragraph-spacing: 0;
@@ -200,7 +200,7 @@
   --typography-xl-light-text-decoration: none;
   --typography-xl-regular-font-family: Effra;
   --typography-xl-regular-font-weight: Regular;
-  --typography-xl-regular-line-height: 41.62px;
+  --typography-xl-regular-line-height: 2.60125rem;
   --typography-xl-regular-font-size: 1.53rem;
   --typography-xl-regular-letter-spacing: 0%;
   --typography-xl-regular-paragraph-spacing: 0;
@@ -208,7 +208,7 @@
   --typography-xl-regular-text-decoration: none;
   --typography-xl-medium-font-family: Effra;
   --typography-xl-medium-font-weight: Medium;
-  --typography-xl-medium-line-height: 41.62px;
+  --typography-xl-medium-line-height: 2.60125rem;
   --typography-xl-medium-font-size: 1.53rem;
   --typography-xl-medium-letter-spacing: 0%;
   --typography-xl-medium-paragraph-spacing: 0;
@@ -216,7 +216,7 @@
   --typography-xl-medium-text-decoration: none;
   --typography-xl-semibold-font-family: Effra;
   --typography-xl-semibold-font-weight: Bold;
-  --typography-xl-semibold-line-height: 41.62px;
+  --typography-xl-semibold-line-height: 2.60125rem;
   --typography-xl-semibold-font-size: 1.53rem;
   --typography-xl-semibold-letter-spacing: 0%;
   --typography-xl-semibold-paragraph-spacing: 0;
@@ -224,7 +224,7 @@
   --typography-xl-semibold-text-decoration: none;
   --typography-2xl-light-font-family: Effra;
   --typography-2xl-light-font-weight: Light;
-  --typography-2xl-light-line-height: 49.95px;
+  --typography-2xl-light-line-height: 3.121875rem;
   --typography-2xl-light-font-size: 1.83625rem;
   --typography-2xl-light-letter-spacing: 0%;
   --typography-2xl-light-paragraph-spacing: 0;
@@ -232,7 +232,7 @@
   --typography-2xl-light-text-decoration: none;
   --typography-2xl-regular-font-family: Effra;
   --typography-2xl-regular-font-weight: Regular;
-  --typography-2xl-regular-line-height: 49.95px;
+  --typography-2xl-regular-line-height: 3.121875rem;
   --typography-2xl-regular-font-size: 1.83625rem;
   --typography-2xl-regular-letter-spacing: 0%;
   --typography-2xl-regular-paragraph-spacing: 0;
@@ -240,7 +240,7 @@
   --typography-2xl-regular-text-decoration: none;
   --typography-2xl-medium-font-family: Effra;
   --typography-2xl-medium-font-weight: Medium;
-  --typography-2xl-medium-line-height: 49.95px;
+  --typography-2xl-medium-line-height: 3.121875rem;
   --typography-2xl-medium-font-size: 1.83625rem;
   --typography-2xl-medium-letter-spacing: 0%;
   --typography-2xl-medium-paragraph-spacing: 0;
@@ -248,7 +248,7 @@
   --typography-2xl-medium-text-decoration: none;
   --typography-2xl-semibold-font-family: Effra;
   --typography-2xl-semibold-font-weight: Bold;
-  --typography-2xl-semibold-line-height: 49.95px;
+  --typography-2xl-semibold-line-height: 3.121875rem;
   --typography-2xl-semibold-font-size: 1.83625rem;
   --typography-2xl-semibold-letter-spacing: 0%;
   --typography-2xl-semibold-paragraph-spacing: 0;
@@ -256,7 +256,7 @@
   --typography-2xl-semibold-text-decoration: none;
   --typography-3xl-light-font-family: Effra;
   --typography-3xl-light-font-weight: Light;
-  --typography-3xl-light-line-height: 59.92px;
+  --typography-3xl-light-line-height: 3.745rem;
   --typography-3xl-light-font-size: 2.203125rem;
   --typography-3xl-light-letter-spacing: 0%;
   --typography-3xl-light-paragraph-spacing: 0;
@@ -264,7 +264,7 @@
   --typography-3xl-light-text-decoration: none;
   --typography-3xl-regular-font-family: Effra;
   --typography-3xl-regular-font-weight: Regular;
-  --typography-3xl-regular-line-height: 59.92px;
+  --typography-3xl-regular-line-height: 3.745rem;
   --typography-3xl-regular-font-size: 2.203125rem;
   --typography-3xl-regular-letter-spacing: 0%;
   --typography-3xl-regular-paragraph-spacing: 0;
@@ -272,7 +272,7 @@
   --typography-3xl-regular-text-decoration: none;
   --typography-3xl-medium-font-family: Effra;
   --typography-3xl-medium-font-weight: Medium;
-  --typography-3xl-medium-line-height: 59.92px;
+  --typography-3xl-medium-line-height: 3.745rem;
   --typography-3xl-medium-font-size: 2.203125rem;
   --typography-3xl-medium-letter-spacing: 0%;
   --typography-3xl-medium-paragraph-spacing: 0;
@@ -280,7 +280,7 @@
   --typography-3xl-medium-text-decoration: none;
   --typography-3xl-semibold-font-family: Effra;
   --typography-3xl-semibold-font-weight: Bold;
-  --typography-3xl-semibold-line-height: 59.92px;
+  --typography-3xl-semibold-line-height: 3.745rem;
   --typography-3xl-semibold-font-size: 2.203125rem;
   --typography-3xl-semibold-letter-spacing: 0%;
   --typography-3xl-semibold-paragraph-spacing: 0;
@@ -288,7 +288,7 @@
   --typography-3xl-semibold-text-decoration: none;
   --typography-4xl-light-font-family: Effra;
   --typography-4xl-light-font-weight: Light;
-  --typography-4xl-light-line-height: 50.76px;
+  --typography-4xl-light-line-height: 3.1725rem;
   --typography-4xl-light-font-size: 2.64375rem;
   --typography-4xl-light-letter-spacing: 0%;
   --typography-4xl-light-paragraph-spacing: 0;
@@ -296,7 +296,7 @@
   --typography-4xl-light-text-decoration: none;
   --typography-4xl-regular-font-family: Effra;
   --typography-4xl-regular-font-weight: Regular;
-  --typography-4xl-regular-line-height: 50.76px;
+  --typography-4xl-regular-line-height: 3.1725rem;
   --typography-4xl-regular-font-size: 2.64375rem;
   --typography-4xl-regular-letter-spacing: 0%;
   --typography-4xl-regular-paragraph-spacing: 0;
@@ -304,7 +304,7 @@
   --typography-4xl-regular-text-decoration: none;
   --typography-4xl-medium-font-family: Effra;
   --typography-4xl-medium-font-weight: Medium;
-  --typography-4xl-medium-line-height: 50.76px;
+  --typography-4xl-medium-line-height: 3.1725rem;
   --typography-4xl-medium-font-size: 2.64375rem;
   --typography-4xl-medium-letter-spacing: 0%;
   --typography-4xl-medium-paragraph-spacing: 0;
@@ -312,7 +312,7 @@
   --typography-4xl-medium-text-decoration: none;
   --typography-4xl-semibold-font-family: Effra;
   --typography-4xl-semibold-font-weight: Bold;
-  --typography-4xl-semibold-line-height: 50.76px;
+  --typography-4xl-semibold-line-height: 3.1725rem;
   --typography-4xl-semibold-font-size: 2.64375rem;
   --typography-4xl-semibold-letter-spacing: 0%;
   --typography-4xl-semibold-paragraph-spacing: 0;
@@ -442,10 +442,10 @@
   --radii-xl: 12px;
   --radii-pill: 9999px;
   --radii-circle: 50%;
-  --border-width-0: 0px;
-  --border-width-1: 1px;
-  --border-width-2: 2px;
-  --border-width-3: 4px;
+  --border-width-0: 0rem;
+  --border-width-1: 0.0625rem;
+  --border-width-2: 0.125rem;
+  --border-width-3: 0.25rem;
   --light-background-default: #f6f6f4;
   --light-surface-base-default: #ffffff;
   --light-surface-base-subdued: #f6f6f4;
