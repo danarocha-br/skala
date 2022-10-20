@@ -1047,11 +1047,15 @@
     },
     "elevation": {
       "low": {
-        "value": "0px 0.800000011920929px 1.2999999523162842px 0px #00000005, 0px 6px 10px 0px #0000000D",
+        "value": "\"0px 0.800000011920929px 1.2999999523162842px 0px #00000005, 0px 6px 10px 0px #0000000D\"",
         "type": "boxShadow"
       },
       "medium": {
-        "value": "0px 2.0999999046325684px 3.799999952316284px 0px #00000005, 0px 17px 30px 0px #0000000D",
+        "value": "\"0px 2.0999999046325684px 3.799999952316284px 0px #00000005, 0px 17px 30px 0px #0000000D\"",
+        "type": "boxShadow"
+      },
+      "high": {
+        "value": "\"0px 1.899999976158142px 2.5px 0px #00000005, 0px 6.300000190734863px 8.5px 0px #00000003;  box-shadow: 0px 28px 38px 0px #0000000F\"",
         "type": "boxShadow"
       }
     }
