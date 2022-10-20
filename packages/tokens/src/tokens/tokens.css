@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 20 Oct 2022 09:16:10 GMT
+ * Generated on Thu, 20 Oct 2022 10:10:04 GMT
  */
 
 :root {
@@ -394,48 +394,48 @@
   --size-10: 96px;
   --size-11: 160px;
   --size-12: 168px;
-  --elevation-low-0-x: 0;
-  --elevation-low-0-y: 0.8;
-  --elevation-low-0-blur: 1.3;
-  --elevation-low-0-spread: 0;
-  --elevation-low-0-color: #00000005;
-  --elevation-low-0-type: dropShadow;
-  --elevation-low-1-x: 0;
-  --elevation-low-1-y: 6;
-  --elevation-low-1-blur: 10;
-  --elevation-low-1-spread: 0;
-  --elevation-low-1-color: #0000000d;
-  --elevation-low-1-type: dropShadow;
-  --elevation-medium-0-x: 0;
-  --elevation-medium-0-y: 2.1;
-  --elevation-medium-0-blur: 3.8;
-  --elevation-medium-0-spread: 0;
-  --elevation-medium-0-color: #00000005;
-  --elevation-medium-0-type: dropShadow;
-  --elevation-medium-1-x: 0;
-  --elevation-medium-1-y: 17;
-  --elevation-medium-1-blur: 30;
-  --elevation-medium-1-spread: 0;
-  --elevation-medium-1-color: #0000000d;
-  --elevation-medium-1-type: dropShadow;
-  --elevation-high-0-x: 0;
-  --elevation-high-0-y: 1.9;
-  --elevation-high-0-blur: 2.5;
-  --elevation-high-0-spread: 0;
-  --elevation-high-0-color: #00000005;
-  --elevation-high-0-type: dropShadow;
-  --elevation-high-1-x: 0;
-  --elevation-high-1-y: 6.3;
-  --elevation-high-1-blur: 8.5;
-  --elevation-high-1-spread: 0;
-  --elevation-high-1-color: #00000003;
-  --elevation-high-1-type: dropShadow;
-  --elevation-high-2-x: 0;
-  --elevation-high-2-y: 28;
-  --elevation-high-2-blur: 38;
-  --elevation-high-2-spread: 0;
-  --elevation-high-2-color: #0000000f;
-  --elevation-high-2-type: dropShadow;
+  --shadow-low-0-x: 0;
+  --shadow-low-0-y: 0.8;
+  --shadow-low-0-blur: 1.3;
+  --shadow-low-0-spread: 0;
+  --shadow-low-0-color: #00000005;
+  --shadow-low-0-type: dropShadow;
+  --shadow-low-1-x: 0;
+  --shadow-low-1-y: 6;
+  --shadow-low-1-blur: 10;
+  --shadow-low-1-spread: 0;
+  --shadow-low-1-color: #0000000d;
+  --shadow-low-1-type: dropShadow;
+  --shadow-medium-0-x: 0;
+  --shadow-medium-0-y: 2.1;
+  --shadow-medium-0-blur: 3.8;
+  --shadow-medium-0-spread: 0;
+  --shadow-medium-0-color: #00000005;
+  --shadow-medium-0-type: dropShadow;
+  --shadow-medium-1-x: 0;
+  --shadow-medium-1-y: 17;
+  --shadow-medium-1-blur: 30;
+  --shadow-medium-1-spread: 0;
+  --shadow-medium-1-color: #0000000d;
+  --shadow-medium-1-type: dropShadow;
+  --shadow-high-0-x: 0;
+  --shadow-high-0-y: 1.9;
+  --shadow-high-0-blur: 2.5;
+  --shadow-high-0-spread: 0;
+  --shadow-high-0-color: #00000005;
+  --shadow-high-0-type: dropShadow;
+  --shadow-high-1-x: 0;
+  --shadow-high-1-y: 6.3;
+  --shadow-high-1-blur: 8.5;
+  --shadow-high-1-spread: 0;
+  --shadow-high-1-color: #00000003;
+  --shadow-high-1-type: dropShadow;
+  --shadow-high-2-x: 0;
+  --shadow-high-2-y: 28;
+  --shadow-high-2-blur: 38;
+  --shadow-high-2-spread: 0;
+  --shadow-high-2-color: #0000000f;
+  --shadow-high-2-type: dropShadow;
   --radii-sm: 4px;
   --radii-md: 6px;
   --radii-lg: 8px;
@@ -446,6 +446,9 @@
   --border-width-1: 0.0625rem;
   --border-width-2: 0.125rem;
   --border-width-3: 0.25rem;
+  --elevation-low: 0px 0.800000011920929px 1.2999999523162842px 0px #00000005, 0px 6px 10px 0px #0000000D;
+  --elevation-medium: 0px 2.0999999046325684px 3.799999952316284px 0px #00000005, 0px 17px 30px 0px #0000000D;
+  --elevation-high: 0px 1.899999976158142px 2.5px 0px #00000005, 0px 6.300000190734863px 8.5px 0px #00000003, 0px 28px 38px 0px #0000000F;
   --light-background-default: #f6f6f4;
   --light-surface-base-default: #ffffff;
   --light-surface-base-subdued: #f6f6f4;
