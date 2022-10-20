@@ -21,6 +21,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'react-hooks'],
+  ignorePatterns: ['**/*.css', '**/*.mdx'],
   rules: {
     'react/jsx-key': 'off',
     'react-hooks/rules-of-hooks': 'error',

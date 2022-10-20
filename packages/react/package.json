@@ -2,35 +2,29 @@
   "name": "@skala/react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "tsup src/index.ts --form esm,cjs --dts --watch",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "lint": "eslint src/**/*.ts* --fix --max-warnings=0",
     "commit": "git-cz"
-  },
-  "lint-staged": {
-    "src/**/*": [
-      "npm run lint"
-    ]
   },
   "keywords": [],
   "author": "Dana Rocha",
   "license": "ISC",
   "devDependencies": {
-    "@skala/design-tokens": "*",
     "@skala/eslint-config": "*",
     "@skala/ts-config": "*",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "cz-conventional-changelog": "^3.3.0",
     "cz-emoji": "^1.3.2-canary.2",
-    "lint-staged": "^13.0.3",
     "react": "^18.2.0",
     "tsup": "^6.2.3",
     "typescript": "^4.8.4"
   },
   "dependencies": {
+    "@skala/design-tokens": "*",
     "@stitches/react": "^1.2.8"
   },
   "config": {

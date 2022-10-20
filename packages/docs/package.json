@@ -9,15 +9,11 @@
     "lint": "eslint src/**/*.ts* --fix --max-warnings=0",
     "commit": "git-cz"
   },
-  "lint-staged": {
-    "src/**/*": [
-      "npm run lint"
-    ]
-  },
   "author": "Dana Rocha",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@skala/eslint-config": "*",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
@@ -27,15 +23,17 @@
     "@storybook/testing-library": "^0.0.13",
     "@vitejs/plugin-react": "^2.1.0",
     "babel-loader": "^8.2.5",
-    "vite": "^3.1.8",
-    "cz-emoji": "^1.3.2-canary.2"
+    "cz-emoji": "^1.3.2-canary.2",
+    "vite": "^3.1.8"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@skala/react": "*",
     "@skala/design-tokens": "*",
-    "@skala/eslint-config": "*"
+    "@skala/eslint-config": "*",
+    "@skala/react": "*",
+    "@skala/ts-config": "*",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "config": {
     "commitizen": {
