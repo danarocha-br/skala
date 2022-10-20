@@ -15,6 +15,7 @@ const coreAndThemeTokens = [
   'elevation',
   'light',
   'dark',
+  'gradient'
 ];
 
 const filterTokens = (tokenCategory) => (token) => {

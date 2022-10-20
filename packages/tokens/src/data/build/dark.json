@@ -304,17 +304,17 @@
         "type": "color"
       }
     },
-    "gradient": {
-      "primary": {
-        "value": "linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%)",
-        "type": "color"
-      }
-    },
     "brand": {
       "primary": {
         "value": "#f1786f",
         "type": "color"
       }
+    }
+  },
+  "gradient": {
+    "background": {
+      "value": "linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%)",
+      "type": "other"
     }
   }
 }

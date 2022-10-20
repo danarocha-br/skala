@@ -68,6 +68,5 @@ export const light = {
   loadingSubdued: '#e0e1e0',
   overlayDefault: '#151c1e',
   overlaySubdued: '#202a2d',
-  gradientPrimary: 'linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%)',
   brandPrimary: '#f1786f',
 };

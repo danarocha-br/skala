@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Fri, 14 Oct 2022 14:30:09 GMT
+ * Generated on Thu, 20 Oct 2022 08:55:36 GMT
  */
 
 :root {
   --font-families-effra: Effra;
-  --font-families-sans: effra, -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-families-sans: 'effra', -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --line-height-1: 17px;
   --line-height-2: 19.2px;
   --line-height-3: 22.4px;
@@ -515,8 +515,8 @@
   --light-loading-subdued: #e0e1e0;
   --light-overlay-default: #151c1e;
   --light-overlay-subdued: #202a2d;
-  --light-gradient-primary: linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%);
   --light-brand-primary: #f1786f;
+  --gradient-background: linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%);
   --dark-background-default: #151c1e;
   --dark-surface-base-default: #202a2d;
   --dark-surface-base-subdued: #323d43;
@@ -586,6 +586,5 @@
   --dark-loading-subdued: #e0e1e0;
   --dark-overlay-default: #151c1e;
   --dark-overlay-subdued: #202a2d;
-  --dark-gradient-primary: linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%);
   --dark-brand-primary: #f1786f;
 }
