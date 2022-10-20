@@ -1,6 +1,2 @@
-import { styled } from './styles';
-
-export const Button = styled('button', {
-  backgroundColor: '',
-  fontFamily: '$sans',
-});
+export * from './components/Box';
+export * from './components/Text';
