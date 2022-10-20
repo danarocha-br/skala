@@ -9,6 +9,11 @@
     "lint": "eslint src/**/*.ts* --fix --max-warnings=0",
     "commit": "git-cz"
   },
+  "lint-staged": {
+    "src/**/*": [
+      "npm run lint"
+    ]
+  },
   "author": "Dana Rocha",
   "license": "MIT",
   "devDependencies": {
