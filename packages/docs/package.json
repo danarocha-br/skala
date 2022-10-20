@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
-    "lint": "eslint src/**/*.ts* --fix --max-warnings=0",
+    "lint": "eslint src/**/*.ts* --fix",
     "commit": "git-cz"
   },
   "lint-staged": {

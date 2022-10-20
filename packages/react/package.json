@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "lint": "eslint src/**/*.ts* --fix --max-warnings=0",
+    "lint": "eslint src/**/*.ts* --fix",
     "commit": "git-cz"
   },
   "keywords": [],
