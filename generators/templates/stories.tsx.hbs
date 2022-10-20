@@ -1,7 +1,5 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react/types-6-0';
-
-import { {{pascalCase name}}, {{pascalCase name}}Props  } from '.';
+import { StoryObj, Meta } from '@storybook/react';
+import { {{pascalCase name}}, {{pascalCase name}}Props } from '@skala/react';
 
 export default {
   title: 'Components/{{pascalCase name}}',
@@ -17,8 +15,7 @@ export default {
   },
   args: {
   }
-} as Meta;
+} as Meta<{{pascalCase name}}Props>;
 
-const Template: Story<{{pascalCase name}}Props> = (args) => <{{pascalCase name}} {...args} />;
+export const Default: StoryObj<{{pascalCase name}}Props> = {};
 
-export const Default = Template.bind({});

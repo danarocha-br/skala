@@ -22,7 +22,7 @@
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
-    "generate": "npm run plop --plopfile ./generators/plopfile.js",
+    "generate": "plop --plopfile ./generators/plopfile.js",
     "dev": "turbo run dev --parallel",
     "build": "turbo run build"
   }

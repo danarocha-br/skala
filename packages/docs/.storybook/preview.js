@@ -1,4 +1,5 @@
 import { themes } from '@storybook/theming';
+import { globalStyles } from '../../react/src/styles';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -9,6 +10,31 @@ export const parameters = {
     },
   },
   docs: {
-    theme: themes.dark,
+    theme: themes.light,
+  },
+  layout: 'centered',
+  options: {
+    storySort: {
+      method: 'alphabetical',
+      order: [
+        'Intro',
+        'Foundations',
+        'Primitives',
+        'Components',
+        'Navigation',
+        'Form',
+        'Templates',
+      ],
+    },
   },
 };
+
+
+// export const decorators = [
+//   (Story) => (
+//     <>
+//       {globalStyles()}
+//       <Story />
+//     </>
+//   ),
+// ];
