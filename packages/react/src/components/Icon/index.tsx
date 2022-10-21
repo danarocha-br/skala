@@ -29,7 +29,7 @@ export type IconProps = {
 export * from './iconPath';
 
 export const Icon = ({
-  color = 'subdued',
+  color = 'subtext',
   size = 'md',
   name = 'plus',
   className,

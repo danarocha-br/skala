@@ -31,6 +31,23 @@ export default {
       },
     ],
   },
+  argTypes: {
+    backHref: {
+      table: {
+        category: 'Text',
+      },
+    },
+    backLabel: {
+      table: {
+        category: 'Text',
+      },
+    },
+    items: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta<StepperProps>;
 
 export const Default: StoryObj<StepperProps> = {};

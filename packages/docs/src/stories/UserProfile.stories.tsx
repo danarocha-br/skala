@@ -37,6 +37,28 @@ export default {
       </>
     ),
   },
+  argTypes: {
+    user_name: {
+      table: {
+        category: 'Text',
+      },
+    },
+    user_email: {
+      table: {
+        category: 'Text',
+      },
+    },
+    children: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    loading: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta<UserProfileProps>;
 
 export const Default: StoryObj<UserProfileProps> = {};

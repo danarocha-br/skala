@@ -14,10 +14,83 @@ export default {
   },
   args: {
     size: 'md',
+    align: 'left',
     color: 'body',
     weight: 'regular',
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor. ',
+  },
+  argTypes: {
+    size: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl'],
+      control: {
+        type: 'select',
+      },
+    },
+    color: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: [
+        'body',
+        'subtext',
+        'caption',
+        'success',
+        'danger',
+        'warning',
+        'on-interactive',
+        'inverted',
+        'current',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
+    weight: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['light', 'regular', 'medium', 'semibold'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    align: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['left', 'center', 'right'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    leading: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+      control: {
+        type: 'select',
+      },
+    },
+    children: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    css: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    as: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
   },
 } as Meta<TextProps>;
 
@@ -64,7 +137,9 @@ const Template: Story<TextProps> = (args) => (
 
 export const AllScales = Template.bind({});
 
-export const CustomTag = Template.bind({});
-Template.args = {
+export const CustomTag: Story<TextProps> = (args) => (
+  <Text {...args}>Text</Text>
+);
+CustomTag.args = {
   as: 'strong',
 };

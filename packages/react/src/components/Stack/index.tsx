@@ -17,10 +17,10 @@ export const Stack = styled('div', {
       column: {
         flexDirection: 'column',
       },
-      rowReverse: {
+      'row-reverse': {
         flexDirection: 'row-reverse',
       },
-      columnReverse: {
+      'column-reverse': {
         flexDirection: 'column-reverse',
       },
       unset: {
@@ -59,13 +59,13 @@ export const Stack = styled('div', {
       },
     },
     wrap: {
-      noWrap: {
+      'no-wrap': {
         flexWrap: 'nowrap',
       },
       wrap: {
         flexWrap: 'wrap',
       },
-      wrapReverse: {
+      'wrap-reverse': {
         flexWrap: 'wrap-reverse',
       },
     },

@@ -24,6 +24,23 @@ export default {
       p: '$10',
     },
   },
+  argTypes: {
+    as: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    css: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    children: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta;
 
 export const Default: StoryObj<BoxProps> = {};

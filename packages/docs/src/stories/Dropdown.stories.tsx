@@ -21,6 +21,18 @@ export default {
     ),
     trigger: <button>click me</button>,
   },
+  argTypes: {
+    children: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    trigger: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta<DropdownProps>;
 
 export const Default: StoryObj<DropdownProps> = {};

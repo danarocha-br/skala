@@ -21,6 +21,18 @@ export default {
       return <Box css={{ p: '$6' }}>{Story()}</Box>;
     },
   ],
+  argTypes: {
+    count: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    currentStep: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta<StepperHorizontalProps>;
 
 export const Default: StoryObj<StepperHorizontalProps> = {};
