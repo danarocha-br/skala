@@ -1273,7 +1273,7 @@
             }
           }
         },
-        "interative": {
+        "interactive": {
           "default": {
             "value": "{colors.royal.600}",
             "type": "color"
@@ -1615,7 +1615,7 @@
             }
           }
         },
-        "interative": {
+        "interactive": {
           "default": {
             "value": "{colors.royal.400}",
             "type": "color"
