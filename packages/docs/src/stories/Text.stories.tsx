@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import { Text, TextProps, Box } from '@skala/react';
+import { Text, TextProps, Stack } from '@skala/react';
 
 export default {
   title: 'Primitives/Text',
@@ -16,15 +16,22 @@ export default {
     size: 'md',
     color: 'body',
     weight: 'regular',
-    children:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius rerum porro natus ea, laudantium incidunt ex blanditiis repellendus explicabo voluptate est. Rem laborum eius quidem hic neque aliquam ducimus?',
+    children: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
   },
 } as Meta<TextProps>;
 
 const Template: Story<TextProps> = (args) => (
-  <Box css={{ w: 300 }}>
-    <Text {...args} />
-  </Box>
+  <Stack direction="column" css={{ w: 500, py: '$6' }}>
+    <Text {...args} size="4xl" />
+    <Text {...args} size="3xl" />
+    <Text {...args} size="2xl" />
+    <Text {...args} size="xl" />
+    <Text {...args} size="lg" />
+    <Text {...args} size="md" />
+    <Text {...args} size="sm" />
+    <Text {...args} size="xs" />
+    <Text {...args} size="xxs" />
+  </Stack>
 );
 
 export const AllScales = Template.bind({});

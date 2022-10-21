@@ -1,9 +1,9 @@
-import { styled } from '../../styles';
-import type * as Stitches from '@stitches/react';
+import { CSS, styled } from '../../styles';
 
 export type TextProps = {
   as?: React.ElementType;
-} & Stitches.VariantProps<typeof Text>;
+  css?: CSS;
+} & React.ComponentProps<typeof Text>;
 
 export const Text = styled('span', {
   margin: '0',

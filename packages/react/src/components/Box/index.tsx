@@ -1,7 +1,9 @@
-import type * as Stitches from '@stitches/react';
-import { styled } from '../../styles';
+import { CSS, styled } from '../../styles';
 
-export type BoxProps = Stitches.VariantProps<typeof Box>;
+export type BoxProps = {
+  as?: React.ElementType;
+  css?: CSS;
+} & React.ComponentProps<typeof Box>;
 
 export const Box = styled('div', {
   boxSizing: 'border-box',

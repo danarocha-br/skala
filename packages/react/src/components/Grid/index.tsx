@@ -1,7 +1,9 @@
-import type * as Stitches from '@stitches/react';
-import { styled } from '../../styles';
+import { styled, CSS } from '../../styles';
 
-export type GridProps = Stitches.VariantProps<typeof Grid>;
+export type GridProps = {
+  as?: React.ElementType;
+  css?: CSS;
+} & React.ComponentProps<typeof Grid>;
 
 export const Grid = styled('div', {
   boxSizing: 'border-box',
