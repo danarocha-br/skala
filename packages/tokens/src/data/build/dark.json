@@ -286,11 +286,11 @@
     },
     "loading": {
       "default": {
-        "value": "#c0c5c9",
+        "value": "#e0e1e0",
         "type": "color"
       },
       "subdued": {
-        "value": "#e0e1e0",
+        "value": "#f6f6f4",
         "type": "color"
       }
     },

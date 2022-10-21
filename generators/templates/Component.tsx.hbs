@@ -1,12 +1,13 @@
-import React from 'react';
+import { CSS } from '../../styles';
 
 import * as S from './styles';
 
 export type {{pascalCase name}}Props = {
+  css?: CSS;
 }
 
-export const {{pascalCase name}} = ({}: {{pascalCase name}}Props) => (
-  <S.Container>
+export const {{pascalCase name}} = ({ css, ...props }: {{pascalCase name}}Props) => (
+  <S.Container css={css} {...props}>
     <h1>{{pascalCase name}}</h1>
   </S.Container>
 );
