@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Dropdown, UserProfile, UserProfileProps } from '@skala/react';
+import { Dropdown, Icon, UserProfile, UserProfileProps } from '@skala/react';
 
 export default {
   title: 'Components/UserProfile',
@@ -17,14 +17,15 @@ export default {
     user_email: 'hello@danarocha.com',
     loading: false,
     children: (
-      //TODO: Add icons
       <>
         <Dropdown.Item textValue="Configurações">
+          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
           <a href="/">
             Configurações <Dropdown.RightSlot>⌘ C</Dropdown.RightSlot>
           </a>
         </Dropdown.Item>
         <Dropdown.Item textValue="Preferências">
+          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
           <a href="/">
             Preferências <Dropdown.RightSlot>⌘ P</Dropdown.RightSlot>
           </a>

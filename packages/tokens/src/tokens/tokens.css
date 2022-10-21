@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Oct 2022 13:42:16 GMT
+ * Generated on Fri, 21 Oct 2022 16:49:32 GMT
  */
 
 :root {
@@ -24,9 +24,9 @@
   --dark-text-caption: #8b969c;
   --dark-text-subtext: #c0c5c9;
   --dark-text-body: #ffffff;
-  --dark-surface-interative-constrast: #f0f7ff;
+  --dark-surface-interative-constrast: #f0f7ff33;
   --dark-surface-interative-border: #405fed;
-  --dark-surface-interative-disabled: #b5cffd;
+  --dark-surface-interative-disabled: #b4cffd4d;
   --dark-surface-interative-pressed: #271ed2;
   --dark-surface-interative-hover: #3b41e8;
   --dark-surface-interative-subdued: #799ff6;

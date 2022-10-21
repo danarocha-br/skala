@@ -1,6 +1,7 @@
 import { CSS } from '../../styles';
 import { Avatar } from '../Avatar';
 import { Dropdown } from '../Dropdown';
+import { Icon } from '../Icon';
 import { Text } from '../Text';
 
 import * as S from './styles';
@@ -35,7 +36,7 @@ export const UserProfile = ({
           showUsername
           loading={loading}
         />
-        {/* <Icon name="chevronDown" size="sm" /> */}
+        <Icon label='dropdown' name="chevronDown" size="sm" />
       </S.Trigger>
     }
   >

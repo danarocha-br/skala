@@ -11,6 +11,10 @@ export const Trigger = styled('button', {
   transition: '$base',
   transform: 'translateX(0)',
 
+  d: 'flex',
+  align: 'center',
+  gap: '$3',
+
   '&:hover': {
     bg: '$surface-base-disabled',
 
