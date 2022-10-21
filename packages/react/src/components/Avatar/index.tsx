@@ -66,3 +66,5 @@ function getInitials(name: string) {
       .toUpperCase()
   );
 }
+
+Avatar.displayName = 'Avatar';

@@ -21,6 +21,51 @@ export default {
     loading: false,
     showUsername: false,
   },
+  argTypes: {
+    username: {
+      table: {
+        category: 'Text',
+      },
+    },
+    imageALT: {
+      table: {
+        category: 'Text',
+      },
+    },
+    imageURL: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    variant: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['circle', 'square'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['md', 'lg'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    loading: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    showUsername: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta<AvatarProps>;
 
 export const Sizes: Story<AvatarProps> = (args) => (

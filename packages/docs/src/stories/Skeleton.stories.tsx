@@ -15,6 +15,13 @@ export default {
   args: {
     children: <Skeleton.Item width={300} height={12} count={5} />,
   },
+  argTypes: {
+    children: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+  },
 } as Meta<SkeletonProps>;
 
 export const Example: StoryObj<SkeletonProps> = {};

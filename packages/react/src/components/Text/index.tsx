@@ -145,3 +145,5 @@ export const Text = styled('span', {
     weight: 'regular',
   },
 });
+
+Text.displayName = 'Text';

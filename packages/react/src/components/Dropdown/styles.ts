@@ -71,7 +71,8 @@ const itemStyles = {
 
   '&:hover': {
     color: '$text-body !important',
-    background: '$surface-interative-constrast !important',
+    background: '$surface-interactive-constrast !important',
+    border: '1px dashed transparent !important',
   },
 
   '&[data-disabled]': {
@@ -82,8 +83,8 @@ const itemStyles = {
 
   '&:focus': {
     color: '$text-body !important',
-    background: '$surface-interative-constrast !important',
-    border: '1px dashed $surface-interative-disabled',
+    background: '$surface-interactive-constrast !important',
+    border: '1px dashed $surface-interactive-disabled',
     outline: 'none',
   },
 

@@ -1,6 +1,8 @@
 import { Story, Meta } from '@storybook/react';
 import { Grid, Icon, IconProps, iconPath, Text, Stack } from '@skala/react';
 
+const icons = Object.keys(iconPath);
+
 export default {
   title: 'Components/Icon',
   component: Icon,
@@ -18,9 +20,51 @@ export default {
     label: 'add',
     size: 'md',
   },
+  argTypes: {
+    name: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: [...icons],
+      control: {
+        type: 'select',
+      },
+    },
+    color: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: [
+        'body',
+        'subtext',
+        'caption',
+        'success',
+        'danger',
+        'warning',
+        'on-interactive',
+        'inverted',
+        'current',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
+    label: {
+      table: {
+        category: 'Text',
+      },
+    },
+    size: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['sm', 'md', 'lg'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta<IconProps>;
-
-const icons = Object.keys(iconPath);
 
 export const IconSet: Story<IconProps> = (args) => (
   <Grid
@@ -56,3 +100,8 @@ export const IconSet: Story<IconProps> = (args) => (
     ))}
   </Grid>
 );
+
+export const SingleIcon: Story<IconProps> = (args) => <Icon {...args} />;
+SingleIcon.parameters = {
+  layout: 'centered',
+};

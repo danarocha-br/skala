@@ -17,6 +17,12 @@ export default {
     },
   },
   args: {
+    cols: '4',
+    gap: '4',
+    rows: '2',
+    flow: 'row',
+    align: 'start',
+    justify: 'start',
     children: (
       <>
         {CHILDREN.map((tag, index) => (
@@ -25,11 +31,95 @@ export default {
       </>
     ),
   },
+  argTypes: {
+    children: {
+      table: {
+        category: 'Modifiers',
+      },
+    },
+    gap: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+      control: {
+        type: 'select',
+      },
+    },
+    cols: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: [
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+        '12',
+        'none',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
+    rows: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: [
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+        '12',
+        'none',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
+    flow: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['row', 'column', 'row-dense', 'row-column'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    align: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['start', 'end', 'stretch', 'baseline', 'center'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    justify: {
+      table: {
+        category: 'Modifiers',
+      },
+      options: ['start', 'end', 'center', 'between'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta<GridProps>;
 
-export const Default: StoryObj<GridProps> = {
-  args: {
-    cols: '4',
-    gap: '4',
-  },
-};
+export const Default: StoryObj<GridProps> = {};

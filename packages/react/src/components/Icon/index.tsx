@@ -29,7 +29,7 @@ export type IconProps = {
 export * from './iconPath';
 
 export const Icon = ({
-  color = 'subdued',
+  color = 'subtext',
   size = 'md',
   name = 'plus',
   className,
@@ -52,3 +52,5 @@ export const Icon = ({
     <path d={iconPath[name]} fillRule="evenodd" clipRule="evenodd" />
   </S.SVG>
 );
+
+Icon.displayName = 'Icon';

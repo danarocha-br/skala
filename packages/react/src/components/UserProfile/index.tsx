@@ -58,3 +58,5 @@ export const UserProfile = ({
     {children}
   </Dropdown.Menu>
 );
+
+UserProfile.displayName = 'UserProfile';

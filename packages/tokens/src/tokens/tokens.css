@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Oct 2022 16:49:32 GMT
+ * Generated on Fri, 21 Oct 2022 18:23:57 GMT
  */
 
 :root {
@@ -24,13 +24,13 @@
   --dark-text-caption: #8b969c;
   --dark-text-subtext: #c0c5c9;
   --dark-text-body: #ffffff;
-  --dark-surface-interative-constrast: #f0f7ff33;
-  --dark-surface-interative-border: #405fed;
-  --dark-surface-interative-disabled: #b4cffd4d;
-  --dark-surface-interative-pressed: #271ed2;
-  --dark-surface-interative-hover: #3b41e8;
-  --dark-surface-interative-subdued: #799ff6;
-  --dark-surface-interative-default: #405fed;
+  --dark-surface-interactive-constrast: #f0f7ff33;
+  --dark-surface-interactive-border: #405fed;
+  --dark-surface-interactive-disabled: #b4cffd4d;
+  --dark-surface-interactive-pressed: #271ed2;
+  --dark-surface-interactive-hover: #3b41e8;
+  --dark-surface-interactive-subdued: #799ff6;
+  --dark-surface-interactive-default: #405fed;
   --dark-surface-action-transparent-disabled: #e0e1e01a;
   --dark-surface-action-transparent-pressed: #4c575d;
   --dark-surface-action-transparent-hover: #e0e1e026;
@@ -100,13 +100,13 @@
   --light-text-caption: #8b969c;
   --light-text-subtext: #4c575d;
   --light-text-body: #202a2d;
-  --light-surface-interative-constrast: #f0f7ff;
-  --light-surface-interative-border: #3b41e8;
-  --light-surface-interative-disabled: #b5cffd;
-  --light-surface-interative-pressed: #182586;
-  --light-surface-interative-hover: #1f18aa;
-  --light-surface-interative-subdued: #3b41e8;
-  --light-surface-interative-default: #271ed2;
+  --light-surface-interactive-constrast: #f0f7ff;
+  --light-surface-interactive-border: #3b41e8;
+  --light-surface-interactive-disabled: #b5cffd;
+  --light-surface-interactive-pressed: #182586;
+  --light-surface-interactive-hover: #1f18aa;
+  --light-surface-interactive-subdued: #3b41e8;
+  --light-surface-interactive-default: #271ed2;
   --light-surface-action-transparent-disabled: #e0e1e033;
   --light-surface-action-transparent-pressed: #e0e1e0;
   --light-surface-action-transparent-hover: #e0e1e04d;
