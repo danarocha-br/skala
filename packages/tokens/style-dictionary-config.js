@@ -3,7 +3,7 @@ const StyleDictionary = require('style-dictionary');
 
 const buildPath = './src/tokens/';
 
-const coreAndThemeTokens = [
+const coreTokens = [
   'fontSize',
   'fontFamilies',
   'fontWeight',
@@ -13,10 +13,10 @@ const coreAndThemeTokens = [
   'radii',
   'colors',
   'elevation',
-  'light',
-  'dark',
   'gradient',
 ];
+
+const themeTokens = ['light', 'dark'];
 
 const filterTokens = (tokenCategory) => (token) => {
   const { category, type } = token.attributes;
@@ -35,6 +35,19 @@ const getTokens = (tokensCategories, extension) => {
         outputReferences: true,
       },
       format: 'custom',
+    };
+  });
+};
+
+const getThemeTokens = (tokensCategories, extension) => {
+  return tokensCategories.map((tokenCategory) => {
+    return {
+      filter: filterTokens(tokenCategory),
+      destination: `${buildPath}${tokenCategory}.${extension}`,
+      options: {
+        outputReferences: true,
+      },
+      format: 'custom-theme',
     };
   });
 };
@@ -76,6 +89,21 @@ StyleDictionary.registerFormat({
   },
 });
 
+StyleDictionary.registerFormat({
+  name: 'custom-theme',
+  formatter: function ({ dictionary }) {
+    return `export const ${Object.keys(
+      dictionary.tokens
+    )} = {${dictionary.allTokens.map(
+      (token) =>
+        `\n\t"${token.name.replace(token.attributes.category + '-', '')}": "${
+          token.value
+        }"`
+      // `\n\t"${token.name}": "${token.value}"`
+    )}\n};`;
+  },
+});
+
 module.exports = {
   source: [
     'src/data/build/global.json',
@@ -97,6 +125,9 @@ module.exports = {
         {
           destination: 'tokens.css',
           format: 'css/variables',
+          options: {
+            outputReferences: true,
+          },
         },
       ],
     },
@@ -112,7 +143,21 @@ module.exports = {
       ],
       prefix: '',
       buildPath: '',
-      files: getTokens(coreAndThemeTokens, 'ts', 'javascript/es6'),
+      files: getTokens(coreTokens, 'ts', 'javascript/es6'),
+    },
+
+    jsThemes: {
+      transformGroup: 'js',
+      transforms: [
+        'attribute/cti',
+        'name/cti/kebab',
+        'color/hsl',
+        'sizes/px',
+        'font-size/rem',
+      ],
+      prefix: '',
+      buildPath: '',
+      files: getThemeTokens(themeTokens, 'ts', 'javascript/es6'),
     },
   },
 };

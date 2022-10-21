@@ -1,0 +1,21 @@
+import { StoryObj, Meta } from '@storybook/react';
+import { {{pascalCase name}}, {{pascalCase name}}Props } from '@skala/react';
+
+export default {
+  title: 'Components/{{pascalCase name}}',
+  component: {{pascalCase name}},
+  parameters: {
+    layout: 'centered',
+    status: 'stable', // beta| deprecated | review | stable,
+    design: {
+      type: 'figma',
+      url:
+        '',
+    },
+  },
+  args: {
+  }
+} as Meta<{{pascalCase name}}Props>;
+
+export const Default: StoryObj<{{pascalCase name}}Props> = {};
+
