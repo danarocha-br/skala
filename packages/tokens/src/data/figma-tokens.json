@@ -1249,6 +1249,28 @@
               "value": "{colors.forest.50}",
               "type": "color"
             }
+          },
+          "transparent": {
+            "default": {
+              "value": "transparent",
+              "type": "color"
+            },
+            "subdued": {
+              "value": "hsla(120, 2%, 88%, .8)",
+              "type": "color"
+            },
+            "hover": {
+              "value": "hsla(120, 2%, 88%, .3)",
+              "type": "color"
+            },
+            "pressed": {
+              "value": "{colors.neutral.200}",
+              "type": "color"
+            },
+            "disabled": {
+              "value": "hsla(120, 2%, 88%, .2)",
+              "type": "color"
+            }
           }
         },
         "interative": {
@@ -1569,6 +1591,28 @@
               "value": "{colors.forest.900}",
               "type": "color"
             }
+          },
+          "transparent": {
+            "default": {
+              "value": "transparent",
+              "type": "color"
+            },
+            "subdued": {
+              "value": "hsla(120, 2%, 88%, .9)",
+              "type": "color"
+            },
+            "hover": {
+              "value": "hsla(120, 2%, 88%, .15)",
+              "type": "color"
+            },
+            "pressed": {
+              "value": "{colors.neutral.600}",
+              "type": "color"
+            },
+            "disabled": {
+              "value": "hsla(120, 2%, 88%, .1)",
+              "type": "color"
+            }
           }
         },
         "interative": {
@@ -1688,7 +1732,7 @@
       },
       "brand": {
         "primary": {
-          "value": "{colors.froly.500}",
+          "value": "{colors.froly.600}",
           "type": "color"
         }
       }
