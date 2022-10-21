@@ -211,7 +211,7 @@
           }
         }
       },
-      "interative": {
+      "interactive": {
         "default": {
           "value": "#271ed2",
           "type": "color"
