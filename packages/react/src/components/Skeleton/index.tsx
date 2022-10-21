@@ -1,17 +1,20 @@
 import ReactSkeleton, {
   SkeletonTheme,
-  SkeletonProps,
+  SkeletonProps as ReactSkeletonProps,
 } from 'react-loading-skeleton';
 import { theme } from '../../styles';
 
-export type SkeletonOwnProps = {
+export type SkeletonProps = {
   children: React.ReactNode;
 };
 
-const SkeletonItem = (props: SkeletonProps) => <ReactSkeleton {...props} />;
+const SkeletonItem = (props: ReactSkeletonProps) => (
+  //@ts-ignore
+  <ReactSkeleton style={{ marginBottom: theme.space[3] }} {...props} />
+);
 SkeletonItem.displayName = 'Skeleton.Item';
 
-const SkeletonRoot = ({ children, ...props }: SkeletonOwnProps) => (
+const SkeletonRoot = ({ children, ...props }: SkeletonProps) => (
   <SkeletonTheme
     //@ts-ignore
     baseColor={theme.colors['loading-default']}

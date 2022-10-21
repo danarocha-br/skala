@@ -3,16 +3,18 @@ import { Skeleton, SkeletonProps } from '@skala/react';
 
 export default {
   title: 'Components/Skeleton',
-  component: Skeleton,
+  component: Skeleton.Root,
   parameters: {
     layout: 'centered',
     status: 'stable', // beta| deprecated | review | stable,
     design: {
       type: 'figma',
-      url: '',
+      url: 'https://www.figma.com/file/nGRJSZ90AzGrFe23Shmkzf/Skala?node-id=17%3A17157',
     },
   },
-  args: {},
+  args: {
+    children: <Skeleton.Item width={300} height={12} count={5} />,
+  },
 } as Meta<SkeletonProps>;
 
-export const Default: StoryObj<SkeletonProps> = {};
+export const Example: StoryObj<SkeletonProps> = {};
