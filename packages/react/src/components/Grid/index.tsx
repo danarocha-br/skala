@@ -190,3 +190,5 @@ export const Grid = styled('div', {
     justify: 'between',
   },
 });
+
+Grid.displayName = 'Grid';

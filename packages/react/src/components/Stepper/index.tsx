@@ -70,3 +70,5 @@ export const Stepper = ({
     </S.Container>
   );
 };
+
+Stepper.displayName = 'Stepper';

@@ -26,3 +26,5 @@ export const StepperHorizontal = ({
     </S.Steps>
   </S.Container>
 );
+
+StepperHorizontal.displayName = 'StepperHorizontal';

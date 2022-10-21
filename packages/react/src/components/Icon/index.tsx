@@ -52,3 +52,5 @@ export const Icon = ({
     <path d={iconPath[name]} fillRule="evenodd" clipRule="evenodd" />
   </S.SVG>
 );
+
+Icon.displayName = 'Icon';

@@ -128,3 +128,5 @@ export const Stack = styled('div', {
     fullWidth: false,
   },
 });
+
+Stack.displayName = 'Stack';
