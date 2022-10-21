@@ -1668,11 +1668,11 @@
       },
       "loading": {
         "default": {
-          "value": "{colors.neutral.300}",
+          "value": "{colors.neutral.200}",
           "type": "color"
         },
         "subdued": {
-          "value": "{colors.neutral.200}",
+          "value": "{colors.neutral.100}",
           "type": "color"
         }
       },
