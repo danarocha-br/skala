@@ -187,6 +187,28 @@
             "value": "#00240f",
             "type": "color"
           }
+        },
+        "transparent": {
+          "default": {
+            "value": "transparent",
+            "type": "color"
+          },
+          "subdued": {
+            "value": "#e0e1e0e6",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#e0e1e026",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "#4c575d",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#e0e1e01a",
+            "type": "color"
+          }
         }
       },
       "interative": {
@@ -306,7 +328,7 @@
     },
     "brand": {
       "primary": {
-        "value": "#f1786f",
+        "value": "#f55c56",
         "type": "color"
       }
     }

@@ -42,6 +42,11 @@ export const dark = {
   'surface-action-secondary-disabled': '#b0e29c',
   'surface-action-secondary-border': '#37b135',
   'surface-action-secondary-constrast': '#00240f',
+  'surface-action-transparent-default': 'transparent',
+  'surface-action-transparent-subdued': '#e0e1e0e6',
+  'surface-action-transparent-hover': '#e0e1e026',
+  'surface-action-transparent-pressed': '#4c575d',
+  'surface-action-transparent-disabled': '#e0e1e01a',
   'surface-interative-default': '#405fed',
   'surface-interative-subdued': '#799ff6',
   'surface-interative-hover': '#3b41e8',
@@ -68,5 +73,5 @@ export const dark = {
   'loading-subdued': '#f6f6f4',
   'overlay-default': '#151c1e',
   'overlay-subdued': '#202a2d',
-  'brand-primary': '#f1786f',
+  'brand-primary': '#f55c56',
 };

@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Fri, 21 Oct 2022 12:08:43 GMT
+ * Generated on Fri, 21 Oct 2022 13:42:16 GMT
  */
 
 :root {
-  --dark-brand-primary: #f1786f;
+  --dark-brand-primary: #f55c56;
   --dark-overlay-subdued: #202a2d;
   --dark-overlay-default: #151c1e;
   --dark-loading-subdued: #f6f6f4;
@@ -31,6 +31,11 @@
   --dark-surface-interative-hover: #3b41e8;
   --dark-surface-interative-subdued: #799ff6;
   --dark-surface-interative-default: #405fed;
+  --dark-surface-action-transparent-disabled: #e0e1e01a;
+  --dark-surface-action-transparent-pressed: #4c575d;
+  --dark-surface-action-transparent-hover: #e0e1e026;
+  --dark-surface-action-transparent-subdued: #e0e1e0e6;
+  --dark-surface-action-transparent-default: transparent;
   --dark-surface-action-secondary-constrast: #00240f;
   --dark-surface-action-secondary-border: #37b135;
   --dark-surface-action-secondary-disabled: #b0e29c;
@@ -102,6 +107,11 @@
   --light-surface-interative-hover: #1f18aa;
   --light-surface-interative-subdued: #3b41e8;
   --light-surface-interative-default: #271ed2;
+  --light-surface-action-transparent-disabled: #e0e1e033;
+  --light-surface-action-transparent-pressed: #e0e1e0;
+  --light-surface-action-transparent-hover: #e0e1e04d;
+  --light-surface-action-transparent-subdued: #e0e1e0cc;
+  --light-surface-action-transparent-default: transparent;
   --light-surface-action-secondary-constrast: #f3faef;
   --light-surface-action-secondary-border: #0a8708;
   --light-surface-action-secondary-disabled: #b0e29c;

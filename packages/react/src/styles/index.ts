@@ -11,6 +11,7 @@ import {
   radii,
   spacing,
   fontFamilies,
+  elevation,
   light,
   dark,
 } from '@skala/design-tokens';
@@ -34,6 +35,7 @@ export const {
     lineHeights: lineHeight,
     radii: radii,
     space: spacing,
+    shadows: elevation,
     zIndices: {
       1: '1',
       2: '2',
