@@ -62,8 +62,7 @@ const itemStyles = {
   height: '$5',
   px: '$3',
   d: 'flex',
-  fd: 'column',
-  justify: 'center',
+  align: 'center',
 
   cursor: 'pointer',
   transition: '$fast',
@@ -91,6 +90,7 @@ const itemStyles = {
   '& > a': {
     all: 'unset',
     d: 'flex',
+    w: '100%',
     justify: 'space-between',
   },
 };
@@ -101,7 +101,7 @@ export const DropdownItem = styled(DropdownMenuPrimitive.Item, {
 
 export const RightSlot = styled('div', {
   color: '$text-caption',
-  fontSize: '$xs',
+  fontSize: '$sm',
 
   ':focus > &': {
     color: '$text-body',

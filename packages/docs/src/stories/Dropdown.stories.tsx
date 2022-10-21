@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Dropdown, DropdownProps } from '@skala/react';
+import { Dropdown, DropdownProps, Icon } from '@skala/react';
 
 export default {
   title: 'Components/Dropdown',
@@ -35,7 +35,27 @@ export const WithSlot: StoryObj<DropdownProps> = {
         </Dropdown.Item>
         <Dropdown.Item>
           <a href="/">
+            Logout <Dropdown.RightSlot>ESC</Dropdown.RightSlot>
+          </a>
+        </Dropdown.Item>
+      </>
+    ),
+  },
+};
+export const WithIcons: StoryObj<DropdownProps> = {
+  args: {
+    children: (
+      <>
+        <Dropdown.Item>
+          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
+          <a href="/">
             Settings <Dropdown.RightSlot>⌘ S</Dropdown.RightSlot>
+          </a>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <Icon name="user" label="profile" css={{ mr: '$2' }} />
+          <a href="/">
+            Profile <Dropdown.RightSlot>⌘ P</Dropdown.RightSlot>
           </a>
         </Dropdown.Item>
       </>
