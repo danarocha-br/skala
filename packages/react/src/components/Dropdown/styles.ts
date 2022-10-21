@@ -101,6 +101,8 @@ export const DropdownItem = styled(DropdownMenuPrimitive.Item, {
 
 export const RightSlot = styled('div', {
   color: '$text-caption',
+  fontSize: '$xs',
+
   ':focus > &': {
     color: '$text-body',
   },
