@@ -1,4 +1,9 @@
-import { Root, Trigger } from '@radix-ui/react-dropdown-menu';
+import {
+  Root,
+  Trigger,
+  MenuContentProps,
+  Portal,
+} from '@radix-ui/react-dropdown-menu';
 
 import { CSS } from '../../styles';
 import { Box } from '../Box';
@@ -25,6 +30,20 @@ DropdownItem.displayName = 'Item';
 const DropdownRightSlot = S.RightSlot;
 DropdownItem.displayName = 'RightSlot';
 
+const DropdownSeparator = S.DropdownSeparator;
+DropdownItem.displayName = 'Separator';
+
+function DropdownMenuContent({ children, ...props }: MenuContentProps) {
+  return (
+    <Portal>
+      <S.DropdownMenuContent sideOffset={2} alignOffset={5} {...props}>
+        {children}
+        <S.DropdownMenuArrow offset={12} />
+      </S.DropdownMenuContent>
+    </Portal>
+  );
+}
+
 const DropdownBase = ({
   css,
   children,
@@ -34,17 +53,20 @@ const DropdownBase = ({
   onOpenChange,
   ...props
 }: DropdownProps) => (
-  <Box css={{ position: 'relative', w: 'max-content' }} {...props}>
+  <Box
+    className="dropdown"
+    css={{ position: 'relative', w: 'max-content', ...css }}
+    {...props}
+  >
     <Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange}>
       <>
-        <Trigger asChild>
+        <Trigger asChild className="dropdown__trigger">
           <div>{trigger}</div>
         </Trigger>
 
-        <S.DropdownMenuContent sideOffset={2} alignOffset={5}>
+        <DropdownMenuContent>
           {children}
-          <S.DropdownMenuArrow offset={12} />
-        </S.DropdownMenuContent>
+        </DropdownMenuContent>
       </>
     </Root>
   </Box>
@@ -55,4 +77,5 @@ export const Dropdown = {
   Menu: DropdownBase,
   Item: DropdownItem,
   RightSlot: DropdownRightSlot,
+  Separator: DropdownSeparator,
 };

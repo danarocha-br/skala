@@ -1,0 +1,41 @@
+import { StoryObj, Meta } from '@storybook/react';
+import { Dropdown, UserProfile, UserProfileProps } from '@skala/react';
+
+export default {
+  title: 'Components/UserProfile',
+  component: UserProfile,
+  parameters: {
+    layout: 'centered',
+    status: 'stable', // beta| deprecated | review | stable,
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/nGRJSZ90AzGrFe23Shmkzf/Skala?node-id=48%3A5156',
+    },
+  },
+  args: {
+    user_name: 'Dana Rocha',
+    user_email: 'hello@danarocha.com',
+    loading: false,
+    children: (
+      //TODO: Add icons
+      <>
+        <Dropdown.Item textValue="Configurações">
+          <a href="/">
+            Configurações <Dropdown.RightSlot>⌘ C</Dropdown.RightSlot>
+          </a>
+        </Dropdown.Item>
+        <Dropdown.Item textValue="Preferências">
+          <a href="/">
+            Preferências <Dropdown.RightSlot>⌘ P</Dropdown.RightSlot>
+          </a>
+        </Dropdown.Item>
+        <Dropdown.Separator />
+        <Dropdown.Item textValue="Sair">
+          <a href="/">Sair</a>
+        </Dropdown.Item>
+      </>
+    ),
+  },
+} as Meta<UserProfileProps>;
+
+export const Default: StoryObj<UserProfileProps> = {};

@@ -8,3 +8,4 @@ export * from './components/Stack';
 export * from './components/Avatar';
 export * from './components/Dropdown';
 export * from './components/Skeleton';
+export * from './components/UserProfile';

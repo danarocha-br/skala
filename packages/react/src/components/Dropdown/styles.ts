@@ -26,7 +26,7 @@ export const DropdownMenuContent = styled(DropdownMenuPrimitive.Content, {
   fontFamily: '$sans',
   background: '$surface-base-default',
   borderRadius: '$sm',
-  boxShadow: '$low',
+  boxShadow: '$high',
 
   w: '100%',
   minWidth: 200,
@@ -51,30 +51,40 @@ export const DropdownMenuArrow = styled(DropdownMenuPrimitive.Arrow, {
 });
 
 const itemStyles = {
-  color: '$text-body',
+  all: 'unset',
+  color: '$text-subtext',
   fontSize: '$sm',
   fontWeight: '$regular',
+  textAlign: 'left',
+  borderRadius: '$sm',
+  border: '1px dashed transparent',
 
-  w: '100%',
-  px: '$2',
-  py: 12,
+  height: '$5',
+  px: '$3',
+  d: 'flex',
+  fd: 'column',
+  justify: 'center',
 
   cursor: 'pointer',
-  transition: '$slow',
+  transition: '$fast',
   outline: 'none',
+  userSelect: 'none',
 
   '&:hover': {
-    background: '$action-transparent-hover',
+    color: '$text-body !important',
+    background: '$surface-interative-constrast !important',
   },
 
   '&[data-disabled]': {
-    color: '$surface-base-disabled',
+    color: '$text-caption',
+    cursor: 'not-allowed !important',
     pointerEvents: 'none',
   },
 
   '&:focus': {
-    background: '$action-transparent-hover',
-    border: 'none',
+    color: '$text-body !important',
+    background: '$surface-interative-constrast !important',
+    border: '1px dashed $surface-interative-disabled',
     outline: 'none',
   },
 
@@ -90,8 +100,6 @@ export const DropdownItem = styled(DropdownMenuPrimitive.Item, {
 });
 
 export const RightSlot = styled('div', {
-  ml: 'auto',
-  pr: '$3',
   color: '$text-caption',
   ':focus > &': {
     color: '$text-body',
@@ -101,3 +109,9 @@ export const RightSlot = styled('div', {
   },
 });
 
+export const DropdownSeparator = styled(DropdownMenuPrimitive.Separator, {
+  bg: '$surface-base-hover',
+  h: 1,
+  my: '$2',
+  position: 'relative',
+});

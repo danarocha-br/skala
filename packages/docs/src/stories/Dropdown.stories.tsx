@@ -42,3 +42,21 @@ export const WithSlot: StoryObj<DropdownProps> = {
     ),
   },
 };
+export const ItemDisabled: StoryObj<DropdownProps> = {
+  args: {
+    children: (
+      <>
+        <Dropdown.Item disabled>
+          <a href="/">
+            Settings <Dropdown.RightSlot>⌘ S</Dropdown.RightSlot>
+          </a>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <a href="/">
+            Settings <Dropdown.RightSlot>⌘ S</Dropdown.RightSlot>
+          </a>
+        </Dropdown.Item>
+      </>
+    ),
+  },
+};
