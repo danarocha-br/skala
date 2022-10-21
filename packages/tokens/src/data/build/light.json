@@ -187,6 +187,28 @@
             "value": "#f3faef",
             "type": "color"
           }
+        },
+        "transparent": {
+          "default": {
+            "value": "transparent",
+            "type": "color"
+          },
+          "subdued": {
+            "value": "#e0e1e0cc",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#e0e1e04d",
+            "type": "color"
+          },
+          "pressed": {
+            "value": "#e0e1e0",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#e0e1e033",
+            "type": "color"
+          }
         }
       },
       "interative": {
