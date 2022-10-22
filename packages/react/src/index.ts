@@ -9,6 +9,7 @@ export * from './components/Icon';
 export * from './components/Avatar';
 export * from './components/Button';
 export * from './components/Dropdown';
+export * from './components/Link';
 export * from './components/Skeleton';
 export * from './components/Stepper';
 export * from './components/StepperHorizontal';
