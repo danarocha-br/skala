@@ -1519,11 +1519,11 @@
             "type": "color"
           },
           "disabled": {
-            "value": "{colors.froly.300}",
+            "value": "{colors.froly.400}",
             "type": "color"
           },
           "border": {
-            "value": "{colors.froly.400}",
+            "value": "{colors.froly.600}",
             "type": "color"
           },
           "constrast": {
@@ -1610,7 +1610,7 @@
               "type": "color"
             },
             "disabled": {
-              "value": "hsla(120, 2%, 88%, .1)",
+              "value": "hsla(120, 2%, 88%, .05)",
               "type": "color"
             }
           }
@@ -1641,7 +1641,7 @@
             "type": "color"
           },
           "constrast": {
-            "value": "hsla(212, 100%, 97%, .2)",
+            "value": "{colors.royal.100}",
             "type": "color"
           }
         }
