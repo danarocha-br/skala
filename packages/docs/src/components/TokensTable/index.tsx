@@ -1,3 +1,4 @@
+import { Box } from '@skala/react';
 import './styles.css';
 
 type TokensTableProps = {
@@ -12,32 +13,51 @@ export function TokensTable({
   type = 'general',
 }: TokensTableProps) {
   return (
-    <table className="tokens-table">
+    <Box as="table" className="tokens-table" css={{ my: '$6' }}>
       <thead>
-        <tr>
+        <Box
+          as="tr"
+          css={{
+            '& th': {
+              color: '$neutral400',
+              opacity: 0.8,
+              fontSize: '$xs',
+              letterSpacing: '1.3px',
+              textTransform: 'uppercase',
+              borderBottom: '3px solid $neutral200',
+            },
+          }}
+        >
           <th>Name</th>
           {type === 'spacing' && <th></th>}
           {type === 'radii' && <th></th>}
           <th>{unity !== 'none' ? 'Pixel' : 'Value'}</th>
           {unity !== 'none' && <th>Rem</th>}
-        </tr>
+        </Box>
       </thead>
 
       <tbody>
         {Object.entries(tokens).map(([key, value]) => {
           return (
-            <tr key={key}>
-              <td>{key}</td>
+            <Box
+              as="tr"
+              key={key}
+              css={{
+                color: '$neutral600',
+                '&:nth-child(even) td': {
+                  backgroundColor: '$neutral100',
+                },
+              }}
+            >
+              <Box as="td" css={{ color: '$froly500' }}>
+                ${key}
+              </Box>
 
               {type === 'spacing' && (
                 <td>
-                  <div
-                    style={{
-                      backgroundColor: 'white',
-                      height: 24,
-                      width: value,
-                    }}
-                  ></div>
+                  <Box
+                    css={{ bg: '$neutral200', height: '$5', width: value }}
+                  ></Box>
                 </td>
               )}
 
@@ -56,14 +76,14 @@ export function TokensTable({
 
               {type === 'radii' && (
                 <td>
-                  <div
-                    style={{
-                      backgroundColor: 'white',
-                      height: 32,
+                  <Box
+                    css={{
+                      bg: '$neutral200',
+                      height: '$5',
                       width: key !== 'circle' ? 64 : 32,
                       borderRadius: value,
                     }}
-                  ></div>
+                  ></Box>
                 </td>
               )}
 
@@ -76,10 +96,10 @@ export function TokensTable({
                     : Number(value.replace('rem', '')) * 16 + 'px'}
                 </td>
               )}
-            </tr>
+            </Box>
           );
         })}
       </tbody>
-    </table>
+    </Box>
   );
 }

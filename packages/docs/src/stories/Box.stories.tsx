@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxProps } from '@skala/react';
+import { Box, BoxProps, Text } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -16,12 +16,12 @@ export default {
   args: {
     children: (
       <>
-        <p>This is a box.</p>
+        <Text>This is a box.</Text>
       </>
     ),
     css: {
       color: '$text-body',
-      bg: '$neutral700',
+      bg: '$surface-base-pressed',
       p: '$10',
     },
   },

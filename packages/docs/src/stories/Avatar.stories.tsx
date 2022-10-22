@@ -6,7 +6,6 @@ export default {
   title: 'Components/Avatar',
   component: Avatar,
   parameters: {
-    layout: 'centered',
     badges: [BADGE.STABLE],
     design: {
       type: 'figma',
@@ -67,13 +66,20 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => (
+      <Stack gap="8" align="center">
+        {Story()}
+      </Stack>
+    ),
+  ],
 } as Meta<AvatarProps>;
 
 export const Sizes: Story<AvatarProps> = (args) => (
-  <Stack gap="8" align="center">
+  <>
     <Avatar {...args} />
     <Avatar {...args} size="lg" />
-  </Stack>
+  </>
 );
 
 export const WithFallback = Sizes.bind({});

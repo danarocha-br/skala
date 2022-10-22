@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta, Source } from '@storybook/addon-docs';
 import { dark } from '@skala/design-tokens';
 
 import { ColorsGrid } from '../../components/ColorsGrid';
@@ -6,5 +6,17 @@ import { ColorsGrid } from '../../components/ColorsGrid';
 <Meta title="Foundations/Colors/Theme/Dark" />
 
 # Dark Theme
+
+<br />
+
+These are color tokens to be used within dark-theme. These tokens are already available in all components.
+
+<Source
+  language="css"
+  format={false}
+  code={`
+  import { Box } from '@skala/design-tokens';
+
+<Box css={{ color: '$surface-base-default' }} /> `} />
 
 <ColorsGrid tokens={dark} />
