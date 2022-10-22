@@ -1268,7 +1268,7 @@
               "type": "color"
             },
             "disabled": {
-              "value": "hsla(120, 2%, 88%, .2)",
+              "value": "hsla(120, 2%, 88%, .3)",
               "type": "color"
             }
           }
