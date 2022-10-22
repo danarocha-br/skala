@@ -46,7 +46,7 @@ export const light = {
   'surface-action-transparent-subdued': '#e0e1e0cc',
   'surface-action-transparent-hover': '#e0e1e04d',
   'surface-action-transparent-pressed': '#e0e1e0',
-  'surface-action-transparent-disabled': '#e0e1e033',
+  'surface-action-transparent-disabled': '#e0e1e04d',
   'surface-interactive-default': '#271ed2',
   'surface-interactive-subdued': '#3b41e8',
   'surface-interactive-hover': '#1f18aa',

@@ -1,12 +1,11 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { {{pascalCase name}}, {{pascalCase name}}Props } from '@skala/react';
+import { {{pascalCase name}}, {{pascalCase name}}Props, Stack } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'Components/{{pascalCase name}}',
   component: {{pascalCase name}},
   parameters: {
-    layout: 'centered',
     badges: [BADGE.STABLE],
     design: {
       type: 'figma',
@@ -15,7 +14,23 @@ export default {
     },
   },
   args: {
-  }
+  },
+   argTypes: {
+    label: {
+      table: {
+        category: 'Text',
+      },
+    },
+   },
+  decorators: [
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" fullWidth css={{ h: '100vh' }}>
+          {Story()}
+        </Stack>
+      );
+    },
+  ],
 } as Meta<{{pascalCase name}}Props>;
 
 export const Default: StoryObj<{{pascalCase name}}Props> = {};
