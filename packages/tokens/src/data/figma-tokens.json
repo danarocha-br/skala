@@ -50,19 +50,19 @@
     },
     "fontWeight": {
       "light": {
-        "value": "Light",
+        "value": "300",
         "type": "fontWeights"
       },
       "regular": {
-        "value": "Regular",
+        "value": "400",
         "type": "fontWeights"
       },
       "medium": {
-        "value": "Medium",
+        "value": "500",
         "type": "fontWeights"
       },
       "semibold": {
-        "value": "Bold",
+        "value": "700",
         "type": "fontWeights"
       }
     },
