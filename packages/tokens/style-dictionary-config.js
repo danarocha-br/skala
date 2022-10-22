@@ -52,6 +52,8 @@ const getThemeTokens = (tokensCategories, extension) => {
   });
 };
 
+//TODO - transform font weight to number instead of string
+
 StyleDictionary.registerTransform({
   name: 'sizes/px',
   type: 'value',
