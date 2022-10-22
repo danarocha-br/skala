@@ -1,12 +1,13 @@
 import { StoryObj, Meta } from '@storybook/react';
 import { Box, StepperHorizontal, StepperHorizontalProps } from '@skala/react';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'Components/StepperHorizontal',
   component: StepperHorizontal,
   parameters: {
     layout: 'fullscreen',
-    status: 'stable', // beta| deprecated | review | stable,
+    badges: [BADGE.STABLE],
     design: {
       type: 'figma',
       url: '',

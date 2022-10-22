@@ -1,7 +1,4 @@
-import Stitches, {
-  createStitches,
-  defaultThemeMap,
-} from '@stitches/react';
+import Stitches, { createStitches, defaultThemeMap } from '@stitches/react';
 
 import {
   colors,
@@ -15,7 +12,6 @@ import {
   light,
   dark,
 } from '@skala/design-tokens';
-
 
 export const {
   styled,
@@ -197,7 +193,6 @@ export const {
       WebkitAppearance: value,
       appearance: value,
     }),
-
   },
 });
 

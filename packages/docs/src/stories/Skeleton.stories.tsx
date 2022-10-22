@@ -1,12 +1,13 @@
 import { StoryObj, Meta } from '@storybook/react';
 import { Skeleton, SkeletonProps } from '@skala/react';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'Components/Skeleton',
   component: Skeleton.Root,
   parameters: {
     layout: 'centered',
-    status: 'stable', // beta| deprecated | review | stable,
+    badges: [BADGE.STABLE],
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/nGRJSZ90AzGrFe23Shmkzf/Skala?node-id=17%3A17157',

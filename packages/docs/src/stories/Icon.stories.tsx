@@ -1,5 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import { Grid, Icon, IconProps, iconPath, Text, Stack } from '@skala/react';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 const icons = Object.keys(iconPath);
 
@@ -8,7 +9,7 @@ export default {
   component: Icon,
   parameters: {
     layout: 'fullscreen',
-    status: 'stable', // beta| deprecated | review | stable,
+    badges: [BADGE.STABLE],
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/nGRJSZ90AzGrFe23Shmkzf/Skala?node-id=12%3A2786',

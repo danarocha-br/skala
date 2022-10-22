@@ -1,12 +1,13 @@
 import { StoryObj, Meta } from '@storybook/react';
 import { Stepper, StepperProps } from '@skala/react';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'Navigation/Stepper',
   component: Stepper,
   parameters: {
     layout: 'centered',
-    status: 'stable', // beta| deprecated | review | stable,
+    badges: [BADGE.STABLE],
     design: {
       type: 'figma',
       url: '',

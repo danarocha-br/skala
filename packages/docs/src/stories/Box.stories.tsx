@@ -1,12 +1,13 @@
 import { StoryObj, Meta } from '@storybook/react';
 import { Box, BoxProps } from '@skala/react';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'Primitives/Box',
   component: Box,
   parameters: {
     layout: 'centered',
-    status: 'stable', // beta| deprecated | review | stable,
+    badges: [BADGE.STABLE],
     design: {
       type: 'figma',
       url: '',

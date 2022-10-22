@@ -1,12 +1,13 @@
 import { Story, Meta } from '@storybook/react';
 import { Text, TextProps, Grid } from '@skala/react';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
   title: 'Primitives/Text',
   component: Text,
   parameters: {
     layout: 'centered',
-    status: 'stable', // beta| deprecated | review | stable,
+    badges: [BADGE.STABLE],
     design: {
       type: 'figma',
       url: '',

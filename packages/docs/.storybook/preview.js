@@ -1,5 +1,5 @@
 import { themes } from '@storybook/theming';
-import { globalStyles } from '../../react/src/styles';
+import { theme, darkTheme } from '../../react/src/styles';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -27,8 +27,39 @@ export const parameters = {
       ],
     },
   },
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: theme.colors['background-default'],
+      },
+      {
+        name: 'dark',
+        value: darkTheme.colors['background-default'],
+      },
+    ],
+  },
+  html: {
+    prettier: {
+      tabWidth: 4,
+      useTabs: false,
+      htmlWhitespaceSensitivity: 'strict',
+    },
+  },
+  multipleThemesStitches: {
+    values: [
+      {
+        name: 'Light',
+        theme: theme,
+      },
+      {
+        name: 'Dark',
+        theme: darkTheme,
+      },
+    ],
+  },
 };
-
 
 // export const decorators = [
 //   (Story) => (
