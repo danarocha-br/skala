@@ -14,7 +14,6 @@ export type ButtonProps = {
   loading?: boolean;
   animateOnHover?: boolean;
   css?: CSS;
-  onClick?: (e: any) => void;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({

@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Dropdown, DropdownProps, Icon } from '@skala/react';
+import { Button, Dropdown, DropdownProps, Icon } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -20,7 +20,7 @@ export default {
         <Dropdown.Item>Item 2</Dropdown.Item>
       </>
     ),
-    trigger: <button>click me</button>,
+    trigger: <Button label="Click me" />,
   },
   argTypes: {
     children: {

@@ -14,11 +14,7 @@ export default {
     },
   },
   args: {
-    children: (
-      <>
-        <Text>This is a box.</Text>
-      </>
-    ),
+    children: <Text>This is a box.</Text>,
     css: {
       color: '$text-body',
       bg: '$surface-base-pressed',
