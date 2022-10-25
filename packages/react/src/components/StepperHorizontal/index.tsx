@@ -14,7 +14,7 @@ export const StepperHorizontal = ({
   currentStep = 1,
   css,
   ...props
-}: StepperHorizontalProps) => (
+}: StepperHorizontalProps): React.ReactNode => (
   <S.Container css={css} {...props}>
     <S.Label>
       {currentStep} / {count}{' '}

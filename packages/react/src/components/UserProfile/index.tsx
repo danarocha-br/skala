@@ -24,7 +24,7 @@ export const UserProfile = ({
   loading = false,
   css,
   ...props
-}: UserProfileProps) => (
+}: UserProfileProps): React.ReactNode => (
   <Dropdown.Menu
     css={css}
     {...props}
@@ -37,7 +37,7 @@ export const UserProfile = ({
           showUsername
           loading={loading}
         />
-        <Icon label='dropdown' name="chevronDown" size="sm" />
+        <Icon label="dropdown" name="chevronDown" size="sm" />
       </S.Trigger>
     }
   >
@@ -55,7 +55,7 @@ export const UserProfile = ({
     >
       {user_email && user_email}
     </Text>
-    <Dropdown.Separator css={{mb: '$2'}} />
+    <Dropdown.Separator css={{ mb: '$2' }} />
     {children}
   </Dropdown.Menu>
 );

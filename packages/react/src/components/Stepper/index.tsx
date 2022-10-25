@@ -25,7 +25,7 @@ export const Stepper = ({
   backLabel,
   items,
   ...props
-}: StepperProps) => {
+}: StepperProps): React.ReactNode => {
   const Component = as || React.Fragment;
 
   return (

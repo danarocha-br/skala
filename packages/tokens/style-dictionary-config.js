@@ -62,7 +62,7 @@ StyleDictionary.registerTransform({
       prop.attributes.category
     );
   },
-  transformer: function (prop) {
+  transformer: (prop) => {
     return parseFloat(prop.original.value) + 'px';
   },
 });
@@ -75,7 +75,7 @@ StyleDictionary.registerTransform({
       prop.attributes.category
     );
   },
-  transformer: function (prop) {
+  transformer: (prop) => {
     return parseFloat(prop.original.value / 16) + 'rem';
   },
 });

@@ -37,7 +37,7 @@ export const Icon = ({
   label,
   css,
   ...props
-}: IconProps) => (
+}: IconProps): React.ReactNode => (
   <S.SVG
     color={color}
     size={size}

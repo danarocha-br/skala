@@ -18,6 +18,18 @@ export type AvatarProps = {
   username: string;
 };
 
+function getInitials(name: string) {
+  return (
+    name &&
+    name
+      .trim()
+      .split(' ')
+      .reduce((initial, name) => initial + name[0], '')
+      .slice(0, 2)
+      .toUpperCase()
+  );
+}
+
 export const Avatar = ({
   size = 'md',
   variant = 'circle',
@@ -28,10 +40,12 @@ export const Avatar = ({
   username,
   css,
   ...props
-}: AvatarProps) => (
+}: AvatarProps): React.ReactNode => (
   <Stack className="avatar" gap={size === 'md' ? '2' : '3'} align="center">
     <S.Container size={size} variant={variant} css={css} {...props}>
-      {Boolean(imageURL) && <S.Image src={imageURL} alt={imageALT || 'Joe Doe'} />}
+      {Boolean(imageURL) && (
+        <S.Image src={imageURL} alt={imageALT || 'Joe Doe'} />
+      )}
       <S.Fallback delayMs={600} loading={loading}>
         {getInitials(username)}
       </S.Fallback>
@@ -55,17 +69,5 @@ export const Avatar = ({
     )}
   </Stack>
 );
-
-function getInitials(name: string) {
-  return (
-    name &&
-    name
-      .trim()
-      .split(' ')
-      .reduce((initial, name) => initial + name[0], '')
-      .slice(0, 2)
-      .toUpperCase()
-  );
-}
 
 Avatar.displayName = 'Avatar';

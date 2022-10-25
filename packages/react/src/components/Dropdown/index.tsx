@@ -34,7 +34,10 @@ DropdownItem.displayName = 'RightSlot';
 const DropdownSeparator = S.DropdownSeparator;
 DropdownItem.displayName = 'Separator';
 
-function DropdownMenuContent({ children, ...props }: MenuContentProps) {
+function DropdownMenuContent({
+  children,
+  ...props
+}: MenuContentProps): React.ReactNode {
   return (
     <Portal>
       <S.DropdownMenuContent sideOffset={2} alignOffset={5} {...props}>

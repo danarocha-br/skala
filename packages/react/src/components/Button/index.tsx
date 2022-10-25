@@ -29,7 +29,7 @@ export const Button = ({
   type = 'button',
   icon,
   ...props
-}: ButtonProps) => {
+}: ButtonProps): React.ReactNode => {
   return (
     <S.Container
       variant={variant}
