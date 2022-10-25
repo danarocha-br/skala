@@ -1,3 +1,4 @@
+import React from 'react';
 import { CSS } from '../../styles';
 
 import { Stack } from '../Stack';

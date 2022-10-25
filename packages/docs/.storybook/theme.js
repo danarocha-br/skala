@@ -5,7 +5,7 @@ import { colors } from '@skala/design-tokens';
 
 export default create({
   base: 'dark',
-  brandTitle: 'Compasso',
+  brandTitle: 'Skala Design System',
   brandUrl: 'https://ocompasso.com',
   brandImage: '',
   brandTarget: '_self',

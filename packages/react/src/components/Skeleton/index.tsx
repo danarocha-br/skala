@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactSkeleton, {
   SkeletonTheme,
   SkeletonProps as ReactSkeletonProps,

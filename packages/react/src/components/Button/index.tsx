@@ -1,3 +1,4 @@
+import React from 'react';
 import { CSS } from '../../styles';
 import { Icon, iconPath } from '../Icon';
 import * as S from './styles';

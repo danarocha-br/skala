@@ -1,3 +1,4 @@
+import React from 'react';
 import { CSS } from '../../styles';
 import { Avatar } from '../Avatar';
 import { Dropdown } from '../Dropdown';

@@ -29,8 +29,8 @@ export function TokensTable({
           }}
         >
           <th>Name</th>
-          {type === 'spacing' && <th></th>}
-          {type === 'radii' && <th></th>}
+          {type === 'spacing' && <th />}
+          {type === 'radii' && <th />}
           <th>{unity !== 'none' ? 'Pixel' : 'Value'}</th>
           {unity !== 'none' && <th>Rem</th>}
         </Box>
@@ -57,7 +57,7 @@ export function TokensTable({
                 <td>
                   <Box
                     css={{ bg: '$neutral200', height: '$5', width: value }}
-                  ></Box>
+                  />
                 </td>
               )}
 
@@ -83,7 +83,7 @@ export function TokensTable({
                       width: key !== 'circle' ? 64 : 32,
                       borderRadius: value,
                     }}
-                  ></Box>
+                  />
                 </td>
               )}
 

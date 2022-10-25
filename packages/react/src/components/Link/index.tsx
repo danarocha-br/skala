@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, HtmlHTMLAttributes } from 'react';
+import React from 'react';
 import { CSS } from '../../styles';
 import { Box } from '../Box';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Root,
   Trigger,
@@ -64,9 +65,7 @@ const DropdownBase = ({
           <div>{trigger}</div>
         </Trigger>
 
-        <DropdownMenuContent>
-          {children}
-        </DropdownMenuContent>
+        <DropdownMenuContent>{children}</DropdownMenuContent>
       </>
     </Root>
   </Box>

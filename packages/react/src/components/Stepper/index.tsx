@@ -58,8 +58,8 @@ export const Stepper = ({
 
       <S.Menu>
         {React.Children.toArray(
-          items.map((item) => (
-            <S.MenuItem isActive={item.isActive}>
+          items.map((item, index) => (
+            <S.MenuItem key={index} isActive={item.isActive}>
               <Component>
                 <a href={item.href}>{item.title}</a>
               </Component>

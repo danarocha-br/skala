@@ -57,7 +57,7 @@ const getThemeTokens = (tokensCategories, extension) => {
 StyleDictionary.registerTransform({
   name: 'sizes/px',
   type: 'value',
-  matcher: function (prop) {
+  matcher: (prop) => {
     return ['lineHeight', 'spacing', 'borderWidth', 'size'].includes(
       prop.attributes.category
     );
@@ -70,7 +70,7 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerTransform({
   name: 'font-size/rem',
   type: 'value',
-  matcher: function (prop) {
+  matcher: (prop) => {
     return ['fontSize', 'lineHeight', 'borderWidth'].includes(
       prop.attributes.category
     );
@@ -82,7 +82,7 @@ StyleDictionary.registerTransform({
 
 StyleDictionary.registerFormat({
   name: 'custom',
-  formatter: function ({ dictionary }) {
+  formatter: ({ dictionary }) => {
     return `export const ${Object.keys(
       dictionary.tokens
     )} = {${dictionary.allTokens.map(
@@ -93,7 +93,7 @@ StyleDictionary.registerFormat({
 
 StyleDictionary.registerFormat({
   name: 'custom-theme',
-  formatter: function ({ dictionary }) {
+  formatter: ({ dictionary }) => {
     return `export const ${Object.keys(
       dictionary.tokens
     )} = {${dictionary.allTokens.map(

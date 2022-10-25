@@ -3,7 +3,9 @@ import { Grid, GridProps, Text } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 const CHILDREN = Array.from({ length: 5 }).map((_, i) => (
-  <Text css={{ bg: '$froly200', py: '$2', px: '$6' }}>I am a row {1 + i}</Text>
+  <Text key={i} css={{ bg: '$froly200', py: '$2', px: '$6' }}>
+    I am a row {1 + i}
+  </Text>
 ));
 
 export default {

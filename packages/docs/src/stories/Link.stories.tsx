@@ -3,7 +3,7 @@ import { Link, LinkProps, Stack } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
-  title: 'Components/Link',
+  title: 'Navigation/Link',
   component: Link,
   parameters: {
     layout: 'fullscreen',
@@ -61,7 +61,7 @@ export default {
   ],
 } as Meta<LinkProps>;
 
-export const DefaultVariant: Story<LinkProps> = (args) => (
+export const Variants: Story<LinkProps> = (args) => (
   <>
     <Link {...args} color="primary" />
     <Link {...args} color="secondary" />
