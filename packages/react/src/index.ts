@@ -14,4 +14,5 @@ export * from './components/Shortcut';
 export * from './components/Skeleton';
 export * from './components/Stepper';
 export * from './components/StepperHorizontal';
+export * from './components/Tooltip';
 export * from './components/UserProfile';
