@@ -2,7 +2,6 @@ import { create } from '@storybook/theming';
 
 import { colors } from '@skala/design-tokens';
 
-
 export default create({
   base: 'dark',
   brandTitle: 'Compasso',

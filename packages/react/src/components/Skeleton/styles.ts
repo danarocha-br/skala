@@ -1,3 +1,3 @@
 import { styled } from '../../styles';
 
-export const Container = styled('div', {})
+export const Container = styled('div', {});

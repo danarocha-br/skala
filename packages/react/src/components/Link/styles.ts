@@ -1,6 +1,5 @@
 import { styled } from '../../styles';
 
-
 export const Anchor = styled('a', {
   fontFamily: '$sans',
   fontWeight: '$medium',
@@ -97,4 +96,3 @@ export const Anchor = styled('a', {
     color: 'primary',
   },
 });
-

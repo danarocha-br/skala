@@ -37,7 +37,6 @@ const MoveLoadingGradientStart = keyframes({
     '-webkit-clip-path':
       'polygon(0% 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, 0% 100%)',
   },
-
 });
 
 const MoveLoadingGradientEnd = keyframes({

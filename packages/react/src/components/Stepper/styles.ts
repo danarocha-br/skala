@@ -1,6 +1,5 @@
 import { styled } from '../../styles';
 
-
 export const Menu = styled('ul', {
   all: 'unset',
   fontFamily: '$sans',
@@ -79,7 +78,6 @@ export const MenuItem = styled('li', {
         '&::after': {
           bg: '$surface-interactive-subdued',
         },
-
       },
     },
   },
@@ -181,4 +179,3 @@ export const Container = styled('div', {
     isActive: false,
   },
 });
-

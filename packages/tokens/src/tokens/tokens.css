@@ -79,7 +79,11 @@
   --dark-surface-base-subdued: #323d43;
   --dark-surface-base-default: #202a2d;
   --dark-background-default: #151c1e;
-  --gradient-background: linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%);
+  --gradient-background: linear-gradient(
+    89.99deg,
+    #303030 13.34%,
+    #4a4a4a 99.99%
+  );
   --light-brand-primary: #f1786f;
   --light-overlay-subdued: #202a2d;
   --light-overlay-default: #151c1e;
@@ -155,9 +159,12 @@
   --light-surface-base-subdued: #f6f6f4;
   --light-surface-base-default: #ffffff;
   --light-background-default: #f6f6f4;
-  --elevation-high: 0px 1.899999976158142px 2.5px 0px #00000005, 0px 6.300000190734863px 8.5px 0px #00000003, 0px 28px 38px 0px #0000000F;
-  --elevation-medium: 0px 2.0999999046325684px 3.799999952316284px 0px #00000005, 0px 17px 30px 0px #0000000D;
-  --elevation-low: 0px 0.800000011920929px 1.2999999523162842px 0px #00000005, 0px 6px 10px 0px #0000000D;
+  --elevation-high: 0px 1.899999976158142px 2.5px 0px #00000005,
+    0px 6.300000190734863px 8.5px 0px #00000003, 0px 28px 38px 0px #0000000f;
+  --elevation-medium: 0px 2.0999999046325684px 3.799999952316284px 0px #00000005,
+    0px 17px 30px 0px #0000000d;
+  --elevation-low: 0px 0.800000011920929px 1.2999999523162842px 0px #00000005,
+    0px 6px 10px 0px #0000000d;
   --border-width-3: 0.25rem;
   --border-width-2: 0.125rem;
   --border-width-1: 0.0625rem;
@@ -298,7 +305,9 @@
   --line-height-3: 1.4rem;
   --line-height-2: 1.2rem;
   --line-height-1: 1.0625rem;
-  --font-families-sans: 'effra', -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-families-sans: 'effra', -apple--apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   --font-families-effra: Effra;
   --size-12: var(--spacing-12);
   --size-11: var(--spacing-11);

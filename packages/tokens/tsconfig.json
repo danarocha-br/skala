@@ -1,4 +1,4 @@
 {
   "extends": "@skala/ts-config/base.json",
-  "include": ["src"],
+  "include": ["src"]
 }
