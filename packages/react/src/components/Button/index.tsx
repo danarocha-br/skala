@@ -46,7 +46,7 @@ export const Button = ({
       {...props}
       className="button"
     >
-      {!!icon && (
+      {Boolean(icon) && (
         <Icon
           name={icon}
           label={label}

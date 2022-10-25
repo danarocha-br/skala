@@ -52,7 +52,7 @@ export const Stepper = ({
             />
           </div>
 
-          {!!backLabel && <span>{backLabel}</span>}
+          {Boolean(backLabel) && <span>{backLabel}</span>}
         </S.BackButton>
       </Component>
 

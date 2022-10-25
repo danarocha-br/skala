@@ -31,7 +31,7 @@ export const Avatar = ({
 }: AvatarProps) => (
   <Stack className="avatar" gap={size === 'md' ? '2' : '3'} align="center">
     <S.Container size={size} variant={variant} css={css} {...props}>
-      {!!imageURL && <S.Image src={imageURL} alt={imageALT || 'Joe Doe'} />}
+      {Boolean(imageURL) && <S.Image src={imageURL} alt={imageALT || 'Joe Doe'} />}
       <S.Fallback delayMs={600} loading={loading}>
         {getInitials(username)}
       </S.Fallback>
