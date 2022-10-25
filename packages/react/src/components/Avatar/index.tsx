@@ -40,7 +40,7 @@ export const Avatar = ({
   username,
   css,
   ...props
-}: AvatarProps): React.ReactNode => (
+}: AvatarProps): JSX.Element => (
   <Stack className="avatar" gap={size === 'md' ? '2' : '3'} align="center">
     <S.Container size={size} variant={variant} css={css} {...props}>
       {Boolean(imageURL) && (

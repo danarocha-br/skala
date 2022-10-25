@@ -25,7 +25,7 @@ export const Stepper = ({
   backLabel,
   items,
   ...props
-}: StepperProps): React.ReactNode => {
+}: StepperProps): JSX.Element => {
   const Component = as || React.Fragment;
 
   return (
@@ -58,8 +58,8 @@ export const Stepper = ({
 
       <S.Menu>
         {React.Children.toArray(
-          items.map((item, index) => (
-            <S.MenuItem key={index} isActive={item.isActive}>
+          items.map((item) => (
+            <S.MenuItem key={item.title} isActive={item.isActive}>
               <Component>
                 <a href={item.href}>{item.title}</a>
               </Component>

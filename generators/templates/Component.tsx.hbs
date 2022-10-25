@@ -6,7 +6,7 @@ export type {{pascalCase name}}Props = {
   css?: CSS;
 }
 
-export const {{pascalCase name}} = ({ css, ...props }: {{pascalCase name}}Props): React.ReactNode => (
+export const {{pascalCase name}} = ({ css, ...props }: {{pascalCase name}}Props): JSX.Element => (
   <S.Container css={css} {...props}>
     <h1>{{pascalCase name}}</h1>
   </S.Container>

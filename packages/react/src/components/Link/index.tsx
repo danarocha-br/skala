@@ -22,7 +22,7 @@ export const Link = ({
   children,
   css,
   ...props
-}: LinkProps): React.ReactNode => {
+}: LinkProps): JSX.Element => {
   const Component = as || React.Fragment;
 
   return (

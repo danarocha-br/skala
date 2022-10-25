@@ -24,7 +24,7 @@ export const UserProfile = ({
   loading = false,
   css,
   ...props
-}: UserProfileProps): React.ReactNode => (
+}: UserProfileProps): JSX.Element => (
   <Dropdown.Menu
     css={css}
     {...props}

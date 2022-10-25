@@ -15,10 +15,7 @@ const SkeletonItem = (props: ReactSkeletonProps) => (
 );
 SkeletonItem.displayName = 'Skeleton.Item';
 
-const SkeletonRoot = ({
-  children,
-  ...props
-}: SkeletonProps): React.ReactNode => (
+const SkeletonRoot = ({ children, ...props }: SkeletonProps): JSX.Element => (
   <SkeletonTheme
     //@ts-ignore
     baseColor={theme.colors['loading-default']}
