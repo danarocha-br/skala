@@ -1,6 +1,8 @@
 import { keyframes, styled } from '../../styles';
-import { Content as TooltipContent, Arrow as TooltipArrow } from '@radix-ui/react-tooltip';
-
+import {
+  Content as TooltipContent,
+  Arrow as TooltipArrow,
+} from '@radix-ui/react-tooltip';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(5px)' },
@@ -67,4 +69,3 @@ export const Content = styled(TooltipContent, {
 export const Arrow = styled(TooltipArrow, {
   fill: 'none',
 });
-
