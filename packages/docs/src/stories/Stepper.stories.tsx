@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Stepper, StepperProps } from '@skala/react';
+import { Stack, Stepper, StepperProps } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -49,6 +49,15 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '100vh' }}>
+          {Story()}
+        </Stack>
+      );
+    },
+  ],
 } as Meta<StepperProps>;
 
 export const Default: StoryObj<StepperProps> = {};

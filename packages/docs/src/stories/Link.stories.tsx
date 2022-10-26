@@ -53,7 +53,7 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Stack align="center" justify="center" fullWidth css={{ h: '100vh' }}>
+        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
           {Story()}
         </Stack>
       );

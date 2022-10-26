@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Button, Dropdown, DropdownProps, Icon } from '@skala/react';
+import { Button, Dropdown, DropdownProps, Icon, Stack } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -34,6 +34,15 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
+          {Story()}
+        </Stack>
+      );
+    },
+  ],
 } as Meta<DropdownProps>;
 
 export const Default: StoryObj<DropdownProps> = {};

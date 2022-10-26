@@ -67,11 +67,18 @@ export default {
     },
   },
   decorators: [
-    (Story) => (
-      <Stack gap="8" align="center">
-        {Story()}
-      </Stack>
-    ),
+    (Story) => {
+      return (
+        <Stack
+          gap="8"
+          align="center"
+          justify="center"
+          css={{ h: '100vh', px: 200 }}
+        >
+          {Story()}
+        </Stack>
+      );
+    },
   ],
 } as Meta<AvatarProps>;
 

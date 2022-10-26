@@ -1,5 +1,11 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Dropdown, Icon, UserProfile, UserProfileProps } from '@skala/react';
+import {
+  Dropdown,
+  Icon,
+  Stack,
+  UserProfile,
+  UserProfileProps,
+} from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -60,6 +66,15 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
+          {Story()}
+        </Stack>
+      );
+    },
+  ],
 } as Meta<UserProfileProps>;
 
 export const Default: StoryObj<UserProfileProps> = {};
