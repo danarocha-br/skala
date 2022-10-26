@@ -35,8 +35,8 @@ export const Anchor = styled('a', {
     outlineColor: '$surface-base-pressed',
 
     [`.dark-theme &`]: {
-      outlineColor: '$neutral700'
-    }
+      outlineColor: '$neutral700',
+    },
   },
 
   variants: {
