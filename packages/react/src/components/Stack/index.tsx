@@ -115,7 +115,7 @@ export const Stack = styled('div', {
     },
     fullWidth: {
       true: {
-        w: '$full',
+        w: '100%',
       },
     },
   },

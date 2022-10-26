@@ -8,11 +8,13 @@ export * from './components/Icon';
 
 export * from './components/Avatar';
 export * from './components/Button';
+export * from './components/Callout';
 export * from './components/Dropdown';
 export * from './components/Link';
 export * from './components/Navigation';
 export * from './components/Shortcut';
 export * from './components/Skeleton';
+export * from './components/Spinner';
 export * from './components/Stepper';
 export * from './components/StepperHorizontal';
 export * from './components/Tooltip';
