@@ -1,6 +1,5 @@
 import { styled } from '../../styles';
 
-
 export const Header = styled('header', {
   fontSize: '$base',
   fontWeight: '$medium',
@@ -116,4 +115,3 @@ export const Marker = styled('div', {
     variant: 'info',
   },
 });
-

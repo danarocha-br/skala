@@ -49,8 +49,8 @@ export const DropdownMenuArrow = styled(DropdownMenuPrimitive.Arrow, {
   fill: 'currentColor',
   color: '$text-on-interactive',
   [`.dark-theme &`]: {
-    color: '$text-inverted'
-  }
+    color: '$text-inverted',
+  },
 });
 
 const itemStyles = {

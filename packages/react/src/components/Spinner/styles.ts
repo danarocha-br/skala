@@ -1,6 +1,5 @@
 import { keyframes, styled } from '../../styles';
 
-
 const dash = keyframes({
   '0%': {
     'stroke-dasharray': '0, 150',
