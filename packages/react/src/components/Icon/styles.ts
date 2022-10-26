@@ -36,7 +36,7 @@ export const SVG = styled('svg', {
 
     size: {
       sm: {
-        width: '$3',
+        width: 20,
       },
       md: {
         width: '$4',

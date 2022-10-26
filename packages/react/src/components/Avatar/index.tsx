@@ -55,7 +55,7 @@ export const Avatar = ({
       <Text
         weight="medium"
         className="avatar__username"
-        css={{ transition: '$base' }}
+        css={{ transition: '$base', transform: 'scale(0.95)' }}
       >
         {username}
       </Text>
