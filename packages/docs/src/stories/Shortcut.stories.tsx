@@ -23,11 +23,13 @@ export default {
     },
   },
   decorators: [
-    (Story) => (
-      <Stack gap="8" align="center" justify="center" css={{ h: '100vh' }}>
-        {Story()}
-      </Stack>
-    ),
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
+          {Story()}
+        </Stack>
+      );
+    },
   ],
 } as Meta<ShortcutProps>;
 

@@ -40,9 +40,14 @@ function DropdownMenuContent({
 }: MenuContentProps): JSX.Element {
   return (
     <Portal>
-      <S.DropdownMenuContent sideOffset={2} alignOffset={5} {...props}>
+      <S.DropdownMenuContent
+        sideOffset={8}
+        alignOffset={5}
+        arrowPadding={8}
+        {...props}
+      >
         {children}
-        <S.DropdownMenuArrow offset={12} />
+        <S.DropdownMenuArrow  />
       </S.DropdownMenuContent>
     </Portal>
   );
@@ -62,13 +67,13 @@ const DropdownBase = ({
     css={{ position: 'relative', w: 'max-content', ...css }}
     {...props}
   >
-    <Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange}>
+    <Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange} >
       <>
-        <Trigger asChild className="dropdown__trigger">
+        <Trigger asChild className="dropdown__trigger" >
           <div>{trigger}</div>
         </Trigger>
 
-        <DropdownMenuContent>{children}</DropdownMenuContent>
+        <DropdownMenuContent >{children}</DropdownMenuContent>
       </>
     </Root>
   </Box>

@@ -1,10 +1,10 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Box, BoxProps, Stack, Text } from '@skala/react';
+import { Spinner, SpinnerProps, Stack } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
-  title: 'Primitives/Box',
-  component: Box,
+  title: 'Components/Spinner',
+  component: Spinner,
   parameters: {
     layout: 'centered',
     badges: [BADGE.STABLE],
@@ -13,26 +13,18 @@ export default {
       url: '',
     },
   },
-  args: {
-    children: <Text>This is a box.</Text>,
-    css: {
-      color: '$text-body',
-      bg: '$surface-base-pressed',
-      p: '$10',
-    },
-  },
+  args: { size: 'md' },
   argTypes: {
-    as: {
+    size: {
       table: {
         category: 'Modifiers',
+      },
+      options: ['md', 'sm'],
+      control: {
+        type: 'inline-radio',
       },
     },
     css: {
-      table: {
-        category: 'Modifiers',
-      },
-    },
-    children: {
       table: {
         category: 'Modifiers',
       },
@@ -49,4 +41,5 @@ export default {
   ],
 } as Meta;
 
-export const Default: StoryObj<BoxProps> = {};
+export const Medium: StoryObj<SpinnerProps> = {};
+export const Small: StoryObj<SpinnerProps> = { args: { size: 'sm' } };

@@ -203,12 +203,7 @@ ExampleLoading.args = {
         isActive
         loading
       />
-      <Navigation.Item
-        label="Clients"
-        icon="user"
-        href="/clients"
-        loading
-      />
+      <Navigation.Item label="Clients" icon="user" href="/clients" loading />
     </>
   ),
 };

@@ -87,7 +87,7 @@ const Wrapper = ({
   isNavigationOpen = true,
   onNavigationOpenChange,
   ...props
-}: NavigationProps): JSX.Element => {
+}: NavigationProps) => {
   return (
     <Box css={css} {...props}>
       <S.CollapsibleRoot

@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Skeleton, SkeletonProps } from '@skala/react';
+import { Skeleton, SkeletonProps, Stack } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -23,6 +23,15 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
+          {Story()}
+        </Stack>
+      );
+    },
+  ],
 } as Meta<SkeletonProps>;
 
 export const Example: StoryObj<SkeletonProps> = {};
