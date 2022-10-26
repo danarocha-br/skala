@@ -1,3 +1,4 @@
+//@ts-noCheck
 import Stitches, { createStitches, defaultThemeMap } from '@stitches/react';
 
 import {

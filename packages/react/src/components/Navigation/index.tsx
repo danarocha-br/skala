@@ -38,6 +38,8 @@ export type NavItemProps = {
   disabled?: boolean;
 };
 
+//TODO: add mobile navigation
+
 const NavItem = ({
   as,
   icon,

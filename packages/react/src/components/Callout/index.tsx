@@ -1,5 +1,5 @@
 import React from 'react';
-import { CSS } from "../../styles";
+import { CSS } from '../../styles';
 
 import { iconPath, Icon } from '../Icon';
 import { Stack } from '../Stack';
@@ -22,10 +22,17 @@ export const Callout = ({
 }: CalloutProps): JSX.Element => (
   <S.Container>
     <S.Marker variant={variant} />
-    <Stack gap='2' direction="column" fullWidth>
+    <Stack gap="2" direction="column" fullWidth>
       {Boolean(title) && (
         <S.Header variant={variant}>
-          {!!icon && <Icon label={Boolean(title) && title || 'icon'} name={icon} color="current" css={{left: '$3', mr: -8, position: 'relative'}} />}
+          {!!icon && (
+            <Icon
+              label={(Boolean(title) && title) || 'icon'}
+              name={icon}
+              color="current"
+              css={{ left: '$3', mr: -8, position: 'relative' }}
+            />
+          )}
           <h5>{title}</h5>
         </S.Header>
       )}
