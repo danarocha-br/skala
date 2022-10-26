@@ -1,6 +1,7 @@
 import { styled } from '../../styles';
 
 export const Trigger = styled('button', {
+  // all: 'unset',
   bg: 'transparent',
   cursor: 'pointer',
   pl: '$2',
@@ -14,21 +15,22 @@ export const Trigger = styled('button', {
   d: 'flex',
   align: 'center',
   gap: '$3',
+  outline: 'none',
 
   '&:hover': {
     bg: '$surface-base-disabled',
 
     '& .avatar__username': {
-      transform: 'translateX(3px)',
+      transform: 'translateX(3px) scale(0.95)',
     },
   },
 
   '&:focus': {
-    border: '1px dashed $surface-base-hover',
-    bg: '$action-transparent-disabled',
+    border: '1px dashed $surface-base-hover !important',
+    background: '$surface-action-transparent-hover',
 
     '& .avatar__username': {
-      transform: 'translateX(3px)',
+      transform: 'translateX(3px) scale(0.95)',
     },
   },
 });

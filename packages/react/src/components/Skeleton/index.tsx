@@ -11,7 +11,7 @@ export type SkeletonProps = {
 
 const SkeletonItem = (props: ReactSkeletonProps) => (
   //@ts-ignore
-  <ReactSkeleton style={{ marginBottom: theme.space[3] }} {...props} />
+  <ReactSkeleton  {...props} />
 );
 SkeletonItem.displayName = 'Skeleton.Item';
 
