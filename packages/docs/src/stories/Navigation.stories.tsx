@@ -193,7 +193,7 @@ ExampleLoading.args = {
         icon="project"
         href="/projects"
         shortcut="⌘ + P"
-        loading={true}
+        loading
       />
       <Navigation.Item
         label="Invoices"
@@ -201,13 +201,13 @@ ExampleLoading.args = {
         href="/invoices"
         shortcut="⌘ + I"
         isActive
-        loading={true}
+        loading
       />
       <Navigation.Item
         label="Clients"
         icon="user"
         href="/clients"
-        loading={true}
+        loading
       />
     </>
   ),
