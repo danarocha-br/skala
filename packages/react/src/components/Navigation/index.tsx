@@ -28,7 +28,7 @@ export type NavigationProps = {
 
 export type NavItemProps = {
   /** to render a wrapper to the a tag */
-  as?: React.ElementType<any>;
+  as?: React.ElementType<unknown>;
   icon: keyof typeof iconPath;
   label: string;
   href: string;
@@ -53,7 +53,7 @@ const NavItem = ({
   const Component = as || React.Fragment;
 
   return !loading ? (
-    <Component href={href} passHref>
+    <Component>
       <S.Anchor
         href={href}
         data-title={shortcut}
