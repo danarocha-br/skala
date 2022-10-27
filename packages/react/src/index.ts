@@ -9,6 +9,7 @@ export * from './components/Icon';
 export * from './components/Avatar';
 export * from './components/Button';
 export * from './components/Callout';
+export * from './components/Dialog';
 export * from './components/Dropdown';
 export * from './components/Link';
 export * from './components/Navbar';
@@ -26,4 +27,6 @@ export * from './components/Toast';
 export * from './components/Tooltip';
 export * from './components/UserProfile';
 
+export * from './hooks/useDialog';
+export * from './hooks/useOverlay';
 export * from './hooks/useToast';

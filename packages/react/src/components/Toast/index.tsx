@@ -134,8 +134,8 @@ ToastItem.displayName = 'Item';
 
 const ToastRoot = ({
   messages,
-  directionX,
-  directionY,
+  directionX = 'right',
+  directionY = 'bottom',
   allowRemoveToast = true,
 }: ToastProps) => {
   return (
