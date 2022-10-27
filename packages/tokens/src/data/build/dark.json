@@ -278,15 +278,15 @@
     },
     "form": {
       "background": {
-        "value": "#ffffff",
+        "value": "#202a2d",
         "type": "color"
       },
       "border": {
-        "value": "#e0e1e0",
+        "value": "#323d43",
         "type": "color"
       },
       "subdued": {
-        "value": "#ffffff",
+        "value": "#202a2d",
         "type": "color"
       },
       "hover": {
@@ -302,7 +302,7 @@
         "type": "color"
       },
       "disabled": {
-        "value": "#f6f6f4",
+        "value": "#66737a",
         "type": "color"
       }
     },
