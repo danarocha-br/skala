@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { Toast, ToastProps, ToastProvider } from '@skala/react';
+import { Toast, ToastProps } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -14,6 +14,8 @@ export default {
     },
   },
   args: {
+    directionX: 'right',
+    directionY: 'bottom',
     messages: [
       {
         id: '1',
@@ -51,6 +53,36 @@ export default {
       },
     ],
     allowRemoveToast: false,
+  },
+  argTypes: {
+    directionX: {
+      table: {
+        category: 'Mofidiers',
+      },
+      options: ['left', 'right'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    directionY: {
+      table: {
+        category: 'Mofidiers',
+      },
+      options: ['top', 'bottom'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    allowRemoveToast: {
+      table: {
+        category: 'Mofidiers',
+      },
+    },
+    messages: {
+      table: {
+        category: 'Text',
+      },
+    },
   },
   // decorators: [
   //   (Story) => (
