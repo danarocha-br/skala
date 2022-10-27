@@ -115,11 +115,11 @@
           "type": "color"
         },
         "disabled": {
-          "value": "#fabbb7",
+          "value": "#f79792",
           "type": "color"
         },
         "border": {
-          "value": "#f79792",
+          "value": "#f55c56",
           "type": "color"
         },
         "constrast": {
@@ -206,7 +206,7 @@
             "type": "color"
           },
           "disabled": {
-            "value": "#e0e1e01a",
+            "value": "#e0e1e00d",
             "type": "color"
           }
         }
@@ -237,7 +237,7 @@
           "type": "color"
         },
         "constrast": {
-          "value": "#f0f7ff33",
+          "value": "#d2e7fe",
           "type": "color"
         }
       }

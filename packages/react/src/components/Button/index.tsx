@@ -47,7 +47,7 @@ export const Button = ({
     >
       {Boolean(icon) && (
         <Icon
-          name={Boolean(icon) && icon || 'plus'}
+          name={(Boolean(icon) && icon) || 'plus'}
           label={label}
           color="current"
           size={size === 'md' ? 'md' : size === 'sm' ? 'sm' : 'lg'}

@@ -1,6 +1,5 @@
 export const elevation = {
-  low: '0px 0.800000011920929px 1.2999999523162842px 0px #00000005, 0px 6px 10px 0px #0000000D',
-  medium:
-    '0px 2.0999999046325684px 3.799999952316284px 0px #00000005, 0px 17px 30px 0px #0000000D',
-  high: '0px 1.899999976158142px 2.5px 0px #00000005, 0px 6.300000190734863px 8.5px 0px #00000003, 0px 28px 38px 0px #0000000F',
+  low: '0px -3px 2px 0px #00000005, 0px 6px 10px 0px #00000014',
+  medium: '0px 0px 5.8px 3px #00000008, 0px 24px 38px 0px #0000001a',
+  high: '0px -1px 2.5px 0px #00000014, 0px 6.3px 8.5px 0px #00000000, 0px 30px 48px 0px #00000026',
 };

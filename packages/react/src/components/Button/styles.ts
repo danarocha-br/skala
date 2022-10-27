@@ -37,14 +37,15 @@ const MoveLoadingGradientStart = keyframes({
     '-webkit-clip-path':
       'polygon(0% 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, $$borderWidth 100%, 0% 100%)',
   },
-
 });
 
-const MoveLoadingGradientEnd = keyframes({
-  '0%': { backgroundPosition: '15% 0%' },
-  '50%': { backgroundPosition: '50% 0%' },
-  '100%': { backgroundPosition: '50% 100%' },
-});
+// const MoveLoadingGradientEnd = keyframes({
+//   '0%': { backgroundPosition: '15% 0%' },
+//   '50%': { backgroundPosition: '50% 0%' },
+//   '100%': { backgroundPosition: '50% 100%' },
+// });
+
+//TODO: button disabled fix cursor
 
 export const Container = styled(AccessibleButton, {
   all: 'unset',
@@ -55,7 +56,7 @@ export const Container = styled(AccessibleButton, {
   fontFamily: '$sans',
   fontWeight: '$medium',
   whiteSpace: 'nowrap',
-  // pointerEvents: 'auto',
+  pointerEvents: 'initial',
 
   display: 'flex',
   alignItems: 'center',
@@ -74,7 +75,7 @@ export const Container = styled(AccessibleButton, {
 
   '&:disabled': {
     opacity: '0.75',
-    cursor: 'not-allowed !important',
+    cursor: 'not-allowed',
   },
 
   '&:active': {
