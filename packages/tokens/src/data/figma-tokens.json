@@ -1682,15 +1682,15 @@
       },
       "form": {
         "background": {
-          "value": "{colors.neutral.white}",
+          "value": "{colors.neutral.800}",
           "type": "color"
         },
         "border": {
-          "value": "{colors.neutral.200}",
+          "value": "{colors.neutral.700}",
           "type": "color"
         },
         "subdued": {
-          "value": "{colors.neutral.white}",
+          "value": "{colors.neutral.800}",
           "type": "color"
         },
         "hover": {
@@ -1706,7 +1706,7 @@
           "type": "color"
         },
         "disabled": {
-          "value": "{colors.neutral.100}",
+          "value": "{colors.neutral.500}",
           "type": "color"
         }
       },
