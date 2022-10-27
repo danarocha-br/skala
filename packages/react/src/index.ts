@@ -13,6 +13,7 @@ export * from './components/Dropdown';
 export * from './components/Link';
 export * from './components/Navbar';
 export * from './components/Navigation';
+export * from './components/SelectMenu';
 export * from './components/Shortcut';
 export * from './components/Skeleton';
 export * from './components/Spinner';
