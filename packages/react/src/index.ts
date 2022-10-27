@@ -15,6 +15,7 @@ export * from './components/Navbar';
 export * from './components/Navigation';
 export * from './components/ScrollView';
 export * from './components/SelectMenu';
+export * from './components/Separator';
 export * from './components/Shortcut';
 export * from './components/Skeleton';
 export * from './components/Spinner';

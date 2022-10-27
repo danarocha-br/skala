@@ -6,6 +6,7 @@ export default {
   title: 'Components/{{pascalCase name}}',
   component: {{pascalCase name}},
   parameters: {
+    layout: 'centered',
     badges: [BADGE.STABLE],
     design: {
       type: 'figma',
@@ -15,19 +16,14 @@ export default {
   },
   args: {
   },
-  argTypes: {
-    shortcut: {
-      table: {
-        category: 'Text',
-      },
-    },
-  },
   decorators: [
-    (Story) => (
-      <Stack gap="8" align="center" justify="center" css={{ h: '100vh' }}>
-        {Story()}
-      </Stack>
-    ),
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
+          {Story()}
+        </Stack>
+      );
+    },
   ],
 } as Meta<{{pascalCase name}}Props>;
 

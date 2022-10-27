@@ -25,11 +25,6 @@ export default {
     )),
   },
   argTypes: {
-    as: {
-      table: {
-        category: 'Modifiers',
-      },
-    },
     css: {
       table: {
         category: 'Modifiers',
