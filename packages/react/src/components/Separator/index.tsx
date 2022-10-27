@@ -12,7 +12,7 @@ export const Separator = ({
   css,
   ...props
 }: SeparatorProps): JSX.Element => (
-  <S.Container css={css} orientation={orientation} {...props}></S.Container>
+  <S.Container css={css} orientation={orientation} {...props} />
 );
 
 Separator.displayName = 'Separator';
