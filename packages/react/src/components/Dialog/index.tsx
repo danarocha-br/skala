@@ -118,7 +118,11 @@ export const Dialog = forwardRef(
                   onClick={closeDialog}
                   size="sm"
                   type="button"
-                  css={{ mt: '$1' }}
+                  css={{
+                    mt: '$1',
+                    position: 'relative',
+                    right: -3,
+                  }}
                 />
               </div>
             </S.DialogClose>
@@ -128,7 +132,7 @@ export const Dialog = forwardRef(
             <S.DialogDescription>{description}</S.DialogDescription>
           )}
 
-          <Box css={{ px: '$3' }}>{children}</Box>
+          <Box css={{ px: '$3', color: '$text-body' }}>{children}</Box>
 
           <S.DialogFooter>
             {variant === 'transactional' ? (
@@ -177,3 +181,5 @@ export const Dialog = forwardRef(
     );
   }
 );
+
+Dialog.displayName = 'Dialog';

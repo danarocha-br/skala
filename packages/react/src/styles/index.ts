@@ -51,7 +51,7 @@ export const {
       'bp-lg': '(min-width: 1200px)',
       'bp-xl': '(min-width: 1800px)',
       motion: '(prefers-reduced-motion)',
-      hover: '(any-hover: hover)',
+      hover: '(unknown-hover: hover)',
       dark: '(prefers-color-scheme: dark)',
       light: '(prefers-color-scheme: light)',
     },
@@ -62,135 +62,135 @@ export const {
     width: 'space',
   },
   utils: {
-    d: (value: any) => ({
+    d: (value: unknown) => ({
       display: value,
     }),
-    p: (value: any) => ({
+    p: (value: unknown) => ({
       padding: value,
     }),
-    pt: (value: any) => ({
+    pt: (value: unknown) => ({
       paddingTop: value,
     }),
-    pr: (value: any) => ({
+    pr: (value: unknown) => ({
       paddingRight: value,
     }),
-    pb: (value: any) => ({
+    pb: (value: unknown) => ({
       paddingBottom: value,
     }),
-    pl: (value: any) => ({
+    pl: (value: unknown) => ({
       paddingLeft: value,
     }),
-    px: (value: any) => ({
+    px: (value: unknown) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    py: (value: any) => ({
+    py: (value: unknown) => ({
       paddingTop: value,
       paddingBottom: value,
     }),
 
-    m: (value: any) => ({
+    m: (value: unknown) => ({
       margin: value,
     }),
-    mt: (value: any) => ({
+    mt: (value: unknown) => ({
       marginTop: value,
     }),
-    mr: (value: any) => ({
+    mr: (value: unknown) => ({
       marginRight: value,
     }),
-    mb: (value: any) => ({
+    mb: (value: unknown) => ({
       marginBottom: value,
     }),
-    ml: (value: any) => ({
+    ml: (value: unknown) => ({
       marginLeft: value,
     }),
-    mx: (value: any) => ({
+    mx: (value: unknown) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (value: any) => ({
+    my: (value: unknown) => ({
       marginTop: value,
       marginBottom: value,
     }),
 
-    spaceY: (value: any) => ({
+    spaceY: (value: unknown) => ({
       marginTop: `calc(${value} * calc(1 - 0))`,
       marginBottom: `calc(${value} * 0)`,
     }),
 
-    spaceX: (value: any) => ({
+    spaceX: (value: unknown) => ({
       marginLeft: `calc(${value} * calc(1 - 0))`,
       marginRight: `calc(${value} * 0)`,
     }),
 
-    fd: (value: any) => ({
+    fd: (value: unknown) => ({
       flexDirection: value,
     }),
 
-    align: (value: any) => ({
+    align: (value: unknown) => ({
       alignItems: value,
     }),
 
-    ac: (value: any) => ({
+    ac: (value: unknown) => ({
       alignContent: value,
     }),
 
-    justify: (value: any) => ({
+    justify: (value: unknown) => ({
       justifyContent: value,
     }),
 
-    bg: (value: any) => ({
+    bg: (value: unknown) => ({
       backgroundColor: value,
     }),
 
-    radii: (value: any) => ({
+    radii: (value: unknown) => ({
       borderRadius: value,
     }),
-    btrr: (value: any) => ({
+    btrr: (value: unknown) => ({
       borderTopRightRadius: value,
     }),
-    bbrr: (value: any) => ({
+    bbrr: (value: unknown) => ({
       borderBottomRightRadius: value,
     }),
-    bblr: (value: any) => ({
+    bblr: (value: unknown) => ({
       borderBottomLeftRadius: value,
     }),
-    btlr: (value: any) => ({
+    btlr: (value: unknown) => ({
       borderTopLeftRadius: value,
     }),
 
-    shadow: (value: any) => ({ boxShadow: value }),
+    shadow: (value: unknown) => ({ boxShadow: value }),
 
-    lh: (value: any) => ({
+    lh: (value: unknown) => ({
       lineHeight: value,
     }),
 
-    ox: (value: any) => ({ overflowX: value }),
-    oy: (value: any) => ({ overflowY: value }),
+    ox: (value: unknown) => ({ overflowX: value }),
+    oy: (value: unknown) => ({ overflowY: value }),
 
-    pe: (value: any) => ({
+    pe: (value: unknown) => ({
       pointerEvents: value,
     }),
 
-    userSelect: (value: any) => ({
+    userSelect: (value: unknown) => ({
       WebkitUserSelect: value,
       userSelect: value,
     }),
 
-    size: (value: any) => ({
+    size: (value: unknown) => ({
       width: value,
       height: value,
     }),
 
-    w: (value: any) => ({
+    w: (value: unknown) => ({
       width: value,
     }),
 
-    h: (value: any) => ({
+    h: (value: unknown) => ({
       height: value,
     }),
 
-    appearance: (value: any) => ({
+    appearance: (value: unknown) => ({
       WebkitAppearance: value,
       appearance: value,
     }),
