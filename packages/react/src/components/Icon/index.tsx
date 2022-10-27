@@ -1,4 +1,3 @@
-
 import { CSS } from '../../styles';
 
 import type * as Stitches from '@stitches/react';
@@ -33,7 +32,6 @@ export const Icon = ({
   color = 'subtext',
   size = 'md',
   name = 'plus',
-  className,
   label,
   css,
   ...props

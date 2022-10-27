@@ -19,8 +19,8 @@
   "author": "Dana Rocha",
   "license": "ISC",
   "devDependencies": {
-    "@skala/ts-config": "*",
     "@skala/eslint-config": "*",
+    "@skala/ts-config": "*",
     "style-dictionary": "^3.7.1",
     "token-transformer": "^0.0.27",
     "tsup": "^6.2.3",

@@ -37,11 +37,6 @@ export default {
         category: 'Modifiers',
       },
     },
-    css: {
-      table: {
-        category: 'Modifiers',
-      },
-    },
     direction: {
       table: {
         category: 'Modifiers',

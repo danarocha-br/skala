@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react';
-import { {{pascalCase name}}, {{pascalCase name}}Props, Stack } from '@skala/react';
+import { {{pascalCase name}}, {{pascalCase name}}Props } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -16,15 +16,6 @@ export default {
   },
   args: {
   },
-  decorators: [
-    (Story) => {
-      return (
-        <Stack align="center" justify="center" css={{ h: '100vh', px: 200 }}>
-          {Story()}
-        </Stack>
-      );
-    },
-  ],
 } as Meta<{{pascalCase name}}Props>;
 
 export const Default: StoryObj<{{pascalCase name}}Props> = {};
