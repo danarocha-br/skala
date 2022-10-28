@@ -3,7 +3,7 @@ import { CSS } from '../../styles';
 import * as S from './styles';
 
 export type SpinnerProps = {
-  size?: 'sm' | 'md';
+  size?: 'xs' | 'sm' | 'md';
   css?: CSS;
 };
 
