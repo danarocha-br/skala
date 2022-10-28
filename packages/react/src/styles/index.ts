@@ -32,6 +32,7 @@ export const {
     lineHeights: lineHeight,
     radii: radii,
     space: spacing,
+    sizes: spacing,
     shadows: elevation,
     zIndices: {
       1: '1',
@@ -56,11 +57,11 @@ export const {
     dark: '(prefers-color-scheme: dark)',
     light: '(prefers-color-scheme: light)',
   },
-  themeMap: {
-    ...defaultThemeMap,
-    height: 'space',
-    width: 'space',
-  },
+  // themeMap: {
+  //   ...defaultThemeMap,
+  //   height: 'space',
+  //   width: 'space',
+  // },
   utils: {
     d: (value: unknown) => ({
       display: value,

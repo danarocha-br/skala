@@ -35,6 +35,9 @@ export const SVG = styled('svg', {
     },
 
     size: {
+      xs: {
+        width: '$3',
+      },
       sm: {
         width: 20,
       },

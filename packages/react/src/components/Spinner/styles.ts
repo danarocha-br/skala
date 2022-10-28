@@ -44,6 +44,10 @@ export const Container = styled('svg', {
 
   variants: {
     size: {
+      xs: {
+        width: '$3',
+        height: '$3',
+      },
       sm: {
         width: '$4',
         height: '$4',

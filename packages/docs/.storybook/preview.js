@@ -32,11 +32,11 @@ export const parameters = {
     values: [
       {
         name: 'light',
-        value: theme.colors['background-default'],
+        value: theme.colors['surface-base-default'],
       },
       {
         name: 'dark',
-        value: darkTheme.colors['background-default'],
+        value: darkTheme.colors['surface-base-default'],
       },
     ],
   },

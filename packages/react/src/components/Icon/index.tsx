@@ -21,8 +21,9 @@ export type IconProps = {
   color?: IconColorProps;
   /** Accessibility naming. */
   label: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'xs' | 'sm' | 'md' | 'lg';
   css?: CSS;
+  className?: string;
 } & Stitches.VariantProps<typeof S.SVG>;
 
 export * from './iconPath';
@@ -32,10 +33,12 @@ export const Icon = ({
   size = 'md',
   name = 'plus',
   label,
+  className,
   css,
   ...props
 }: IconProps): JSX.Element => (
   <S.SVG
+    className={className}
     color={color}
     size={size}
     viewBox="0 0 24 24"
