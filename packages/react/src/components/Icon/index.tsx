@@ -19,7 +19,6 @@ export type IconColorProps =
 export type IconProps = {
   name: keyof typeof iconPath;
   color?: IconColorProps;
-  className?: string;
   /** Accessibility naming. */
   label: string;
   size?: 'sm' | 'md' | 'lg';

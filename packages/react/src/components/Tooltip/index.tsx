@@ -13,7 +13,6 @@ export type TooltipProps = {
 };
 
 export const Tooltip = ({
-  css,
   children,
   content,
   slot,
@@ -26,7 +25,12 @@ export const Tooltip = ({
         <div>{children}</div>
       </Trigger>
 
-      <S.Content sideOffset={3} hasSlot={Boolean(slot)} side={direction} {...props}>
+      <S.Content
+        sideOffset={3}
+        hasSlot={Boolean(slot)}
+        side={direction}
+        {...props}
+      >
         {content}
         {Boolean(slot) && <span>{slot}</span>}
         <S.Arrow />

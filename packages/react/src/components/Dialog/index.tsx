@@ -118,17 +118,25 @@ export const Dialog = forwardRef(
                   onClick={closeDialog}
                   size="sm"
                   type="button"
-                  css={{ mt: '$1' }}
+                  css={{
+                    mt: '$1',
+                    position: 'relative',
+                    right: -3,
+
+                    '& svg': {
+                      fill: '$text-caption',
+                    },
+                  }}
                 />
               </div>
             </S.DialogClose>
           </Stack>
 
-          {description && (
+          {Boolean(description) && (
             <S.DialogDescription>{description}</S.DialogDescription>
           )}
 
-          <Box css={{ px: '$3' }}>{children}</Box>
+          <Box css={{ px: '$3', color: '$text-body' }}>{children}</Box>
 
           <S.DialogFooter>
             {variant === 'transactional' ? (
@@ -138,6 +146,7 @@ export const Dialog = forwardRef(
                   variant="transparent"
                   onClick={onButtonSecondaryClick || closeDialog}
                   size="sm"
+                  type="button"
                 />
 
                 <Button
@@ -145,6 +154,7 @@ export const Dialog = forwardRef(
                   color="secondary"
                   onClick={onButtonPrimaryClick}
                   size="sm"
+                  type="submit"
                 />
               </>
             ) : variant === 'danger' ? (
@@ -154,6 +164,7 @@ export const Dialog = forwardRef(
                   variant="transparent"
                   onClick={onButtonSecondaryClick || closeDialog}
                   size="sm"
+                  type="button"
                 />
 
                 <Button
@@ -161,13 +172,13 @@ export const Dialog = forwardRef(
                   color="danger"
                   onClick={onButtonPrimaryClick}
                   size="sm"
+                  type="submit"
                 />
               </>
             ) : (
               <Button
                 label={buttonPrimaryLabel || 'Ok'}
                 onClick={onButtonPrimaryClick}
-                // variant="transparent"
                 size="sm"
               />
             )}
@@ -177,3 +188,5 @@ export const Dialog = forwardRef(
     );
   }
 );
+
+Dialog.displayName = 'Dialog';
