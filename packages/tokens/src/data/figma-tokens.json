@@ -1321,7 +1321,6 @@
               "value": "{colors.royal.600}",
               "type": "color"
             },
-
             "hover": {
               "value": "{colors.royal.700}",
               "type": "color"
@@ -1472,6 +1471,48 @@
             "type": "color"
           }
         }
+      },
+      "component": {
+        "button": {
+          "color": {
+            "background": {
+              "primary": {
+                "enabled": {
+                  "value": "{light.action.color.background.primary.enabled}",
+                  "type": "color"
+                },
+                "hover": {
+                  "value": "{light.action.color.background.primary.hover}",
+                  "type": "color"
+                },
+                "focus": {
+                  "value": "{light.action.color.background.primary.pressed}",
+                  "type": "color"
+                },
+                "disabled": {
+                  "value": "{light.action.color.background.primary.disabled}",
+                  "type": "color"
+                }
+              }
+            },
+            "border": {
+              "focus": {
+                "value": "{light.action.color.background.primary.disabled}",
+                "type": "color"
+              }
+            },
+            "text": {
+              "enabled": {
+                "value": "{light.action.color.text.primary.default}",
+                "type": "color"
+              },
+              "disabled": {
+                "value": "{colors.neutral.600}",
+                "type": "color"
+              }
+            }
+          }
+        }
       }
     },
     "gradient": {
@@ -1479,6 +1520,92 @@
         "background": {
           "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%)",
           "type": "other"
+        }
+      }
+    },
+    "component": {
+      "button": {
+        "space": {
+          "x": {
+            "md": {
+              "value": "{spacing.5}",
+              "type": "spacing"
+            },
+            "lg": {
+              "value": "{spacing.6}",
+              "type": "spacing"
+            },
+            "sm": {
+              "value": "{spacing.4}",
+              "type": "spacing"
+            }
+          },
+          "y": {
+            "md": {
+              "value": "{spacing.3}",
+              "type": "spacing"
+            },
+            "lg": {
+              "value": "{spacing.4}",
+              "type": "spacing"
+            },
+            "sm": {
+              "value": "{spacing.1}",
+              "type": "spacing"
+            }
+          }
+        },
+        "size": {
+          "height": {
+            "md": {
+              "value": "60",
+              "type": "sizing"
+            },
+            "sm": {
+              "value": "40",
+              "type": "sizing"
+            },
+            "lg": {
+              "value": "64",
+              "type": "sizing"
+            }
+          }
+        },
+        "border": {
+          "radii": {
+            "md": {
+              "value": "{radii.md}",
+              "type": "borderRadius"
+            },
+            "lg": {
+              "value": "{radii.md}",
+              "type": "borderRadius"
+            },
+            "sm": {
+              "value": "{radii.sm}",
+              "type": "borderRadius"
+            }
+          }
+        },
+        "font": {
+          "size": {
+            "sm": {
+              "value": "{fontSize.sm}",
+              "type": "fontSizes"
+            },
+            "md": {
+              "value": "{fontSize.md}",
+              "type": "fontSizes"
+            },
+            "lg": {
+              "value": "{fontSize.md}",
+              "type": "fontSizes"
+            }
+          },
+          "weight": {
+            "value": "{fontWeight.medium}",
+            "type": "fontWeights"
+          }
         }
       }
     }
@@ -1827,6 +1954,10 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": ["global", "light", "dark"]
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark"
+    ]
   }
 }
