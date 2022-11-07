@@ -192,6 +192,8 @@ export const Container = styled('div', {
     },
 
     [`& ${Addon}`]: {
+      color: '$text-on-interactive !important',
+
       '& input:disabled': {
         color: '$text-subtext !important',
       },
@@ -266,6 +268,12 @@ export const Container = styled('div', {
       true: {
         border: 'none',
         bg: 'transparent !important',
+
+        '&:hover': {
+          [`& ${Addon}`]: {
+            color: '$text-subtext !important',
+          },
+        },
       },
     },
 

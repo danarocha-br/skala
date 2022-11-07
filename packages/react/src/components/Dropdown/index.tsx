@@ -47,7 +47,7 @@ function DropdownMenuContent({
         {...props}
       >
         {children}
-        <S.DropdownMenuArrow  />
+        <S.DropdownMenuArrow />
       </S.DropdownMenuContent>
     </Portal>
   );
@@ -64,16 +64,16 @@ const DropdownBase = ({
 }: DropdownProps) => (
   <Box
     className="dropdown"
-    css={{ position: 'relative', w: 'max-content', ...css }}
+    css={{ position: 'relative', w: 'max-content', css }}
     {...props}
   >
-    <Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange} >
+    <Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange}>
       <>
-        <Trigger asChild className="dropdown__trigger" >
+        <Trigger asChild className="dropdown__trigger">
           <div>{trigger}</div>
         </Trigger>
 
-        <DropdownMenuContent >{children}</DropdownMenuContent>
+        <DropdownMenuContent>{children}</DropdownMenuContent>
       </>
     </Root>
   </Box>

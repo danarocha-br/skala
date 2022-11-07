@@ -1,5 +1,5 @@
 //@ts-noCheck
-import Stitches, { createStitches, defaultThemeMap } from '@stitches/react';
+import Stitches, { createStitches } from '@stitches/react';
 
 import {
   colors,
