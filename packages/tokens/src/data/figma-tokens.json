@@ -1062,6 +1062,14 @@
   },
   "light": {
     "light": {
+      "gradient": {
+        "color": {
+          "background": {
+            "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%)",
+            "type": "color"
+          }
+        }
+      },
       "background": {
         "default": {
           "value": "{colors.neutral.100}",
@@ -1237,19 +1245,19 @@
             },
             "secondary": {
               "enabled": {
-                "value": "{colors.forest.500}",
+                "value": "{colors.royal.600}",
                 "type": "color"
               },
               "hover": {
-                "value": "{colors.forest.600}",
+                "value": "{colors.royal.700}",
                 "type": "color"
               },
               "pressed": {
-                "value": "{colors.forest.700}",
+                "value": "{colors.royal.800}",
                 "type": "color"
               },
               "disabled": {
-                "value": "{colors.forest.200}",
+                "value": "{colors.royal.200}",
                 "type": "color"
               }
             },
@@ -1281,7 +1289,7 @@
             },
             "secondary": {
               "enabled": {
-                "value": "{colors.forest.500}",
+                "value": "{colors.royal.500}",
                 "type": "color"
               }
             },
@@ -1301,7 +1309,7 @@
             },
             "secondary": {
               "default": {
-                "value": "{colors.forest.50}",
+                "value": "{colors.royal.50}",
                 "type": "color"
               }
             },
@@ -1528,18 +1536,16 @@
           }
         }
       }
-    },
-    "gradient": {
-      "color": {
-        "background": {
-          "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%)",
-          "type": "other"
-        }
-      }
     }
   },
   "dark": {
     "dark": {
+      "gradient": {
+        "background": {
+          "value": "linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%)",
+          "type": "color"
+        }
+      },
       "background": {
         "default": {
           "value": "{colors.neutral.900}",
@@ -1704,7 +1710,6 @@
                 "value": "{colors.neutral.100}",
                 "type": "color"
               },
-
               "hover": {
                 "value": "{colors.neutral.200}",
                 "type": "color"
@@ -1723,7 +1728,6 @@
                 "value": "{colors.forest.400}",
                 "type": "color"
               },
-
               "hover": {
                 "value": "{colors.forest.500}",
                 "type": "color"
@@ -1879,7 +1883,6 @@
               "value": "{colors.neutral.800}",
               "type": "color"
             },
-
             "subdued": {
               "value": "{colors.neutral.800}",
               "type": "color"
@@ -2019,21 +2022,21 @@
             "text": {
               "primary": {
                 "enabled": {
-                  "value": "{dark.action.color.text.primary.default}",
+                  "value": "{dark.action.color.text.primary.enabled}",
                   "type": "color"
                 },
                 "disabled": {
-                  "value": "{colors.neutral.800}",
+                  "value": "{colors.neutral.400}",
                   "type": "color"
                 }
               },
               "secondary": {
                 "enabled": {
-                  "value": "{dark.action.color.text.secondary.default}",
+                  "value": "{dark.action.color.text.secondary.enabled}",
                   "type": "color"
                 },
                 "disabled": {
-                  "value": "{dark.action.color.text.secondary.default}",
+                  "value": "{dark.action.color.text.secondary.enabled}",
                   "type": "color"
                 }
               }
@@ -2041,16 +2044,14 @@
           }
         }
       }
-    },
-    "gradient": {
-      "background": {
-        "value": "linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%)",
-        "type": "other"
-      }
     }
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": ["global", "light", "dark"]
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark"
+    ]
   }
 }
