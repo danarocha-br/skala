@@ -170,7 +170,7 @@ export const Container = styled('div', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'start',
-  zIndex: 2,
+  zIndex: '1 !important',
 
   bg: '$surface-color-background-subdued',
 
