@@ -1,20 +1,21 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { CSS } from '../../styles';
+import { NumericFormatProps, NumericFormat } from 'react-number-format';
 
+import * as StyledInput from '../TextInput/styles';
 import { Icon, iconPath } from '../Icon';
 import { Box } from '../Box';
-import { Spinner } from '../Spinner';
 import { Stack } from '../Stack';
+import { Spinner } from '../Spinner';
 import { FormErrorMessage } from '../FormErrorMessage';
 
 import * as S from './styles';
 
-export type TextInputProps = {
+export type NumberInputProps = {
   name: string;
   label?: string;
   placeholder?: string;
   value: string;
-  type?: string;
   disabled?: boolean;
   loading?: boolean;
   readOnly?: boolean;
@@ -31,12 +32,15 @@ export type TextInputProps = {
   variant?: 'default' | 'table';
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   errors?: any | undefined;
+  decimalScale?: number;
+  allowNegative?: boolean;
+  type?: 'text' | 'tel' | 'password';
   css?: CSS;
-} & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'name'>;
+} & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'name'> &
+  NumericFormatProps;
 
-export const TextInput = ({
+export const NumberInput = ({
   name,
-  type,
   icon,
   label,
   value,
@@ -50,10 +54,14 @@ export const TextInput = ({
   onAction,
   actionLabel = 'Settings',
   actionIcon = 'settings',
+  decimalScale = 2,
+  allowNegative = false,
+  decimalSeparator = ',',
+  type = 'text',
   css,
   errors,
   ...props
-}: TextInputProps): JSX.Element => {
+}: NumberInputProps): JSX.Element => {
   /**
    * Get UI States
    */
@@ -73,7 +81,7 @@ export const TextInput = ({
 
   return (
     <Box css={{ w: '100%', css }}>
-      <S.Container
+      <StyledInput.Container
         isFocused={isFocused}
         hasError={Boolean(errors) && !areErrorsEmpty ? true : false}
         isDisabled={disabled || loading}
@@ -83,7 +91,7 @@ export const TextInput = ({
         variant={variant}
       >
         {hasAction && (
-          <S.SettingsButton
+          <StyledInput.SettingsButton
             aria-label={actionLabel}
             onClick={onAction}
             type="button"
@@ -92,11 +100,11 @@ export const TextInput = ({
           >
             {actionLabel}{' '}
             <Icon label="action" name={actionIcon} size="xs" color="current" />
-          </S.SettingsButton>
+          </StyledInput.SettingsButton>
         )}
 
         {variant !== 'table' && (
-          <S.Label htmlFor={name} isReadOnly={readOnly}>
+          <StyledInput.Label htmlFor={name} isReadOnly={readOnly}>
             <Stack gap="1">
               {Boolean(icon) && (
                 <Icon
@@ -130,21 +138,21 @@ export const TextInput = ({
                 css={{ mr: -8 }}
               />
             ) : null}
-          </S.Label>
+          </StyledInput.Label>
         )}
 
         {Boolean(addon) && (
-          <S.Addon
+          <StyledInput.Addon
             isFocused={isFocused}
             isTable={variant === 'table'}
             isReadOnly={readOnly}
             isDisabled={disabled}
           >
             {addon}
-          </S.Addon>
+          </StyledInput.Addon>
         )}
 
-        <S.Input
+        <NumericFormat
           id={name}
           {...props}
           aria-invalid={Boolean(errors) && !areErrorsEmpty ? true : false}
@@ -158,9 +166,15 @@ export const TextInput = ({
           isFocused={isFocused}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
-          // tabIndex={readOnly && -1}
+          customInput={S.Input}
+          allowLeadingZeros
+          allowNegative={allowNegative}
+          decimalSeparator={decimalSeparator}
+          decimalScale={decimalScale}
+          thousandsGroupStyle="thousand"
+          thousandSeparator={props.thousandSeparator}
         />
-      </S.Container>
+      </StyledInput.Container>
 
       {Boolean(errors) && !areErrorsEmpty ? (
         <FormErrorMessage>{errors.message}</FormErrorMessage>
@@ -169,4 +183,4 @@ export const TextInput = ({
   );
 };
 
-TextInput.displayName = 'TextInput';
+NumberInput.displayName = 'NumberInput';
