@@ -230,6 +230,9 @@ export const Container = styled('div', {
       true: {
         borderColor: '$form-color-border-focus',
         transition: 'all $transitions$fast',
+        '&.input__icon--password': {
+          color: '$text-color-on-dark !important',
+        },
       },
     },
 
