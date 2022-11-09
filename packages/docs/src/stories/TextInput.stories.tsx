@@ -243,7 +243,7 @@ HasErrors.args = {
 export const Default: Story<TextInputProps> = (args) => {
   const [inputValue, setInputValue] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     return setInputValue(e.target.value);
   };
 
