@@ -15,6 +15,7 @@ export * from './components/FormErrorMessage';
 export * from './components/Link';
 export * from './components/Navbar';
 export * from './components/Navigation';
+export * from './components/NumberInput';
 export * from './components/Panel';
 export * from './components/ScrollView';
 export * from './components/SelectMenu';
