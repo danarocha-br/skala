@@ -11,7 +11,8 @@
     "token-transform-dark": "npx token-transformer src/data/figma-tokens.json src/data/build/dark.json global,dark,theme global",
     "token-transform-global": "npx token-transformer src/data/figma-tokens.json src/data/build/global.json global --expandTypography=true --resolveReferences=math --expandShadow=true",
     "transform-tokens": "npm run token-transform-global && npm run token-transform-dark && npm run token-transform-light",
-    "build-tokens": "style-dictionary build --config ./style-dictionary-config.js && npm run lint",
+    "generate-tokens": "style-dictionary build --config ./style-dictionary-config.js && npm run lint",
+    "build-tokens": "npm run transform-tokens && npm run generate-tokens",
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint src/**/*.ts* --fix"
   },

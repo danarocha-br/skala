@@ -2,13 +2,13 @@
 import Stitches, { createStitches } from '@stitches/react';
 
 import {
-  colors,
+  color,
   fontSize,
   fontWeight,
   lineHeight,
   radii,
   spacing,
-  fontFamilies,
+  fontFamily,
   elevation,
   light,
   dark,
@@ -25,8 +25,8 @@ export const {
   config,
 } = createStitches({
   theme: {
-    colors: { ...colors, ...light },
-    fonts: fontFamilies,
+    colors: { ...color, ...light },
+    fonts: fontFamily,
     fontSizes: fontSize,
     fontWeights: fontWeight,
     lineHeights: lineHeight,

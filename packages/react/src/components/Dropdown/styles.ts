@@ -23,14 +23,14 @@ const slideLeftAndFade = keyframes({
 });
 
 export const DropdownMenuContent = styled(DropdownMenuPrimitive.Content, {
-  fontFamily: '$sans',
-  background: '$surface-base-default',
-  borderRadius: '$sm',
-  boxShadow: '$high',
+  fontFamily: '$font-family-sans',
+  background: '$surface-color-background-default',
+  borderRadius: '$radii-sm',
+  boxShadow: '$elevation-high',
 
   w: '100%',
   minWidth: 200,
-  p: '$1',
+  p: '$spacing-1',
 
   '@media (prefers-reduced-motion: no-preference)': {
     animationDuration: '500ms',
@@ -47,23 +47,23 @@ export const DropdownMenuContent = styled(DropdownMenuPrimitive.Content, {
 
 export const DropdownMenuArrow = styled(DropdownMenuPrimitive.Arrow, {
   fill: 'currentColor',
-  color: '$text-on-interactive',
+  color: '$text-color-on-dark',
   [`.dark-theme &`]: {
-    color: '$text-inverted',
+    color: '$text-color-on-light',
   },
 });
 
 const itemStyles = {
   all: 'unset',
-  color: '$text-subtext',
-  fontSize: '$sm',
-  fontWeight: '$regular',
+  color: '$text-color-body-lighter',
+  fontSize: '$font-size-sm',
+  fontWeight: '$font-weight-regular',
   textAlign: 'left',
-  borderRadius: '$sm',
+  borderRadius: '$radii-sm',
   border: '1px dashed transparent',
 
-  height: '$5',
-  px: '$3',
+  height: '$spacing-5',
+  px: '$spacing-3',
   d: 'flex',
   align: 'center',
 
@@ -73,21 +73,25 @@ const itemStyles = {
   userSelect: 'none',
 
   '&:hover': {
-    color: '$text-body !important',
-    background: '$surface-interactive-constrast !important',
+    color: '$text-color-body !important',
+    background: '$interactive-color-background-default !important',
     border: '1px dashed transparent !important',
+
+    [`.dark-theme &`]: {
+      background: '$color-royal-500 !important',
+    },
   },
 
   '&[data-disabled]': {
-    color: '$text-caption',
+    color: '$text-color-caption',
     cursor: 'not-allowed !important',
     pointerEvents: 'none',
   },
 
   '&:focus': {
-    color: '$text-body !important',
-    background: '$surface-interactive-constrast !important',
-    border: '1px dashed $surface-interactive-disabled',
+    color: '$text-color-body !important',
+    background: '$interactive-color-text-enabled !important',
+    border: '1px dashed $interactive-color-background-disabled',
     outline: 'none',
   },
 
@@ -104,20 +108,20 @@ export const DropdownItem = styled(DropdownMenuPrimitive.Item, {
 });
 
 export const RightSlot = styled('div', {
-  color: '$text-caption',
-  fontSize: '$sm',
+  color: '$text-color-caption',
+  fontSize: '$font-size-sm',
 
   ':focus > &': {
-    color: '$text-body',
+    color: '$text-color-body',
   },
   '[data-disabled] &': {
-    color: '$action-transparent-hover',
+    color: '$action-color-background-transparent-hover',
   },
 });
 
 export const DropdownSeparator = styled(DropdownMenuPrimitive.Separator, {
-  bg: '$surface-base-hover',
+  bg: '$surface-color-background-hover',
   h: 1,
-  my: '$2',
+  my: '$spacing-2',
   position: 'relative',
 });

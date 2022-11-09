@@ -12,11 +12,11 @@ export const Shortcut = ({
     size="xs"
     weight="medium"
     css={{
-      px: '$1',
+      px: '$spacing-1',
       pb: 1,
-      bg: '$surface-base-hover',
-      borderRadius: '$sm',
-      lineHeight: '$2',
+      bg: '$surface-color-background-hover',
+      borderRadius: '$radii-sm',
+      lineHeight: '$line-height-2',
       h: 'auto',
     }}
     aria-label={shortcut}

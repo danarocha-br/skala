@@ -1,16 +1,15 @@
 import { styled } from '../../styles';
 
-
 export const Anchor = styled('a', {
-  fontFamily: '$sans',
-  fontWeight: '$medium',
+  fontFamily: '$font-family-sans',
+  fontWeight: '$font-weight-medium',
 
   textDecoration: 'none',
   outline: 'none',
   cursor: 'pointer',
   position: 'relative',
   whiteSpace: 'nowrap',
-  px: '$1',
+  px: '$spacing-1',
 
   '&:hover': {
     outline: 'none',
@@ -34,9 +33,9 @@ export const Anchor = styled('a', {
   '&:focus-visible': {
     outline: '1px dashed',
     outlineOffset: '3px',
-    outlineColor: '$surface-interactive-disabled',
+    outlineColor: '$interactive-color-background-disabled',
     background: 'transparent',
-    borderRadius: '$sm',
+    borderRadius: '$radii-sm',
   },
 
   '&::before': {
@@ -73,21 +72,21 @@ export const Anchor = styled('a', {
   variants: {
     color: {
       primary: {
-        color: '$text-body',
+        color: '$text-color-body',
         '&:active': {
-          color: '$surface-action-primary-pressed',
+          color: '$action-color-background-primary-pressed',
         },
       },
       secondary: {
-        color: '$surface-interactive-default',
+        color: '$interactive-color-background-enabled',
         '&:active': {
-          color: '$surface-interactive-pressed',
+          color: '$interactive-color-background-pressed',
         },
       },
       caption: {
-        color: '$text-subtext',
+        color: '$text-color-body-lighter',
         '&:active': {
-          color: '$text-body',
+          color: '$text-color-body',
         },
       },
     },
@@ -97,4 +96,3 @@ export const Anchor = styled('a', {
     color: 'primary',
   },
 });
-

@@ -68,9 +68,9 @@ const CustomSelectItem = ({
       <Stack align="center">
         <Box
           css={{
-            w: '$3',
-            h: '$3',
-            borderRadius: '$sm',
+            w: '$spacing-3',
+            h: '$spacing-3',
+            borderRadius: '$radii-sm',
             bg: color,
           }}
         />
@@ -96,23 +96,23 @@ export const Default: Story<SelectMenuProps> = (args) => {
         <CustomSelectItem
           value="draft"
           label="Rascunho"
-          color="$surface-warning-hover"
+          color="$feedback-color-background-warning-hover"
         />
         <CustomSelectItem
           value="invoiced"
           label="Enviado"
-          color="$surface-interactive-pressed"
+          color="$interactive-color-background-pressed"
         />
 
         <CustomSelectItem
           value="paid"
           label="Pago"
-          color="$surface-action-secondary-default"
+          color="$action-color-background-secondary-enabled"
         />
         <CustomSelectItem
           value="disabled"
           label="Disabled"
-          color="$surface-action-primary-subdued"
+          color="$action-color-background-primary-disabled"
           disabled
         />
       </SelectMenu.Group>

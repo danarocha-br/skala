@@ -25,21 +25,22 @@ const slideLeftAndFade = keyframes({
 });
 
 export const Content = styled(TooltipContent, {
-  color: '$text-body',
-  fontSize: '$xs',
-  fontFamily: '$sans',
-  backgroundColor: '$surface-base-subdued',
+  color: '$text-color-body',
+  fontSize: '$font-size-xs',
+  fontFamily: '$font-family-sans',
+  backgroundColor: '$surface-color-background-subdued',
 
-  px: '$2',
-  py: '$1',
+  px: '$spacing-2',
+  py: '$spacing-1',
+
   d: 'inline-flex',
   align: 'center',
-  gap: '$2',
+  gap: '$spacing-2',
 
   boxShadow: 'hsl(206 22% 8% / 5%) 0px 0px 20px 5px',
-  borderRadius: '$sm',
+  borderRadius: '$radii-sm',
   border: '1px solid',
-  borderColor: '$surface-action-transparent-hover',
+  borderColor: '$action-color-background-transparent-hover',
 
   '@media (prefers-reduced-motion: no-preference)': {
     animationDuration: '400ms',
@@ -56,7 +57,7 @@ export const Content = styled(TooltipContent, {
   variants: {
     hasSlot: {
       true: {
-        px: '$1',
+        px: '$spacing-1',
       },
     },
   },

@@ -3,17 +3,17 @@ import { transparentize } from 'polished';
 import { styled } from '../../styles';
 
 export const Anchor = styled('a', {
-  color: '$text-body',
-  fontFamily: '$sans',
+  color: '$text-color-body',
+  fontFamily: '$font-family-sans',
   textDecoration: 'none',
   opacity: 0.65,
 
   d: 'inline-flex',
   align: 'center',
-  gap: '$3',
-  px: '$2',
-  py: '$2',
-  borderRadius: '$sm',
+  gap: '$spacing-3',
+  px: '$spacing-2',
+  py: '$spacing-2',
+  borderRadius: '$radii-sm',
 
   w: '100%',
   position: 'relative',
@@ -32,31 +32,31 @@ export const Anchor = styled('a', {
     opacity: 1,
     outline: '1px dashed',
     outlineOffset: '2px',
-    outlineColor: '$surface-base-pressed',
+    outlineColor: '$surface-color-background-pressed',
 
     [`.dark-theme &`]: {
-      outlineColor: '$neutral700',
+      outlineColor: '$color-neutral-700',
     },
   },
 
   variants: {
     isActive: {
       true: {
-        color: '$text-body',
-        fontWeight: '$medium',
-        background: '$royal50',
+        color: '$text-color-body',
+        fontWeight: '$font-weight-medium',
+        background: '$color-royal-50',
         opacity: 1,
 
         '& > svg': {
-          color: '$brand-primary',
+          color: '$brand-color-primary',
         },
 
         [`.dark-theme &`]: {
-          color: '$text-on-interactive',
-          background: '$surface-interactive-disabled',
+          color: '$text-color-on-dark',
+          background: '$interactive-color-background-disabled',
 
           '& > svg': {
-            color: '$surface-danger-subdued',
+            color: '$feedback-color-background-danger-subdued',
           },
         },
       },
@@ -74,17 +74,17 @@ export const Anchor = styled('a', {
         '&::after': {
           content: 'PRO',
           position: 'absolute',
-          right: '$2',
+          right: '$spacing-2',
 
-          color: '$text-on-interactive',
-          backgroundColor: '$surface-action-primary-default',
-          fontSize: '$xs',
-          py: '$1',
-          px: '$2',
-          borderRadius: '$sm',
+          color: '$text-color-on-dark',
+          backgroundColor: '$action-color-background-primary-enabled',
+          fontSize: '$font-size-xs',
+          py: '$spacing-1',
+          px: '$spacing-2',
+          borderRadius: '$radii-sm',
 
           [`.dark-theme &`]: {
-            color: '$surface-action-primary-constrast',
+            color: '$action-color-text-primary-enabled',
           },
         },
       },
@@ -104,12 +104,12 @@ export const Anchor = styled('a', {
       disabled: false,
       css: {
         '&:hover': {
-          color: '$text-body',
-          bg: '$surface-action-transparent-disabled',
+          color: '$text-color-body',
+          bg: '$action-color-background-transparent-disabled',
           opacity: 1,
 
           '& svg': {
-            fill: '$brand-primary',
+            fill: '$brand-color-primary',
           },
 
           '& > span': {
@@ -127,13 +127,13 @@ export const Anchor = styled('a', {
           '&::after': {
             content: 'attr(data-title)',
             position: 'absolute',
-            right: '$2',
+            right: '$spacing-2',
 
-            color: '$text-caption',
-            fontSize: '$xs',
-            py: '$1',
-            px: '$2',
-            borderRadius: '$sm',
+            color: '$text-color-caption',
+            fontSize: '$font-size-xs',
+            py: '$spacing-1',
+            px: '$spacing-2',
+            borderRadius: '$radii-sm',
           },
         },
       },
@@ -158,12 +158,12 @@ export const CollapsibleContent = styled(Content, {
   d: 'flex',
   flexDirection: 'column',
   justify: 'space-between',
-  px: '$2',
+  px: '$spacing-2',
   h: 'calc(100% - 60px)',
 
   '&[data-state="open"]': {
     animation: `${open} 400ms ease-in`,
-    backgroundColor: '$surface-base-default',
+    backgroundColor: '$surface-color-background-default',
   },
   '&[data-state="closed"]': {
     animation: `${close} 200ms ease-in`,
@@ -176,7 +176,7 @@ export const CollapsibleRoot = styled(Root, {
   top: 0,
 
   '&[data-state="open"]': {
-    bg: '$surface-base-subdued',
+    bg: '$surface-color-background-subdued',
     borderRight: '1px solid',
     borderColor: `${transparentize(0.7, '#D5DBDB')}`,
     minWidth: 280,
@@ -188,16 +188,16 @@ export const CollapsibleRoot = styled(Root, {
 });
 
 export const Header = styled('div', {
-  px: '$2',
+  px: '$spacing-2',
   pb: 4,
-  pt: '$2',
+  pt: '$spacing-2',
 
   d: 'flex',
   justify: 'space-between',
   align: 'center',
 
   '&[data-state="open"]': {
-    backgroundColor: '$surface-base-default',
+    backgroundColor: '$surface-color-background-default',
   },
 
   variants: {
@@ -219,8 +219,8 @@ export const Header = styled('div', {
 });
 
 export const Footer = styled('footer', {
-  px: '$2',
-  py: '$2',
+  px: '$spacing-2',
+  py: '$spacing-2',
 
   d: 'flex',
   justify: 'space-between',
@@ -232,19 +232,19 @@ export const ToogleButton = styled('button', {
   all: 'unset',
   w: 'auto',
 
-  p: '$2',
-  pb: '$1',
-  borderRadius: '$md',
+  p: '$spacing-2',
+  pb: '$spacing-1',
+  borderRadius: '$radii-md',
   transition: '$base',
   border: '1px solid transparent',
 
   '&:hover': {
-    bg: '$surface-action-transparent-hover',
+    bg: '$action-color-background-transparent-hover',
   },
 
   '&:focus': {
-    bg: '$surface-action-transparent-disabled',
-    border: '1px dashed $surface-base-hover',
+    bg: '$action-color-background-transparent-disabled',
+    border: '1px dashed $surface-color-background-hover',
   },
 });
 
@@ -252,10 +252,10 @@ export const Svg = styled('svg', {
   transform: 'scale(1.1)',
 
   '& .fill': {
-    fill: '$loading-subdued',
+    fill: '$loading-color-background-subdued',
   },
   '& .outline': {
-    fill: '$text-body',
+    fill: '$text-color-body',
   },
 });
 
@@ -267,5 +267,5 @@ export const MobileMenuBar = styled('div', {
   w: '100%',
   h: '$10',
 
-  bg: '$surface-interactive-default',
+  bg: '$interactive-color-background-enabled',
 });

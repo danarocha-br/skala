@@ -2,35 +2,35 @@ import { Button } from 'reakit';
 import { styled } from '../../styles';
 
 export const Addon = styled('span', {
-  color: '$text-body',
-  fontSize: '$sm',
+  color: '$text-color-body',
+  fontSize: '$font-size-sm',
 
   position: 'absolute',
-  top: '$5',
+  top: '$spacing-5',
+  left: '$spacing-3',
   mt: 2,
-  left: '$3',
 
   variants: {
     isFocused: {
       true: {
-        color: '$text-on-interactive',
+        color: '$text-color-on-dark',
       },
     },
     isDisabled: {
       true: {
-        color: '$text-subtext',
+        color: '$text-color-body-lighter',
       },
     },
     isTable: {
       true: {
-        top: '$3',
+        top: '$spacing-3',
       },
     },
     isReadOnly: {
       true: {
-        top: '$4',
+        top: '$spacing-4',
+        left: 0,
         mt: 3,
-        left: '$0',
       },
     },
   },
@@ -41,14 +41,14 @@ export const Addon = styled('span', {
 });
 
 export const BaseInputStyles = {
-  fontFamily: '$sans',
-  color: '$text-body',
+  fontFamily: '$font-family-sans',
+  color: '$text-color-body',
   fontSize: 'max($md, $sm)',
-  bg: '$form-background',
-  py: '$2',
-  px: '$3',
+  bg: '$form-color-background-default',
+  py: '$spacing-2',
+  px: '$spacing-3',
   border: 'none',
-  borderTop: '1px solid $colors$form-border',
+  borderTop: '1px solid $colors$form-color-border-default',
   w: 'stretch',
   maxWidth: '100%',
 
@@ -56,16 +56,16 @@ export const BaseInputStyles = {
   transition: 'all $transitions$base',
 
   '&::placeholder': {
-    color: '$text-subtext',
-    fontWeight: '$normal',
-    fontFamily: '$sans',
+    color: '$text-color-body-lighter',
+    fontWeight: '$font-weight-normal',
+    fontFamily: '$font-family-sans',
 
     opacity: 0.4,
   },
 
   '&:focus:not([readonly])': {
-    color: '$text-on-interactive',
-    bg: '$form-focus',
+    color: '$text-color-on-dark',
+    bg: '$form-color-background-focus',
 
     outline: 'none',
   },
@@ -80,11 +80,11 @@ export const BaseInputStyles = {
     pointerEvents: 'none',
 
     '&:focus': {
-      color: '$colors$text-body !important',
+      color: '$colors$text-color-body !important',
       bg: 'transparent !important',
 
       '&::placeholder': {
-        color: '$subtext !important',
+        color: '$text-color-body-lighter !important',
       },
     },
 
@@ -93,31 +93,32 @@ export const BaseInputStyles = {
     },
 
     [`& ${Addon}`]: {
-      color: '$subtext !important',
+      color: '$text-color-body-lighter !important',
     },
   },
 
   '&:disabled': {
     cursor: 'not-allowed',
-    bg: '$form-background !important',
-    padding: '$2 $3',
+    bg: '$form-color-background-default !important',
+    padding: '$spacing-2 $spacing-3',
     pointerEvents: 'auto',
 
     '&:hover': {
-      bg: '$form-background !important',
+      bg: '$form-color-background-default !important',
     },
   },
 
   '&:-webkit-autofill': {
-    '-webkit-box-shadow': '0 0 0 $spacings$2 $colors$text-body inset',
+    '-webkit-box-shadow':
+      '0 0 0 $spacings$spacing-2 $colors$text-color-body inset',
     filter: 'none',
   },
 
   variants: {
     variant: {
       default: {
-        borderBottomRightRadius: '$sm',
-        borderBottomLeftRadius: '$sm',
+        borderBottomRightRadius: '$radii-sm',
+        borderBottomLeftRadius: '$radii-sm',
 
         h: '100%',
       },
@@ -125,14 +126,14 @@ export const BaseInputStyles = {
         borderRadius: 0,
         border: '1px solid transparent',
 
-        h: '$5',
+        h: '$spacing-5',
 
         '&[readonly]': {
-          padding: '$0 $2',
+          padding: '0 $spacing-2',
         },
 
         '&:hover:not([readonly]):not([disabled])': {
-          border: '1px solid $colors$form-focus',
+          border: '1px solid $colors$form-color-border-focus',
         },
       },
     },
@@ -147,7 +148,7 @@ export const BaseInputStyles = {
 
     hasAddon: {
       true: {
-        pl: '$9 !important',
+        pl: '$spacing-9 !important',
       },
     },
   },
@@ -164,14 +165,14 @@ export const Input = styled('input', {
 });
 
 export const Container = styled('div', {
-  fontFamily: '$sans',
+  fontFamily: '$font-family-sans',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'start',
   zIndex: 2,
 
-  bg: '$surface-base-subdued',
+  bg: '$surface-color-background-subdued',
 
   transition: 'all $transitions$base',
   position: 'relative',
@@ -181,35 +182,35 @@ export const Container = styled('div', {
   },
 
   '&:hover': {
-    borderColor: '$form-focus',
+    borderColor: '$form-color-border-focus',
 
     '& input:not([readonly])::placeholder': {
-      color: '$text-on-interactive',
+      color: '$text-color-on-dark',
     },
 
     '& input:disabled::placeholder': {
-      color: '$text-subtext !important',
+      color: '$text-color-body-lighter !important',
     },
 
     [`& ${Addon}`]: {
-      color: '$text-on-interactive !important',
+      color: '$text-color-on-dark !important',
 
       '& input:disabled': {
-        color: '$text-subtext !important',
+        color: '$text-color-body-lighter !important',
       },
     },
 
     '& input:not([readonly])': {
-      bg: '$form-hover',
-      borderColor: '$form-focus',
-      color: '$text-on-interactive !important',
+      bg: '$form-color-background-hover',
+      borderColor: '$form-color-border-focus',
+      color: '$text-color-on-dark !important',
 
       '&:focus': {
-        bg: '$form-focus',
+        bg: '$form-color-background-focus',
       },
 
       '&:hover': {
-        color: '$text-on-interactive',
+        color: '$text-color-on-dark',
       },
     },
   },
@@ -217,9 +218,9 @@ export const Container = styled('div', {
   variants: {
     variant: {
       default: {
-        borderRadius: '$md',
+        borderRadius: '$radii-md',
         border: '1px solid',
-        borderColor: '$form-border',
+        borderColor: '$form-color-border-default',
       },
       table: {
         borderRadius: 0,
@@ -227,26 +228,27 @@ export const Container = styled('div', {
     },
     isFocused: {
       true: {
-        borderColor: '$form-focus',
+        borderColor: '$form-color-border-focus',
         transition: 'all $transitions$fast',
       },
     },
 
     isDisabled: {
       true: {
+        cursor: 'not-allowed !important',
         opacity: 0.7,
 
         bg: 'transparent !important',
 
         '& input:disabled': {
-          bg: '$form-border !important',
+          bg: '$form-color-border-default !important',
         },
 
         '&:hover': {
-          borderColor: '$form-border',
+          borderColor: '$form-color-border-default',
 
           '& input:disabled': {
-            bg: '$form-border !important',
+            bg: '$form-color-border-default !important',
           },
         },
       },
@@ -255,10 +257,10 @@ export const Container = styled('div', {
     hasIcon: {
       true: {
         '& .input__icon': {
-          mr: '$1',
+          mr: '$spacing-1',
 
           '&--error': {
-            right: '$6',
+            right: '$spacing-6',
           },
         },
       },
@@ -271,7 +273,7 @@ export const Container = styled('div', {
 
         '&:hover': {
           [`& ${Addon}`]: {
-            color: '$text-subtext !important',
+            color: '$text-color-body-lighter !important',
           },
         },
       },
@@ -279,14 +281,14 @@ export const Container = styled('div', {
 
     hasError: {
       true: {
-        borderColor: '$form-error',
+        borderColor: '$form-color-border-error',
 
         '& input': {
-          borderTop: '1px solid $colors$form-error',
+          borderTop: '1px solid $colors$form-color-border-error',
         },
 
         '& .input__action': {
-          transform: 'translateX(-$space$5)',
+          transform: 'translateX(-$space$spacing-5)',
         },
       },
     },
@@ -294,7 +296,7 @@ export const Container = styled('div', {
     isLoading: {
       true: {
         '& .input__action': {
-          transform: 'translateX(-$space$5)',
+          transform: 'translateX(-$space$spacing-5)',
         },
       },
     },
@@ -306,7 +308,11 @@ export const Container = styled('div', {
       hasIcon: true,
       css: {
         '.input__icon': {
-          fill: '$form-focus',
+          fill: '$form-color-background-focus',
+
+          [`.dark-theme &`]: {
+            fill: '$form-color-background-subdued',
+          },
         },
       },
     },
@@ -323,28 +329,28 @@ export const Container = styled('div', {
 });
 
 export const Label = styled('label', {
-  color: '$text-subtext',
-  fontSize: '$xs',
-  fontWeight: '$medium',
-  padding: '$1 $3',
+  color: '$text-color-body-lighter',
+  fontSize: '$font-size-xs',
+  fontWeight: '$font-weight-medium',
+  padding: '$spacing-1 $spacing-3',
 
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  h: '$3',
+  h: '$spacing-3',
   w: 'stretch',
 
   position: 'relative',
 
   '&.input__error-icon': {
     position: 'absolute',
-    right: '$1',
+    right: '$spacing-1',
   },
 
   variants: {
     isReadOnly: {
       true: {
-        pl: '$0',
+        pl: 0,
       },
     },
   },
@@ -356,21 +362,21 @@ export const Label = styled('label', {
 
 export const SettingsButton = styled(Button, {
   all: 'unset',
-  color: '$text-body',
-  fontSize: '$xs',
+  color: '$text-color-body',
+  fontSize: '$font-size-xs',
   display: 'flex',
   alignItems: 'center',
-  gap: '$1',
+  gap: '$spacing-1',
   bg: 'transparent',
   zIndex: '$100',
   position: 'absolute',
-  right: '$2',
+  right: '$spacing-2',
   top: 4,
 
   '&:hover': {
-    color: '$surface-action-primary-hover',
+    color: '$action-color-background-primary-hover',
   },
   '&:focus': {
-    color: '$surface-action-primary-focus',
+    color: '$action-color-background-primary-focus',
   },
 });

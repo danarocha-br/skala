@@ -56,13 +56,13 @@ export default {
     userMenu: (
       <>
         <Dropdown.Item textValue="Configurações">
-          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
+          <Icon name="settings" label="settings" css={{ mr: '$spacing-2' }} />
           <a href="/">
             Configurações <Dropdown.RightSlot>⌘ C</Dropdown.RightSlot>
           </a>
         </Dropdown.Item>
         <Dropdown.Item textValue="Preferências">
-          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
+          <Icon name="settings" label="settings" css={{ mr: '$spacing-2' }} />
           <a href="/">
             Preferências <Dropdown.RightSlot>⌘ P</Dropdown.RightSlot>
           </a>
@@ -126,11 +126,11 @@ WithFooter.args = {
   footer: (
     <>
       <Tooltip content="Made with ❤️ by Compasso">
-        <Text color="subtext" css={{ ml: '$3' }}>
+        <Text color="body-lighter" css={{ ml: '$spacing-3' }}>
           C
         </Text>
       </Tooltip>
-      <Box css={{ d: 'inline-flex', mr: '$2', gap: '$2' }}>
+      <Box css={{ d: 'inline-flex', mr: '$spacing-2', gap: '$spacing-2' }}>
         <Tooltip content="Configuraçoes" slot={<Shortcut shortcut="⌘ C" />}>
           <Button label="settings" variant="icon" icon="settings" size="sm" />
         </Tooltip>
@@ -154,11 +154,11 @@ export const WithNavigationToggle: Story<NavigationProps> = (args) => {
       footer={
         <>
           <Tooltip content="Made with ❤️ by Compasso">
-            <Text color="subtext" css={{ ml: '$3' }}>
+            <Text color="body-lighter" css={{ ml: '$spacing-3' }}>
               C
             </Text>
           </Tooltip>
-          <Box css={{ d: 'inline-flex', mr: '$2', gap: '$2' }}>
+          <Box css={{ d: 'inline-flex', mr: '$spacing-2', gap: '$spacing-2' }}>
             <Tooltip content="Configuraçoes" slot={<Shortcut shortcut="⌘ C" />}>
               <Button
                 label="settings"
@@ -214,7 +214,7 @@ export const NavigationItem: Story<NavigationProps> = () => (
     justify="center"
     css={{ h: '100vh', w: '100%', px: 380 }}
   >
-    <Text size="xs" css={{ ml: '$3' }}>
+    <Text size="xs" css={{ ml: '$spacing-3' }}>
       Regular Active
     </Text>
     <Navigation.Item
@@ -223,12 +223,12 @@ export const NavigationItem: Story<NavigationProps> = () => (
       href="/invoices"
       isActive
     />
-    <Text size="xs" css={{ ml: '$3' }}>
+    <Text size="xs" css={{ ml: '$spacing-3' }}>
       Regular
     </Text>
     <Navigation.Item icon="invoice" label="Invoices" href="/invoices" />
 
-    <Text size="xs" css={{ ml: '$3' }}>
+    <Text size="xs" css={{ ml: '$spacing-3' }}>
       With Shortcut
     </Text>
     <Navigation.Item
@@ -238,7 +238,7 @@ export const NavigationItem: Story<NavigationProps> = () => (
       shortcut="cmd + p"
     />
 
-    <Text size="xs" css={{ ml: '$3' }}>
+    <Text size="xs" css={{ ml: '$spacing-3' }}>
       Disabled
     </Text>
     <Navigation.Item
@@ -248,7 +248,7 @@ export const NavigationItem: Story<NavigationProps> = () => (
       shortcut="cmd + p"
       disabled
     />
-    <Text size="xs" css={{ ml: '$3' }}>
+    <Text size="xs" css={{ ml: '$spacing-3' }}>
       Loading
     </Text>
     <Navigation.Item

@@ -5,18 +5,18 @@ export const Button = styled('button', {
 
   position: 'relative',
   cursor: 'pointer',
-  borderRadius: '$sm',
+  borderRadius: '$radii-sm',
   transform: 'scale(0.8)',
   p: 2,
   transition: 'background .3s linear',
 
   '&:hover': {
-    bg: '$surface-action-transparent-hover',
+    bg: '$action-color-background-transparent-hover',
   },
 
   '&:focus': {
     outline: '2px solid',
-    outlineColor: '$surface-action-transparent-disabled',
+    outlineColor: '$action-color-background-transparent-disabled',
     outlineOffset: '2px',
   },
 
@@ -26,13 +26,13 @@ export const Button = styled('button', {
     fill: 'none',
 
     '& path': {
-      stroke: '$text-subtext',
+      stroke: '$text-color-body-lighter',
       strokeWidth: 2,
       strokeLinecap: 'round',
       transition: 'all .2s linear',
 
       '&.light': {
-        stroke: '$text-subt',
+        stroke: '$text-color-body-lighter',
         strokeDasharray: '3px',
         strokeDashoffset: 0,
       },

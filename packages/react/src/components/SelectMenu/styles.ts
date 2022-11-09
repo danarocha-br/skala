@@ -19,78 +19,81 @@ import {
 
 export const SelectBox = styled(SelectTrigger, {
   all: 'unset',
-  fontFamily: '$sans',
+  color: '$text-color-body',
+  fontFamily: '$font-family-sans',
+  fontSize: '$font-size-sm',
+  backgroundColor: 'transparent',
+  border: '1px solid transparent',
+
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  borderRadius: '$sm',
-  padding: '0 $2',
-  fontSize: '$sm',
+
+  borderRadius: '$radii-sm',
+  padding: '0 $spacing-2',
   height: 40,
-  gap: '$2',
-  backgroundColor: 'transparent',
-  color: '$text-body',
+  gap: '$spacing-2',
   position: 'relative',
   transition: '$base',
-  border: '1px solid transparent',
 
   '&:hover': {
-    bg: '$surface-action-transparent-disabled',
+    background: '$action-color-background-transparent-disabled',
   },
   '&:focus': {
-    bg: '$surface-action-transparent-disabled',
-    border: '1px dashed $surface-base-hover',
+    background: '$action-color-background-transparent-disabled',
+    border: '1px dashed',
+    borderColor: '$surface-color-background-hover',
   },
 });
 
 export const SelectContent = styled(Content, {
   overflow: 'hidden',
-  backgroundColor: '$surface-base-subdued',
-  borderRadius: '$md',
-  boxShadow: '$low',
+  backgroundColor: '$surface-color-background-subdued',
+  borderRadius: '$radii-md',
+  boxShadow: '$elevation-low',
 });
 
 export const SelectViewport = styled(Viewport, {
-  padding: '$2',
-  fontFamily: '$sans',
+  padding: '$spacing-2',
+  fontFamily: '$font-family-sans',
 });
 
 export const SelectItem = styled(Item, {
   all: 'unset',
-  fontSize: '$sm',
-  color: '$text-body',
-  borderRadius: '$sm',
+  fontSize: '$font-size-sm',
+  color: '$text-color-body',
+  borderRadius: '$radii-sm',
   display: 'flex',
   alignItems: 'center',
-  height: '$5',
+  height: '$spacing-5',
   padding: '0 8px 0 32px',
   position: 'relative',
   userSelect: 'none',
 
   '&[data-disabled]': {
-    color: '$text-subtext',
+    color: '$text-color-body-lighter',
     cursor: 'not-allowed',
   },
 
   '&:focus': {
-    backgroundColor: '$surface-interactive-subdued',
-    color: '$text-on-interactive',
+    backgroundColor: '$interactive-color-background-subdued',
+    color: '$text-color-on-dark',
 
     '> svg': {
-      color: '$text-on-interactive',
+      color: '$text-color-on-dark',
     },
   },
 });
 
 export const SelectLabel = styled(Label, {
   padding: '0 24px',
-  fontSize: '$xs',
-  color: '$text-body',
+  fontSize: '$font-size-xs',
+  color: '$text-color-body',
 });
 
 export const SelectSeparator = styled(Separator, {
   height: 1,
-  backgroundColor: '$form-border',
+  backgroundColor: '$form-color-border-default',
   margin: 5,
 });
 
@@ -109,7 +112,7 @@ const scrollButtonStyles = {
   justifyContent: 'center',
   height: 25,
   backgroundColor: 'white',
-  color: '$text-body',
+  color: '$text-color-body',
   cursor: 'default',
 };
 
@@ -122,7 +125,7 @@ export const SelectScrollDownButton = styled(
 
 export const SelectItemText = styled(ItemText, {
   d: 'flex',
-  gap: '$1',
+  gap: '$spacing-1',
   alignItems: 'center',
 });
 

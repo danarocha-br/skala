@@ -12,7 +12,7 @@ export type StepperItemProps = {
 
 export type StepperProps = {
   /** to render a wrapper to the a tag */
-  as?: React.ElementType<any>;
+  as?: React.ElementType<unknown>;
   backHref: string;
   backLabel?: string;
   items: StepperItemProps[];
@@ -46,9 +46,9 @@ export const Stepper = ({
           <div>
             <Icon
               name="arrowLeft"
-              color="on-interactive"
+              color="on-dark"
               label="arrow"
-              css={{ position: 'relative', left: '$1' }}
+              css={{ position: 'relative', left: '$spacing-1' }}
             />
           </div>
 

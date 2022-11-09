@@ -99,12 +99,16 @@ export const Dialog = forwardRef(
             align="center"
             justify="between"
             css={{
-              background: '$surface-base-subdued',
-              borderBottom: '1px solid $form-border',
-              px: '$3',
-              pb: '$2',
-              borderTopLeftRadius: '$md',
-              borderTopRightRadius: '$md',
+              background:
+                variant === 'danger'
+                  ? '$feedback-color-background-danger-disabled'
+                  : '$surface-color-background-subdued',
+              borderBottom: '1px solid',
+              borderColor: '$form-color-border-default',
+              px: '$spacing-3',
+              pb: '$spacing-2',
+              borderTopLeftRadius: '$radii-md',
+              borderTopRightRadius: '$radii-md',
             }}
           >
             <S.DialogTitle variant={variant}>{title}</S.DialogTitle>
@@ -119,12 +123,12 @@ export const Dialog = forwardRef(
                   size="sm"
                   type="button"
                   css={{
-                    mt: '$1',
+                    mt: '$spacing-1',
                     position: 'relative',
                     right: -3,
 
                     '& svg': {
-                      fill: '$text-caption',
+                      fill: '$text-color-caption',
                     },
                   }}
                 />
@@ -136,7 +140,9 @@ export const Dialog = forwardRef(
             <S.DialogDescription>{description}</S.DialogDescription>
           )}
 
-          <Box css={{ px: '$3', color: '$text-body' }}>{children}</Box>
+          <Box css={{ px: '$spacing-3', color: '$text-color-body' }}>
+            {children}
+          </Box>
 
           <S.DialogFooter>
             {variant === 'transactional' ? (

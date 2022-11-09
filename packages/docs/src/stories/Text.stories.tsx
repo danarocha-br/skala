@@ -37,13 +37,13 @@ export default {
       },
       options: [
         'body',
-        'subtext',
+        'body-lighter',
         'caption',
         'success',
         'danger',
         'warning',
-        'on-interactive',
-        'inverted',
+        'on-dark',
+        'on-light',
         'current',
       ],
       control: {

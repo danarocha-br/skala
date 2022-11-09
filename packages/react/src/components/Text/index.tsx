@@ -7,90 +7,91 @@ export type TextProps = {
 
 export const Text = styled('span', {
   margin: '0',
-  fontFamily: '$sans',
-  fontWeight: '$regular',
+  fontFamily: '$font-family-sans',
+  fontWeight: '$font-weight-regular',
   fontVariantNumeric: 'tabular-nums',
   display: 'block',
 
   variants: {
     size: {
       xxs: {
-        fontSize: '$xxs',
-        lineHeight: '$1',
+        fontSize: '$font-size-xxs',
+        lineHeight: '$line-height-1',
       },
       xs: {
-        fontSize: '$xs',
-        lineHeight: '$2',
+        fontSize: '$font-size-xs',
+        lineHeight: '$line-height-2',
       },
       sm: {
-        fontSize: '$sm',
-        lineHeight: '$3',
+        fontSize: '$font-size-sm',
+        lineHeight: '$line-height-3',
       },
       md: {
-        fontSize: '$md',
-        lineHeight: '$4',
+        fontSize: '$font-size-md',
+        lineHeight: '$line-height-4',
       },
       lg: {
-        fontSize: '$lg',
-        lineHeight: '$4',
+        fontSize: '$font-size-lg',
+        lineHeight: '$line-height-4',
       },
+      //TODO: divive these to heading instead
       xl: {
-        fontSize: '$xl',
-        lineHeight: '$5',
+        fontSize: '$font-size-xl',
+        lineHeight: '$line-height-5',
       },
       '2xl': {
-        fontSize: '$2xl',
-        lineHeight: '$6',
+        fontSize: '$font-size-2xl',
+        lineHeight: '$line-height-6',
       },
       '3xl': {
-        fontSize: '$3xl',
-        lineHeight: '$5',
+        fontSize: '$font-size-3xl',
+        lineHeight: '$line-height-5',
       },
       '4xl': {
-        fontSize: '$4xl',
-        lineHeight: '$6',
+        fontSize: '$font-size-4xl',
+        lineHeight: '$line-height-6',
       },
     },
 
     color: {
       body: {
-        color: '$text-body',
+        color: '$text-color-body',
       },
-      subtext: {
-        color: '$text-subtext',
+      'body-lighter': {
+        color: '$text-color-body-lighter',
       },
       caption: {
-        color: '$text-caption',
+        color: '$text-color-caption',
       },
       success: {
-        color: '$text-success',
+        color: '$text-color-success',
       },
       danger: {
-        color: '$text-danger',
+        color: '$text-color-danger',
       },
       warning: {
-        color: '$text-warning',
+        color: '$text-color-warning',
       },
-      onInteractive: {
-        color: '$text-onInteractive',
+      'on-dark': {
+        color: '$text-color-on-dark',
       },
-      inverted: {
-        color: '$text-inverted',
+      'on-light': {
+        color: '$text-color-on-light',
       },
     },
 
     weight: {
       light: {
-        fontWeight: '$light',
+        fontWeight: '$font-weight-light',
       },
       regular: {
-        fontWeight: '$regular',
+        fontWeight: '$font-weight-regular',
       },
       medium: {
-        fontWeight: '$medium',
+        fontWeight: '$font-weight-medium',
       },
       semibold: {
-        fontWeight: '$semibold',
+        fontWeight: '$font-weight-semibold',
       },
     },
 
@@ -108,31 +109,31 @@ export const Text = styled('span', {
 
     leading: {
       1: {
-        lineHeight: '$1',
+        lineHeight: '$line-height-1',
       },
       2: {
-        lineHeight: '$2',
+        lineHeight: '$line-height-2',
       },
       3: {
-        lineHeight: '$3',
+        lineHeight: '$line-height-3',
       },
       4: {
-        lineHeight: '$4',
+        lineHeight: '$line-height-4',
       },
       5: {
-        lineHeight: '$5',
+        lineHeight: '$line-height-5',
       },
       6: {
-        lineHeight: '$6',
+        lineHeight: '$line-height-6',
       },
       7: {
-        lineHeight: '$7',
+        lineHeight: '$line-height-7',
       },
       8: {
-        lineHeight: '$8',
+        lineHeight: '$line-height-8',
       },
       9: {
-        lineHeight: '$9',
+        lineHeight: '$line-height-9',
       },
     },
   },

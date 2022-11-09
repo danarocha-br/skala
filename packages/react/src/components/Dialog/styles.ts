@@ -29,7 +29,7 @@ const contentShow = keyframes({
 });
 
 export const DialogOverlay = styled(Overlay, {
-  backgroundColor: '$neutral800',
+  backgroundColor: '$color-neutral-800',
   position: 'fixed',
   inset: 0,
   left: 0,
@@ -40,10 +40,10 @@ export const DialogOverlay = styled(Overlay, {
 });
 
 export const DialogContent = styled(Content, {
-  fontFamily: '$sans',
-  backgroundColor: '$surface-base-default',
-  borderRadius: '$md',
-  boxShadow: '$high',
+  fontFamily: '$font-family-sans',
+  backgroundColor: '$surface-color-background-default',
+  borderRadius: '$radii-md',
+  boxShadow: '$elevation-high',
   position: 'fixed',
   top: '50%',
   left: '50%',
@@ -61,15 +61,15 @@ export const DialogContent = styled(Content, {
 
 export const DialogTitle = styled(Title, {
   margin: 0,
-  fontWeight: '$medium',
-  color: '$text-subtext',
-  fontSize: '$md',
-  pt: '$2',
+  fontWeight: '$font-weight-medium',
+  color: '$text-color-body-lighter',
+  fontSize: '$font-size-md',
+  pt: '$spacing-2',
 
   variants: {
     variant: {
       danger: {
-        color: '$surface-danger-default',
+        color: '$feedback-danger-color-background-default',
       },
       transactional: {},
       passive: {},
@@ -83,10 +83,10 @@ export const DialogTitle = styled(Title, {
 
 export const DialogDescription = styled(Description, {
   margin: '10px 0 20px',
-  color: '$text-caption',
+  color: '$text-color-caption',
   fontSize: 15,
   lineHeight: 1.5,
-  px: '$3',
+  px: '$spacing-3',
 });
 
 export const DialogClose = styled(Close, {
@@ -98,9 +98,9 @@ export const DialogFooter = styled('footer', {
   d: 'flex',
   justifyContent: 'end',
   alignItems: 'center',
-  gap: '$3',
-  px: '$2',
-  py: '$2',
+  gap: '$spacing-3',
+  px: '$spacing-2',
+  py: '$spacing-2',
 });
 
 export const Dialog = styled(Root, {});

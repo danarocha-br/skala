@@ -30,7 +30,7 @@ export const Callout = ({
               label={(Boolean(title) && title) || 'icon'}
               name={icon}
               color="current"
-              css={{ left: '$3', mr: -8, position: 'relative' }}
+              css={{ left: '$spacing-3', mr: -8, position: 'relative' }}
             />
           )}
           <h5>{title}</h5>

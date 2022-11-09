@@ -2,7 +2,7 @@ import { styled } from '../../styles';
 import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div, {
-  fontFamily: '$sans',
+  fontFamily: '$font-family-sans',
   position: 'fixed',
 
   userSelect: 'none',
@@ -10,26 +10,26 @@ export const Container = styled(motion.div, {
   h: 'auto',
   d: 'flex',
   flexDirection: 'column',
-  gap: '$2',
+  gap: '$spacing-2',
 
   zIndex: '100',
 
   variants: {
     directionY: {
       top: {
-        top: '$4',
+        top: '$spacing-4',
       },
       bottom: {
-        bottom: '$4',
+        bottom: '$spacing-4',
       },
     },
 
     directionX: {
       left: {
-        left: '$4',
+        left: '$spacing-4',
       },
       right: {
-        right: '$4',
+        right: '$spacing-4',
       },
     },
   },
@@ -42,13 +42,13 @@ export const Container = styled(motion.div, {
 
 export const Toast = styled(motion.div, {
   position: 'relative',
-  pb: '$2',
+  pb: '$spacing-2',
 
-  borderRadius: '$md',
-  boxShadow: '$low',
+  borderRadius: '$radii-md',
+  boxShadow: '$elevation-low',
   border: '1px solid',
-  borderColor: '$surface-action-transparent-pressed',
-  bg: '$surface-base-subdued',
+  borderColor: '$action-color-background-transparent-pressed',
+  background: '$surface-color-background-subdued',
   // w: '100%',
 
   '@bp-md': {
@@ -58,19 +58,19 @@ export const Toast = styled(motion.div, {
 
 export const Marker = styled('div', {
   w: '100%',
-  h: '$1',
+  h: '$spacing-1',
 
   bg: 'red',
-  borderTopLeftRadius: '$md',
-  borderTopRightRadius: '$md',
+  borderTopLeftRadius: '$radii-md',
+  borderTopRightRadius: '$radii-md',
 
   variants: {
     variant: {
-      info: { bg: '$surface-interactive-subdued' },
-      success: { bg: '$surface-success-default' },
-      danger: { bg: '$surface-danger-subdued' },
-      warning: { bg: '$surface-warning-default' },
-      neutral: { bg: '$surface-base-pressed' },
+      info: { bg: '$interactive-color-background-subdued' },
+      success: { bg: '$feedback-color-background-success-default' },
+      danger: { bg: '$feedback-color-background-danger-subdued' },
+      warning: { bg: '$feedback-color-background-warning-default' },
+      neutral: { bg: '$surface-color-background-pressed' },
     },
   },
 
@@ -80,42 +80,42 @@ export const Marker = styled('div', {
 });
 
 export const Title = styled('div', {
-  color: '$text-body',
-  fontWeight: '$medium',
+  color: '$text-color-body',
+  fontWeight: '$font-weight-medium',
   d: 'flex',
-  gap: '$2',
+  gap: '$spacing-2',
   justifyContent: 'space-between',
 
-  pt: '$2',
-  pb: '$1',
-  px: '$2',
+  pt: '$spacing-2',
+  pb: '$spacing-1',
+  px: '$spacing-2',
   position: 'relative',
 
   variants: {
     variant: {
       info: {
         '& svg': {
-          color: '$surface-interactive-subdued',
+          color: '$interactive-color-background-subdued',
         },
       },
       success: {
         '& svg': {
-          color: '$surface-success-default',
+          color: '$feedback-color-background-success-default',
         },
       },
       danger: {
         '& svg': {
-          color: '$surface-danger-default',
+          color: '$feedback-color-background-danger-default',
         },
       },
       warning: {
         '& svg': {
-          color: '$surface-warning-default',
+          color: '$feedback-color-background-warning-default',
         },
       },
       neutral: {
         '& svg': {
-          color: '$text-caption',
+          color: '$text-color-caption',
         },
       },
     },
@@ -127,9 +127,9 @@ export const Title = styled('div', {
 });
 
 export const Message = styled('div', {
-  color: '$text-subtext',
+  color: '$text-color-body-lighter',
 
-  px: '$3',
-  pt: '$2',
-  pb: '$1',
+  px: '$spacing-3',
+  pt: '$spacing-2',
+  pb: '$spacing-1',
 });

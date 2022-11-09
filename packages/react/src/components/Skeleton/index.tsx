@@ -11,16 +11,16 @@ export type SkeletonProps = {
 
 const SkeletonItem = (props: ReactSkeletonProps) => (
   //@ts-ignore
-  <ReactSkeleton  {...props} />
+  <ReactSkeleton {...props} />
 );
 SkeletonItem.displayName = 'Skeleton.Item';
 
 const SkeletonRoot = ({ children, ...props }: SkeletonProps): JSX.Element => (
   <SkeletonTheme
     //@ts-ignore
-    baseColor={theme.colors['loading-default']}
+    baseColor={theme.colors['loading-color-background-default']}
     //@ts-ignore
-    highlightColor={theme.colors['loading-subdued']}
+    highlightColor={theme.colors['loading-color-background-subdued']}
     borderRadius="999px"
     {...props}
   >

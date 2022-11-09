@@ -13,18 +13,18 @@ export function TokensTable({
   type = 'general',
 }: TokensTableProps) {
   return (
-    <Box as="table" className="tokens-table" css={{ my: '$6' }}>
+    <Box as="table" className="tokens-table" css={{ my: '$spacing-6' }}>
       <thead>
         <Box
           as="tr"
           css={{
             '& th': {
-              color: '$neutral400',
+              color: '$color-neutral-400',
               opacity: 0.8,
-              fontSize: '$xs',
+              fontSize: '$font-size-xs',
               letterSpacing: '1.3px',
               textTransform: 'uppercase',
-              borderBottom: '3px solid $neutral200',
+              borderBottom: '3px solid $color-neutral-200',
             },
           }}
         >
@@ -43,20 +43,24 @@ export function TokensTable({
               as="tr"
               key={key}
               css={{
-                color: '$neutral600',
+                color: '$color-neutral-600',
                 '&:nth-child(even) td': {
-                  backgroundColor: '$neutral100',
+                  backgroundColor: '$color-neutral-100',
                 },
               }}
             >
-              <Box as="td" css={{ color: '$froly500' }}>
+              <Box as="td" css={{ color: '$color-froly-500' }}>
                 ${key}
               </Box>
 
               {type === 'spacing' && (
                 <td>
                   <Box
-                    css={{ bg: '$neutral200', height: '$5', width: value }}
+                    css={{
+                      bg: '$color-neutral-200',
+                      height: '$spacing-5',
+                      width: value,
+                    }}
                   />
                 </td>
               )}
@@ -78,8 +82,8 @@ export function TokensTable({
                 <td>
                   <Box
                     css={{
-                      bg: '$neutral200',
-                      height: '$5',
+                      bg: '$color-neutral-200',
+                      height: '$spacing-5',
                       width: key !== 'circle' ? 64 : 32,
                       borderRadius: value,
                     }}

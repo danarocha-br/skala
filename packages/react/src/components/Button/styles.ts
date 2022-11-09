@@ -53,8 +53,8 @@ export const Container = styled(AccessibleButton, {
   boxSizing: 'border-box',
   '-webkit-appearance': 'none',
 
-  fontFamily: '$sans',
-  fontWeight: '$medium',
+  fontFamily: '$font-family-sans',
+  fontWeight: '$font-weight-medium',
   whiteSpace: 'nowrap',
   pointerEvents: 'initial',
 
@@ -74,7 +74,7 @@ export const Container = styled(AccessibleButton, {
   },
 
   '&:disabled': {
-    opacity: '0.75',
+    opacity: '0.65',
     cursor: 'not-allowed',
   },
 
@@ -89,65 +89,53 @@ export const Container = styled(AccessibleButton, {
   variants: {
     variant: {
       primary: {
-        color: '$text-on-interactive',
-
-        [`.dark-theme &`]: {
-          color: '$text-inverted',
-
-          '& svg': {
-            fill: '$text-on-interactive',
-          },
-        },
+        color: '$action-color-text-primary-enabled',
       },
 
       transparent: {
-        color: '$text-body',
-        background: '$surface-action-transparent-default !important',
+        color: '$action-color-text-transparent-enabled',
+        background: '$action-color-background-transparent-enabled !important',
 
         '&:hover:not([disabled])': {
-          background: '$surface-action-transparent-hover !important',
-
-          [`.dark-theme &`]: {
-            background: '$surface-action-transparent-disabled !important',
-          },
+          background: '$action-color-background-transparent-hover !important',
         },
 
         '&:disabled': {
-          background: '$surface-action-transparent-hover !important',
+          background: '$action-color-background-transparent-hover !important',
         },
       },
 
       icon: {
-        color: '$text-body',
-        background: '$surface-action-transparent !important',
+        color: '$action-color-text-transparent-enabled',
+        background: '$action-color-background-transparent-enabled !important',
 
         '& svg': {
-          fill: '$text-body',
+          fill: '$action-color-text-transparent-enabled',
         },
 
         '&:hover:not([disabled])': {
-          background: '$surface-action-transparent-hover !important',
+          background: '$action-color-background-transparent-hover !important',
         },
       },
     },
 
     size: {
       lg: {
-        fontSize: '$md',
-        padding: '$4 $6',
-        borderRadius: '$md',
+        fontSize: '$font-size-md',
+        padding: '$spacing-4 $spacing-6',
+        borderRadius: '$radii-md',
         height: 64,
       },
       md: {
-        fontSize: '$md',
-        padding: '$3 $5',
-        borderRadius: '$md',
+        fontSize: '$font-size-md',
+        padding: '$spacing-3 $spacing-5',
+        borderRadius: '$radii-md',
       },
       sm: {
-        fontSize: '$sm',
-        padding: '$1 $4',
+        fontSize: '$font-size-sm',
+        padding: '$spacing-1 $spacing-4',
         h: 40,
-        borderRadius: '$sm',
+        borderRadius: '$radii-sm',
 
         '&:focus': {
           outline: '2px solid',
@@ -165,67 +153,56 @@ export const Container = styled(AccessibleButton, {
 
     color: {
       primary: {
-        color: '$surface-action-primary-constrast',
-        background: '$surface-action-primary-default',
+        color: '$action-color-text-primary-enabled',
+        background: '$action-color-background-primary-enabled',
 
         '&:hover:not([disabled])': {
-          background: '$surface-action-primary-hover',
+          background: '$action-color-background-primary-hover',
 
           '& span': {
             zIndex: '$1',
           },
         },
         '&:focus': {
-          outlineColor: '$surface-action-primary-disabled',
+          outlineColor: '$action-color-border-primary-pressed',
         },
         '&:disabled': {
-          color: '$text-subtext !important',
-          background: '$surface-action-primary-disabled',
+          color: '$action-color-text-primary-disabled !important',
+          background: '$action-color-background-primary-disabled',
         },
       },
       secondary: {
-        color: '$surface-interactive-constrast',
-        background: '$surface-interactive-default',
+        color: '$action-color-text-secondary-enabled',
+        background: '$action-color-background-secondary-enabled',
 
         '&:hover:not([disabled])': {
-          background: '$surface-interactive-hover',
+          background: '$action-color-background-secondary-hover',
           '& span': {
             zIndex: '$1',
           },
         },
         '&:focus': {
-          outlineColor: '$surface-interactive-disabled',
-          background: '$surface-interactive-hover',
+          outlineColor: '$action-color-border-secondary-pressed',
+          background: '$action-color-background-secondary-hover',
         },
         '&:disabled': {
-          color: '$surface-interactive-border !important',
-          background: '$surface-interactive-disabled',
-
-          [`.dark-theme &`]: {
-            color: '$text-on-interactive !important',
-            background: '$surface-interactive-disabled',
-            opacity: 0.5,
-          },
+          color: '$action-color-text-secondary-disabled !important',
+          background: '$action-color-background-secondary-disabled',
         },
       },
       danger: {
-        color: '$surface-danger-constrast',
-        background: '$surface-danger-default',
+        color: '$feedback-color-text-danger-default',
+        background: '$feedback-color-background-danger-default',
 
         '&:hover:not([disabled])': {
-          background: '$surface-danger-hover',
+          background: '$feedback-color-background-danger-hover',
         },
         '&:focus': {
-          outlineColor: '$surface-danger-disabled',
+          outlineColor: '$feedback-color-border-danger-pressed',
         },
         '&:disabled': {
-          color: '$surface-danger-border !important',
-          background: '$surface-danger-disabled',
-
-          [`.dark-theme &`]: {
-            color: '$surface-danger-contrast !important',
-            opacity: 0.5,
-          },
+          color: '$feedback-color-text-danger-disabled !important',
+          background: '$feedback-color-background-danger-disabled',
         },
       },
     },
@@ -285,9 +262,9 @@ export const Container = styled(AccessibleButton, {
       true: {
         $$borderWidth: '2.4px',
         $$gradient:
-          'linear-gradient(99deg, $colors$neutral200, $colors$royal300, $colors$froly300)',
+          'linear-gradient(99deg, $colors$color-neutral-200, $colors$color-royal-300, $colors$color-froly-300)',
         position: 'relative',
-        background: '$surface-action-transparent-hover !important',
+        background: '$action-color-background-transparent-hover !important',
 
         '&::after': {
           content: '',
@@ -296,7 +273,7 @@ export const Container = styled(AccessibleButton, {
           right: 0,
           bottom: 0,
           left: 0,
-          borderRadius: '$md',
+          borderRadius: '$radii-md',
           // border: '$$borderWidth solid $neutral200',
           background: '$$gradient',
           backgroundSize: '100% 100%',
@@ -313,9 +290,9 @@ export const Container = styled(AccessibleButton, {
       size: 'lg',
 
       css: {
-        w: '$7',
-        h: '$7',
-        p: '0 ',
+        w: '$spacing-7',
+        h: '$spacing-7',
+        p: '0',
       },
     },
     {
@@ -323,8 +300,8 @@ export const Container = styled(AccessibleButton, {
       size: 'md',
 
       css: {
-        w: '$6 ',
-        h: '$6 ',
+        w: '$spacing-6 ',
+        h: '$spacing-6 ',
         p: '0 ',
       },
     },
@@ -351,9 +328,9 @@ export const Container = styled(AccessibleButton, {
       color: 'primary',
 
       css: {
-        color: '$text-body',
+        color: '$text-color-body',
         '&:focus': {
-          outlineColor: '$surface-action-transparent-disabled',
+          outlineColor: '$action-color-border-transparent-pressed',
         },
       },
     },
@@ -363,7 +340,7 @@ export const Container = styled(AccessibleButton, {
 
       css: {
         '&:focus': {
-          outlineColor: '$surface-action-transparent-disabled',
+          outlineColor: '$action-color-border-transparent-pressed !important',
         },
       },
     },
@@ -372,9 +349,9 @@ export const Container = styled(AccessibleButton, {
       color: 'secondary',
 
       css: {
-        color: '$surface-interactive-default',
+        color: '$interactive-color-background-enabled',
         '&:focus': {
-          outlineColor: '$surface-interactive-disabled',
+          outlineColor: '$action-color-border-transparent-pressed !important',
         },
       },
     },
@@ -383,52 +360,9 @@ export const Container = styled(AccessibleButton, {
       color: 'danger',
 
       css: {
-        color: '$surface-danger-default',
+        color: '$feedback-color-background-danger-default',
         '&:focus': {
-          outlineColor: '$surface-danger-disabled',
-        },
-      },
-    },
-    {
-      variant: 'primary',
-      color: 'primary',
-
-      css: {
-        '&:disabled': {
-          color: '$text-inverted',
-        },
-        [`.dark-theme &`]: {
-          '& svg': {
-            fill: '$text-inverted',
-          },
-        },
-      },
-    },
-    {
-      variant: 'primary',
-      color: 'secondary',
-
-      css: {
-        '&:disabled': {
-          color: '$text-inverted',
-        },
-
-        [`.dark-theme &`]: {
-          color: '$text-on-interactive',
-        },
-      },
-    },
-    {
-      variant: 'primary',
-      color: 'danger',
-
-      css: {
-        '&:disabled': {
-          color: '$text-inverted',
-        },
-
-        [`.dark-theme &`]: {
-          color: '$text-on-interactive',
+          outlineColor: '$action-color-border-transparent-pressed',
         },
       },
     },
@@ -437,17 +371,13 @@ export const Container = styled(AccessibleButton, {
       color: 'secondary',
 
       css: {
-        color: '$surface-interactive-default',
+        color: '$interactive-color-background-enabled',
         '& svg': {
-          fill: '$surface-interactive-default',
+          fill: '$interactive-color-background-enabled',
         },
 
         '&:focus': {
-          outlineColor: '$surface-interactive-disabled',
-        },
-
-        [`.dark-theme &`]: {
-          color: '$text-inverted',
+          outlineColor: '$action-color-border-transparent-pressed',
         },
       },
     },
@@ -456,17 +386,13 @@ export const Container = styled(AccessibleButton, {
       color: 'danger',
 
       css: {
-        color: '$surface-danger-default',
+        color: '$feedback-color-background-danger-default',
         '& svg': {
-          fill: '$surface-danger-default',
+          fill: '$feedback-color-background-danger-default',
         },
 
         '&:focus': {
-          outlineColor: '$surface-danger-disabled',
-        },
-
-        [`.dark-theme &`]: {
-          color: '$text-inverted',
+          outlineColor: '$action-color-border-transparent-pressed',
         },
       },
     },
@@ -477,10 +403,10 @@ export const Container = styled(AccessibleButton, {
 
       css: {
         '&::before': {
-          background: '$surface-action-primary-pressed',
+          background: '$action-color-background-primary-pressed',
         },
         '&::after': {
-          background: '$surface-action-primary-pressed',
+          background: '$action-color-background-primary-pressed',
         },
       },
     },
@@ -491,10 +417,10 @@ export const Container = styled(AccessibleButton, {
 
       css: {
         '&::before': {
-          background: '$surface-interactive-hover',
+          background: '$interactive-color-background-hover',
         },
         '&::after': {
-          background: '$surface-interactive-hover',
+          background: '$interactive-color-background-hover',
         },
       },
     },
@@ -505,10 +431,10 @@ export const Container = styled(AccessibleButton, {
 
       css: {
         '&::before': {
-          background: '$surface-danger-pressed',
+          background: '$feedback-color-background-danger-hover',
         },
         '&::after': {
-          background: '$surface-danger-pressed',
+          background: '$feedback-color-background-danger-hover',
         },
       },
     },
@@ -519,10 +445,10 @@ export const Container = styled(AccessibleButton, {
 
       css: {
         '&::before': {
-          background: '$surface-base-subdued !important',
+          background: '$surface-color-background-subdued !important',
         },
         '&::after': {
-          background: '$surface-base-subdued !important',
+          background: '$surface-color-background-subdued !important',
         },
       },
     },
@@ -532,14 +458,14 @@ export const Container = styled(AccessibleButton, {
 
       css: {
         '&::before': {
-          background: '$surface-base-subdued !important',
+          background: '$surface-color-background-subdued !important',
           borderRadius: '50%',
           paddingBottom: '150%',
           top: '0%',
           left: '-10%',
         },
         '&::after': {
-          background: '$surface-base-subdued !important',
+          background: '$surface-color-background-subdued !important',
         },
       },
     },

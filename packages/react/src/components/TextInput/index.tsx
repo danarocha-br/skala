@@ -4,11 +4,10 @@ import { CSS } from '../../styles';
 import { Icon, iconPath } from '../Icon';
 import { Box } from '../Box';
 import { Spinner } from '../Spinner';
-// import { FormErrorMessage } from '../FormErrorMessage';
-
-import * as S from './styles';
 import { Stack } from '../Stack';
 import { FormErrorMessage } from '../FormErrorMessage';
+
+import * as S from './styles';
 
 export type TextInputProps = {
   name: string;
@@ -115,7 +114,7 @@ export const TextInput = ({
               <Box
                 as="span"
                 className="input__icon--loading"
-                css={{ position: 'absolute', right: '$2' }}
+                css={{ position: 'absolute', right: '$spacing-2' }}
               >
                 <Spinner size="xs" />
               </Box>

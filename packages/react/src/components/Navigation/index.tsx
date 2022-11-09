@@ -66,7 +66,7 @@ const NavItem = ({
       </S.Anchor>
     </Component>
   ) : (
-    <Box css={{ px: '$2' }}>
+    <Box css={{ px: '$spacing-2' }}>
       <Skeleton.Root>
         <Skeleton.Item width={200} />
       </Skeleton.Root>
@@ -145,7 +145,7 @@ const Wrapper = ({
               <Stack
                 direction="column"
                 gap={3}
-                css={{ mt: '$5', mb: 'auto', width: '93.5%' }}
+                css={{ mt: '$spacing-5', mb: 'auto', width: '93.5%' }}
               >
                 {children}
               </Stack>

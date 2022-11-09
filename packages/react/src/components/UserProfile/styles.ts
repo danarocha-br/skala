@@ -4,21 +4,21 @@ export const Trigger = styled('button', {
   // all: 'unset',
   bg: 'transparent',
   cursor: 'pointer',
-  pl: '$2',
-  pr: '$3',
-  py: '$2',
+  pl: '$spacing-2',
+  pr: '$spacing-3',
+  py: '$spacing-2',
   border: '1px solid transparent',
-  borderRadius: '$sm',
+  borderRadius: '$radii-sm',
   transition: '$base',
   transform: 'translateX(0)',
 
   d: 'flex',
   align: 'center',
-  gap: '$3',
+  gap: '$spacing-3',
   outline: 'none',
 
   '&:hover': {
-    bg: '$surface-base-disabled',
+    background: '$surface-color-background-disabled',
 
     '& .avatar__username': {
       transform: 'translateX(3px) scale(0.95)',
@@ -26,8 +26,8 @@ export const Trigger = styled('button', {
   },
 
   '&:focus': {
-    border: '1px dashed $surface-base-hover !important',
-    background: '$surface-action-transparent-hover',
+    border: '1px dashed $surface-color-background-hover !important',
+    background: '$action-color-background-transparent-hover',
 
     '& .avatar__username': {
       transform: 'translateX(3px) scale(0.95)',

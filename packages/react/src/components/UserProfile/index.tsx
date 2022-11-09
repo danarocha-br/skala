@@ -45,17 +45,17 @@ export const UserProfile = ({
       size="sm"
       color="caption"
       css={{
-        py: '$2',
-        px: '$3',
+        py: '$spacing-2',
+        px: '$spacing-3',
         mb: -8,
-        backgroundColor: '$surface-base-disabled',
-        borderTopLeftRadius: '$sm',
-        borderTopRightRadius: '$sm',
+        backgroundColor: '$surface-color-background-disabled',
+        borderTopLeftRadius: '$radii-sm',
+        borderTopRightRadius: '$radii-sm',
       }}
     >
       {user_email && user_email}
     </Text>
-    <Dropdown.Separator css={{ mb: '$2' }} />
+    <Dropdown.Separator css={{ mb: '$spacing-2' }} />
     {children}
   </Dropdown.Menu>
 );

@@ -19,7 +19,7 @@ export default {
   },
   args: {
     children: TAGS.map((tag) => (
-      <Text css={{ mr: '$6' }} key={tag}>
+      <Text css={{ mr: '$spacing-6' }} key={tag}>
         {tag}
       </Text>
     )),
@@ -39,7 +39,7 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <Stack align="center" justify="center" css={{ h: '100vh', p: 200 }}>
+        <Stack align="center" justify="center" css={{ h: '100vh', p: 100 }}>
           {Story()}
         </Stack>
       );

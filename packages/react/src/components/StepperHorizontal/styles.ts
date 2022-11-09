@@ -13,19 +13,19 @@ export const Label = styled(Text, {
 export const Steps = styled('div', {
   d: 'grid',
   gridTemplateColumns: 'repeat(var(--steps-count), 1fr)',
-  gap: '$2',
-  mt: '$1',
+  gap: '$spacing-2',
+  mt: '$spacing-1',
 });
 
 export const Step = styled('div', {
-  h: '$1',
-  borderRadius: '$sm',
-  bg: '$surface-base-hover',
+  h: '$spacing-1',
+  borderRadius: '$radii-sm',
+  bg: '$surface-color-background-hover',
 
   variants: {
     isActive: {
       true: {
-        bg: '$surface-success-subdued',
+        bg: '$feedback-color-background-success-subdued',
       },
     },
   },

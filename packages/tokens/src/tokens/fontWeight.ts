@@ -1,6 +1,6 @@
 export const fontWeight = {
-  light: '300',
-  regular: '400',
-  medium: '500',
-  semibold: '700',
+  'font-weight-light': '300',
+  'font-weight-regular': '400',
+  'font-weight-medium': '500',
+  'font-weight-semibold': '700',
 };

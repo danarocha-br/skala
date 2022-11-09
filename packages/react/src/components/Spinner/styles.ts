@@ -23,13 +23,13 @@ const rotate = keyframes({
 
 const colors = keyframes({
   '0%, 100%': {
-    stroke: '$surface-interactive-default',
+    stroke: '$interactive-color-background-enabled',
   },
   '35%': {
-    stroke: '$surface-success-default',
+    stroke: '$feedback-color-background-success-default',
   },
   '75%': {
-    stroke: '$surface-danger-default',
+    stroke: '$feedback-color-background-danger-default',
   },
 });
 
@@ -38,23 +38,23 @@ export const Container = styled('svg', {
 
   '& circle': {
     animation: `${dash} 1.4s ease-in-out infinite, ${colors} 2.5s ease-in-out 0.75s infinite`,
-    stroke: '$surface-danger-default',
+    stroke: '$feedback-danger-color-background-default',
     'stroke-linecap': 'round',
   },
 
   variants: {
     size: {
       xs: {
-        width: '$3',
-        height: '$3',
+        width: '$spacing-3',
+        height: '$spacing-3',
       },
       sm: {
-        width: '$4',
-        height: '$4',
+        width: '$spacing-4',
+        height: '$spacing-4',
       },
       md: {
-        width: '$8',
-        height: '$8',
+        width: '$spacing-8',
+        height: '$spacing-8',
       },
     },
   },

@@ -7,14 +7,14 @@ import * as S from './styles';
 
 export type IconColorProps =
   | 'body'
-  | 'subtext'
+  | 'body-lighter'
   | 'caption'
   | 'success'
   | 'danger'
   | 'warning'
   | 'current'
-  | 'inverted'
-  | 'on-interactive';
+  | 'on-light'
+  | 'on-dark';
 
 export type IconProps = {
   name: keyof typeof iconPath;
@@ -29,7 +29,7 @@ export type IconProps = {
 export * from './iconPath';
 
 export const Icon = ({
-  color = 'subtext',
+  color = 'body-lighter',
   size = 'md',
   name = 'plus',
   label,

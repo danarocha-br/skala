@@ -6,7 +6,7 @@ import * as S from './styles';
 
 export type LinkProps = {
   /** to render a wrapper to the a tag */
-  as?: React.ElementType<any>;
+  as?: React.ElementType<unknown>;
   href: string;
   target?: string;
   color?: 'primary' | 'secondary' | 'caption';
@@ -26,7 +26,7 @@ export const Link = ({
   const Component = as || React.Fragment;
 
   return (
-    <Component href={href} passHref>
+    <Component>
       <S.Anchor
         href={href}
         target={target}

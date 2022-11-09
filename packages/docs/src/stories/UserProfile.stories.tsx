@@ -26,13 +26,13 @@ export default {
     children: (
       <>
         <Dropdown.Item textValue="Configurações">
-          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
+          <Icon name="settings" label="settings" css={{ mr: '$spacing-2' }} />
           <a href="/">
             Configurações <Dropdown.RightSlot>⌘ C</Dropdown.RightSlot>
           </a>
         </Dropdown.Item>
         <Dropdown.Item textValue="Preferências">
-          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
+          <Icon name="settings" label="settings" css={{ mr: '$spacing-2' }} />
           <a href="/">
             Preferências <Dropdown.RightSlot>⌘ P</Dropdown.RightSlot>
           </a>

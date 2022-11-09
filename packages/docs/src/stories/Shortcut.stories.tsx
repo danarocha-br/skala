@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { Shortcut, ShortcutProps } from '@skala/react';
+import { Shortcut, ShortcutProps, Stack } from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
 
 export default {
@@ -22,6 +22,15 @@ export default {
       },
     },
   },
+  decorators: [
+    (Story) => {
+      return (
+        <Stack align="center" justify="center" css={{ h: '50vh', w: '50vw' }}>
+          {Story()}
+        </Stack>
+      );
+    },
+  ],
 } as Meta<ShortcutProps>;
 
 export const Default: Story<ShortcutProps> = (args) => <Shortcut {...args} />;

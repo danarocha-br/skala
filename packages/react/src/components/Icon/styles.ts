@@ -6,28 +6,28 @@ export const SVG = styled('svg', {
   variants: {
     color: {
       body: {
-        color: '$text-body',
+        color: '$text-color-body',
       },
-      subtext: {
-        color: '$text-subtext',
+      'body-lighter': {
+        color: '$text-color-body-lighter',
       },
       caption: {
-        color: '$text-caption',
+        color: '$text-color-caption',
       },
       danger: {
-        color: '$text-danger',
+        color: '$text-color-danger',
       },
       success: {
-        color: '$text-success',
+        color: '$text-color-success',
       },
       warning: {
-        color: '$text-warning',
+        color: '$text-color-warning',
       },
-      'on-interactive': {
-        color: '$text-on-interactive',
+      'on-light': {
+        color: '$text-color-on-light',
       },
-      inverted: {
-        color: '$text-inverted',
+      'on-dark': {
+        color: '$text-color-on-dark',
       },
       current: {
         color: 'currentColor',
@@ -36,16 +36,16 @@ export const SVG = styled('svg', {
 
     size: {
       xs: {
-        width: '$3',
+        width: '$spacing-3',
       },
       sm: {
         width: 20,
       },
       md: {
-        width: '$4',
+        width: '$spacing-4',
       },
       lg: {
-        width: '$5',
+        width: '$spacing-5',
       },
     },
   },

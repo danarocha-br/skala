@@ -17,7 +17,7 @@ export default {
   },
   args: {
     name: 'plus',
-    color: 'subtext',
+    color: 'body-lighter',
     label: 'add',
     size: 'md',
   },
@@ -37,13 +37,13 @@ export default {
       },
       options: [
         'body',
-        'subtext',
+        'body-lighter',
         'caption',
         'success',
         'danger',
         'warning',
-        'on-interactive',
-        'inverted',
+        'on-dark',
+        'on-light',
         'current',
       ],
       control: {
@@ -74,7 +74,7 @@ export const IconSet: Story<IconProps> = (args) => (
     align="stretch"
     justify="between"
     gap="3"
-    css={{ w: '$full', p: '$4' }}
+    css={{ w: '100%', p: '$spacing-4' }}
   >
     {icons.map((icon) => (
       <Stack
@@ -83,9 +83,9 @@ export const IconSet: Story<IconProps> = (args) => (
         align="center"
         gap="2"
         css={{
-          bg: '$surface-base-subdued',
-          p: '$2',
-          borderRadius: '$sm',
+          bg: '$surface-color-background-subdued',
+          p: '$spacing-2',
+          borderRadius: '$radii-sm',
         }}
       >
         <Icon {...args} name={icon} />
@@ -93,7 +93,11 @@ export const IconSet: Story<IconProps> = (args) => (
           as="p"
           size="xs"
           color="caption"
-          css={{ bg: '$surface-base-default', w: '100%', textAlign: 'center' }}
+          css={{
+            bg: '$surface-color-background-default',
+            w: '100%',
+            textAlign: 'center',
+          }}
         >
           {icon}
         </Text>

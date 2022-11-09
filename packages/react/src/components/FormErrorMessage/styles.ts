@@ -1,23 +1,23 @@
 import { styled } from '../../styles';
 
 export const Container = styled('div', {
-  fontSize: '$xs',
-  fontFamily: '$sans',
+  fontSize: '$font-size-xs',
+  fontFamily: '$font-family-sans',
 
-  pb: '$1',
-  pt: '$2',
-  px: '$3',
+  pb: '$spacing-1',
+  pt: '$spacing-2',
+  px: '$spacing-3',
 
   position: 'relative',
   top: -4,
   zIndex: '1',
 
-  color: '$text-danger',
-  bg: '$froly100',
-  border: '1px solid $froly200',
+  color: '$text-color-danger',
+  bg: '$color-froly-100',
+  border: '1px solid $color-froly-200',
 
   [`.dark-theme &`]: {
-    color: '$neutral200',
+    color: '$color-neutral-200',
     bg: '#f1786f20',
     border: '1px solid #f1786f10',
   },
@@ -25,12 +25,12 @@ export const Container = styled('div', {
   variants: {
     variant: {
       inside: {
-        borderBottomLeftRadius: '$md',
-        borderBottomRightRadius: '$md',
+        borderBottomLeftRadius: '$radii-md',
+        borderBottomRightRadius: '$radii-md',
       },
       outside: {
-        mt: '$2',
-        borderRadius: '$md',
+        mt: '$spacing-2',
+        borderRadius: '$radii-md',
       },
     },
   },

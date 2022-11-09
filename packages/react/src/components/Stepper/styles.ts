@@ -1,9 +1,8 @@
 import { styled } from '../../styles';
 
-
 export const Menu = styled('ul', {
   all: 'unset',
-  fontFamily: '$sans',
+  fontFamily: '$font-family-sans',
 
   d: 'flex',
   fd: 'column',
@@ -15,18 +14,18 @@ export const Menu = styled('ul', {
 
 export const MenuItem = styled('li', {
   all: 'unset',
-  fontFamily: '$sans',
-  color: '$text-subtext',
+  fontFamily: '$font-family-sans',
+  color: '$text-color-body-lighter',
   whiteSpace: 'nowrap',
 
   '&::after': {
     content: '',
     position: 'absolute',
-    left: '$2',
+    left: '$spacing-2',
     width: 10,
     height: 10,
     borderRadius: '50%',
-    background: '$form-border',
+    background: '$form-color-border-default',
     transition: '$base',
   },
 
@@ -35,37 +34,37 @@ export const MenuItem = styled('li', {
       content: '',
       position: 'absolute',
       left: '12px',
-      mt: '$2',
+      mt: '$spacing-2',
       w: '2px',
-      h: '$5',
-      background: '$form-border',
+      h: '$spacing-5',
+      background: '$form-color-border-default',
       transition: '$base',
     },
   },
 
   '&:first-child': {
-    mt: '$4',
+    mt: '$spacing-4',
   },
 
   '& a': {
     all: 'unset',
     cursor: 'pointer',
-    mb: '$3',
+    mb: '$spacing-3',
 
-    color: '$text-body',
-    fontWeight: '$medium',
+    color: '$text-color-body',
+    fontWeight: '$font-weight-medium',
 
     d: 'inline-block',
     opacity: 0,
     transform: 'translateY(-10px)',
     transition: '$base',
-    ml: '$5',
+    ml: '$spacing-5',
 
     '&:hover': {
-      color: '$surface-interactive-subdued',
+      color: '$interactive-color-background-subdued',
 
       '&::after': {
-        bg: '$surface-interactive-subdued',
+        bg: '$interactive-color-background-subdued',
       },
     },
   },
@@ -74,12 +73,11 @@ export const MenuItem = styled('li', {
     isActive: {
       true: {
         '& a': {
-          color: '$surface-interactive-subdued',
+          color: '$interactive-color-background-subdued',
         },
         '&::after': {
-          bg: '$surface-interactive-subdued',
+          bg: '$interactive-color-background-subdued',
         },
-
       },
     },
   },
@@ -91,16 +89,16 @@ export const MenuItem = styled('li', {
 
 export const BackButton = styled('a', {
   all: 'unset',
-  fontFamily: '$sans',
+  fontFamily: '$font-family-sans',
 
   cursor: 'pointer',
-  fontWeight: '$medium',
+  fontWeight: '$font-weight-medium',
 
   d: 'flex',
   alignItems: 'center',
   justifyItems: 'center',
 
-  gap: '$2',
+  gap: '$spacing-2',
 
   '& div': {
     position: 'relative',
@@ -108,16 +106,16 @@ export const BackButton = styled('a', {
     alignItems: 'center',
     justifyItems: 'center',
 
-    w: '$5',
-    h: '$5',
+    w: '$spacing-5',
+    h: '$spacing-5',
     borderRadius: '50%',
-    background: '$surface-interactive-subdued',
+    background: '$interactive-color-background-subdued',
   },
 
   '& span': {
     d: 'inline-block',
-    color: '$text-caption',
-    marginLeft: '$2',
+    color: '$text-color-caption',
+    marginLeft: '$spacing-2',
     opacity: 0,
     transform: 'translateX(-20px)',
     transition: 'all .2s ease',
@@ -125,7 +123,7 @@ export const BackButton = styled('a', {
 
   '&:hover': {
     '& span': {
-      color: '$text-body',
+      color: '$text-color-body',
     },
   },
 });
@@ -143,7 +141,7 @@ export const Container = styled('div', {
     },
 
     [`& ${MenuItem}`]: {
-      mb: '$4',
+      mb: '$spacing-4',
 
       '&::after': {
         transform: 'translateY(6px)',
@@ -169,7 +167,7 @@ export const Container = styled('div', {
         '&:hover': {
           [`& ${MenuItem}`]: {
             '&::after': {
-              bg: '$surface-interactive-default',
+              bg: '$interactive-color-background-enabled',
             },
           },
         },
@@ -181,4 +179,3 @@ export const Container = styled('div', {
     isActive: false,
   },
 });
-

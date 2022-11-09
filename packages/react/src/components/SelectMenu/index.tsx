@@ -39,7 +39,7 @@ const SelectMenuBase = ({
             label="open menu"
             name="chevronDown"
             size="sm"
-            css={{ position: 'relative', right: -8 }}
+            css={{ position: 'relative', right: 0 }}
           />
         </S.SelectIcon>
       </S.SelectBox>

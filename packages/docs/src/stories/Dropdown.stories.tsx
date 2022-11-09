@@ -69,13 +69,13 @@ export const WithIcons: StoryObj<DropdownProps> = {
     children: (
       <>
         <Dropdown.Item>
-          <Icon name="settings" label="settings" css={{ mr: '$2' }} />
+          <Icon name="settings" label="settings" css={{ mr: '$spacing-2' }} />
           <a href="/">
             Settings <Dropdown.RightSlot>⌘ S</Dropdown.RightSlot>
           </a>
         </Dropdown.Item>
         <Dropdown.Item>
-          <Icon name="user" label="profile" css={{ mr: '$2' }} />
+          <Icon name="user" label="profile" css={{ mr: '$spacing-2' }} />
           <a href="/">
             Profile <Dropdown.RightSlot>⌘ P</Dropdown.RightSlot>
           </a>

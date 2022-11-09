@@ -1,8 +1,8 @@
 export const radii = {
-  sm: '4px',
-  md: '6px',
-  lg: '8px',
-  xl: '12px',
-  pill: '9999px',
-  circle: '50%',
+  'radii-sm': '4px',
+  'radii-md': '6px',
+  'radii-lg': '8px',
+  'radii-xl': '12px',
+  'radii-pill': '9999px',
+  'radii-circle': '50%',
 };

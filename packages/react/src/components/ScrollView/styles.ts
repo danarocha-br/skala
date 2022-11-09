@@ -27,9 +27,9 @@ export const ScrollBar = styled(Scrollbar, {
   userSelect: 'none',
   touchAction: 'none',
   padding: 2,
-  background: '$form-subdued',
+  background: '$form-color-background-subdued',
   transition: 'all 160ms ease-out',
-  '&:hover': { background: '$form-disabled' },
+  '&:hover': { background: '$form-color-background-disabled' },
   '&[data-orientation="vertical"]': { width: SCROLLBAR_SIZE },
   '&[data-orientation="horizontal"]': {
     flexDirection: 'column',
@@ -39,7 +39,7 @@ export const ScrollBar = styled(Scrollbar, {
 
 export const SrollThumb = styled(Thumb, {
   flex: 1,
-  background: '$surface-base-pressed',
+  background: '$surface-color-background-pressed',
   borderRadius: SCROLLBAR_SIZE,
   position: 'relative',
   '&::before': {
@@ -56,5 +56,5 @@ export const SrollThumb = styled(Thumb, {
 });
 
 export const ScrollCorner = styled(Corner, {
-  background: '$form-disabled',
+  background: '$form-color-background-disabled',
 });

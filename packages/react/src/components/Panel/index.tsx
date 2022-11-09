@@ -101,7 +101,7 @@ export const Panel = forwardRef(
             justify="between"
             css={{
               bg: '',
-              p: '$2 $4',
+              p: '$spacing-2 $spacing-4',
               position: 'relative',
               border: '1px solid',
               borderColor: `${transparentize(0.5, '#D5DBDB')}`,
@@ -128,7 +128,7 @@ export const Panel = forwardRef(
                     top: -14,
 
                     '& svg': {
-                      fill: '$text-caption',
+                      fill: '$text-color-caption',
                     },
                   }}
                 />
@@ -137,7 +137,7 @@ export const Panel = forwardRef(
           </Stack>
 
           <ScrollView>
-            <Box css={{ p: '$4', h: '100%', pb: '13rem' }}>
+            <Box css={{ p: '$spacing-4', h: '100%', pb: '13rem' }}>
               {Boolean(description) && (
                 <S.PanelDescription>{description}</S.PanelDescription>
               )}

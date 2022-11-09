@@ -34,7 +34,7 @@ const overlayShow = keyframes({
 // });
 
 export const PanelOverlay = styled(Overlay, {
-  backgroundColor: '$surface-action-primary-default',
+  backgroundColor: '$action-color-background-primary-enabled',
   position: 'fixed',
   inset: 0,
 
@@ -54,10 +54,10 @@ export const PanelOverlay = styled(Overlay, {
 });
 
 export const PanelContent = styled(Content, {
-  fontFamily: '$sans',
-  backgroundColor: '$surface-base-subdued',
-  borderTopRightRadius: '$md',
-  borderBottomRightRadius: '$md',
+  fontFamily: '$font-family-sans',
+  backgroundColor: '$surface-color-background-subdued',
+  borderTopRightRadius: '$radii-md',
+  borderBottomRightRadius: '$radii-md',
 
   position: 'fixed',
   top: 0,
@@ -91,15 +91,15 @@ export const PanelContent = styled(Content, {
 
 export const PanelTitle = styled(Title, {
   margin: 0,
-  fontWeight: '$medium',
-  color: '$text-subtext',
-  fontSize: '$lg',
+  fontWeight: '$font-weight-medium',
+  color: '$text-color-body-lighter',
+  fontSize: '$font-size-lg',
 });
 
 export const PanelDescription = styled(Description, {
   margin: '10px 0 20px',
-  color: '$text-caption',
-  fontSize: '$sm',
+  color: '$text-color-caption',
+  fontSize: '$font-size-sm',
 });
 
 export const PanelClose = styled(Close, {
@@ -107,20 +107,20 @@ export const PanelClose = styled(Close, {
 });
 
 export const PanelFooter = styled('footer', {
-  py: '$3',
-  px: '$3',
-  bg: '$surface-base-subdued',
+  py: '$spacing-3',
+  px: '$spacing-3',
+  bg: '$surface-color-background-subdued',
 
   d: 'flex',
   justifyContent: 'end',
   alignItems: 'center',
-  gap: '$3',
+  gap: '$spacing-3',
 
   position: 'fixed',
   bottom: 0,
   zIndex: 9,
 
-  boxShadow: '$medium',
+  boxShadow: '$elevation-medium',
 
   w: '93.333%',
 

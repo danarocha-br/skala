@@ -5,15 +5,14 @@ const buildPath = './src/tokens/';
 
 const coreTokens = [
   'fontSize',
-  'fontFamilies',
+  'fontFamily',
   'fontWeight',
   'lineHeight',
   'spacing',
   'borderWidth',
   'radii',
-  'colors',
+  'color',
   'elevation',
-  'gradient',
 ];
 
 const themeTokens = ['light', 'dark'];
@@ -138,7 +137,7 @@ module.exports = {
       transformGroup: 'js',
       transforms: [
         'attribute/cti',
-        'name/ti/camel',
+        'name/cti/kebab',
         'color/hsl',
         'sizes/px',
         'font-size/rem',

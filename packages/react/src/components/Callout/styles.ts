@@ -1,62 +1,62 @@
 import { styled } from '../../styles';
 
 export const Header = styled('header', {
-  fontSize: '$base',
-  fontWeight: '$medium',
-  borderTopRightRadius: '$md',
+  fontSize: '$font-size-md',
+  fontWeight: '$font-weight-medium',
+  borderTopRightRadius: '$radii-md',
 
   d: 'flex',
   alignItems: 'center',
-  gap: '$2',
+  gap: '$spacing-2',
   w: '100%',
-  h: '$4',
-  py: '$1',
+  h: '$spacing-4',
+  py: '$spacing-1',
   position: 'relative',
 
   [`.dark-theme &`]: {
-    color: '$text-inverted',
+    color: '$text-color-on-light',
   },
 
   '& h5': {
     all: 'unset',
-    px: '$4',
+    px: '$spacing-4',
   },
 
   variants: {
     variant: {
       info: {
-        color: '$surface-interactive-subdued',
+        color: '$interactive-color-text-enabled',
         background: '#d2e7feb3',
 
         [`.dark-theme &`]: {
-          color: '$text-on-interactive',
+          color: '$text-color-on-dark',
           background: '#405fed1c',
         },
       },
       success: {
-        color: '$surface-success-default',
-        bg: '$forest100',
+        color: '$feedback-color-background-success-default',
+        background: '$color-forest-100',
 
         [`.dark-theme &`]: {
-          color: '$text-on-interactive',
+          color: '$text-color-on-dark',
           bg: '#37b1351a',
         },
       },
       danger: {
-        color: '$surface-danger-default',
-        bg: '$froly100',
+        color: '$feedback-color-background-danger-default',
+        bg: '$color-froly-100',
 
         [`.dark-theme &`]: {
-          color: '$text-on-interactive',
+          color: '$text-color-on-dark',
           bg: '#f1786f17',
         },
       },
       warning: {
-        color: '$surface-warning-pressed',
-        bg: '#fddeba8c',
+        color: '$feedback-color-background-warning-default',
+        bg: '#fddeba60',
 
         [`.dark-theme &`]: {
-          color: '$text-on-interactive',
+          color: '$text-color-on-dark',
           bg: '#fcc88d1f',
         },
       },
@@ -68,45 +68,45 @@ export const Header = styled('header', {
 });
 
 export const Container = styled('div', {
-  fontFamily: '$sans',
+  fontFamily: '$font-family-sans',
   w: '100%',
   d: 'flex',
 
-  borderRadius: '$md',
+  borderRadius: '$radii-md',
   border: '1px solid',
-  borderColor: '$surface-action-transparent-pressed',
+  borderColor: '$action-color-border-transparent-enabled !important',
 
-  fontSize: '$sm !important',
+  fontSize: '$font-size-sm !important',
 
   '& .callout__content': {
-    px: '$4',
-    pb: '$2',
-  },
-
-  [`.dark-theme &`]: {
-    borderColor: '$surface-action-transparent-disabled',
+    px: '$spacing-4',
+    pb: '$spacing-2',
   },
 });
 
 export const Marker = styled('div', {
-  w: '$1',
+  w: '$spacing-1',
   h: 'auto',
-  borderTopLeftRadius: '$md',
-  borderBottomLeftRadius: '$md',
+  borderTopLeftRadius: '$radii-md',
+  borderBottomLeftRadius: '$radii-md',
 
   variants: {
     variant: {
       info: {
-        bg: '$surface-interactive-subdued',
+        background: '$color-royal-300',
+
+        [`.dark-theme &`]: {
+          background: '$color-royal-500',
+        },
       },
       success: {
-        bg: '$surface-success-default',
+        bg: '$feedback-color-background-success-default',
       },
       danger: {
-        bg: '$surface-danger-default',
+        bg: '$feedback-color-background-danger-default',
       },
       warning: {
-        bg: '$surface-warning-default',
+        bg: '$feedback-color-background-warning-default',
       },
     },
   },

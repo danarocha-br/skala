@@ -7,7 +7,7 @@ type ColorsGridProps = {
 
 export function ColorsGrid({ tokens }: ColorsGridProps) {
   return (
-    <Grid cols="5" gap="4" css={{ marginTop: '$6' }}>
+    <Grid cols="5" gap="4" css={{ marginTop: '$spacing-6' }}>
       {Object.entries(tokens).map(([key, color]) => {
         return (
           <Stack
@@ -15,21 +15,21 @@ export function ColorsGrid({ tokens }: ColorsGridProps) {
             justify="end"
             key={key}
             css={{
-              backgroundColor: '$neutralWhite',
+              backgroundColor: '$color-neutral-white',
               border: '1px solid #00000010',
-              p: '$2',
-              radii: '$sm',
-              boxShadow: '$medium',
+              p: '$spacing-2',
+              radii: '$radii-sm',
+              boxShadow: '$elevation-low',
               w: '100%',
             }}
           >
             <Box
               as="strong"
               css={{
-                fontSize: '$xs',
+                fontSize: '$font-size-xs',
                 fontFamily: 'monospace',
-                color: '$froly600',
-                radii: '$sm',
+                color: '$color-froly-600',
+                radii: '$radii-sm',
                 w: '100%',
               }}
             >
@@ -46,9 +46,9 @@ export function ColorsGrid({ tokens }: ColorsGridProps) {
                   getContrast(String(color), '#FFF') < 3.5
                     ? '#00000010'
                     : '#00000030',
-                p: '$2',
-                mt: '$2',
-                h: '$7',
+                p: '$spacing-2',
+                mt: '$spacing-2',
+                h: '$spacing-7',
                 w: '100%',
                 radii: '2px',
               }}
@@ -64,7 +64,7 @@ export function ColorsGrid({ tokens }: ColorsGridProps) {
                     getContrast(String(color), '#FFF') < 3.5 ? '#000' : '#fff',
                 }}
               >
-                <Box as="span" css={{ fontSize: 'xxs' }}>
+                <Box as="span" css={{ fontSize: '$font-size-xxs' }}>
                   {color}
                 </Box>
               </Stack>

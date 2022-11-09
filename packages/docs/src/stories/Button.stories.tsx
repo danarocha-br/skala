@@ -34,10 +34,18 @@ export default {
       table: {
         category: 'Modifiers',
       },
+      options: ['primary', 'transparent', 'icon'],
+      control: {
+        type: 'inline-radio',
+      },
     },
     color: {
       table: {
         category: 'Modifiers',
+      },
+      options: ['primary', 'secondary', 'danger'],
+      control: {
+        type: 'inline-radio',
       },
     },
     size: {

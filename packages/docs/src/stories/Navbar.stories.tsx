@@ -52,7 +52,7 @@ export default {
           align="center"
           justify="center"
           fullWidth
-          css={{ h: '100vh', px: '$4' }}
+          css={{ h: '100vh', px: '$spacing-4' }}
         >
           {Story()}
         </Stack>

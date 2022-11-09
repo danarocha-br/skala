@@ -51,7 +51,7 @@ export const Button = ({
           label={label}
           color="current"
           size={size === 'md' ? 'md' : size === 'sm' ? 'sm' : 'lg'}
-          css={{ marginRight: `${variant !== 'icon' && '$4'}` }}
+          css={{ marginRight: `${variant !== 'icon' && '$spacing-4'}` }}
         />
       )}
 

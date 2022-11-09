@@ -26,12 +26,17 @@ export const Navbar = ({
 }: NavbarProps) => (
   //TODO - make navbar mobile friendly
   <S.Container css={css} {...props}>
-    <Text size="lg" color="subtext" css={{ whiteSpace: 'nowrap' }}>
+    <Text size="lg" color="body-lighter" css={{ whiteSpace: 'nowrap' }}>
       {pageTitle}
     </Text>
 
     {slot && (
-      <Stack align="center" gap={4} justify="end" css={{ flex: 2, px: '$12' }}>
+      <Stack
+        align="center"
+        gap={4}
+        justify="end"
+        css={{ flex: 2, px: '$spacing-12' }}
+      >
         {slot}
       </Stack>
     )}
