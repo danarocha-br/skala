@@ -36,7 +36,7 @@ export const parameters = {
       },
       {
         name: 'dark',
-        value: darkTheme.colors['surface-color-background-default']
+        value: darkTheme.colors['surface-color-background-default'],
       },
     ],
   },
