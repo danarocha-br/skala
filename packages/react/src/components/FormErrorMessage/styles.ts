@@ -9,7 +9,6 @@ export const Container = styled('div', {
   px: '$spacing-3',
 
   position: 'relative',
-  top: -4,
   zIndex: '1',
 
   color: '$text-color-danger',
@@ -27,10 +26,13 @@ export const Container = styled('div', {
       inside: {
         borderBottomLeftRadius: '$radii-md',
         borderBottomRightRadius: '$radii-md',
+        top: -4,
       },
       outside: {
-        mt: '$spacing-2',
         borderRadius: '$radii-md',
+        '& span': {
+          mt: -4,
+        },
       },
     },
   },

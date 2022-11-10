@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
+import React from 'react';
 import { CSS } from '../../styles';
-import * as RadioGroupPrimitive from '@radix-ui/react-radio-group';
 
 import { Icon, iconPath } from '../Icon';
 import { Text } from '../Text';
+import { FormErrorMessage } from '../FormErrorMessage';
 
 import * as S from './styles';
-import { FormErrorMessage } from '../FormErrorMessage';
-import { Stack } from '../Stack';
 
 export type RadioOptionProps = {
   value: string;
@@ -31,7 +28,7 @@ export type RadioGroupProps = {
   errors?: any | undefined;
   onChange?: (value: string) => void;
   css?: CSS;
-} & React.InputHTMLAttributes<HTMLInputElement>;
+} & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'name'>;
 
 export const RadioGroup = ({
   name,
@@ -110,7 +107,7 @@ export const RadioGroup = ({
                   label={option.icon || 'icon'}
                   name={option.icon || 'design'}
                   size="md"
-                  color="current"
+                  color="body"
                   className="radio__icon"
                 />
               )}
