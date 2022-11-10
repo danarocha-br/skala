@@ -116,7 +116,7 @@ export const OverviewDefaultVariant: Story<TextInputProps> = (args) => {
   };
 
   return (
-    <Stack direction="column" fullWidth>
+    <Stack as="form" direction="column" fullWidth>
       <TextInput
         {...args}
         value={inputValue}
