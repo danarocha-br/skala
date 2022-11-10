@@ -9,6 +9,7 @@ export * from './components/Icon';
 export * from './components/Avatar';
 export * from './components/Button';
 export * from './components/Callout';
+export * from './components/Checkbox';
 export * from './components/DateInput';
 export * from './components/Dialog';
 export * from './components/Dropdown';

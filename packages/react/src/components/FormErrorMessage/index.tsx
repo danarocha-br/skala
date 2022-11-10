@@ -1,4 +1,5 @@
 import { CSS } from '../../styles';
+import { Text } from '../Text';
 
 import * as S from './styles';
 
@@ -15,7 +16,9 @@ export const FormErrorMessage: React.FC<FormErrorMessageProps> = ({
   ...props
 }) => (
   <S.Container role="alert" variant={variant} css={css} {...props}>
-    {children}
+    <Text size="sm" color="danger">
+      {children}
+    </Text>
   </S.Container>
 );
 
