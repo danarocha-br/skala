@@ -11,8 +11,8 @@ import { TextInput } from '../TextInput';
 export type PasswordInputProps = {
   name: string;
   label: string;
-  placeholder: string;
-  icon: keyof typeof iconPath;
+  placeholder?: string;
+  icon?: keyof typeof iconPath;
   value: string;
   css?: CSS;
 } & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'name'>;

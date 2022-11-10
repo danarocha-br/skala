@@ -13,6 +13,7 @@ export * from './components/Checkbox';
 export * from './components/DateInput';
 export * from './components/Dialog';
 export * from './components/Dropdown';
+export * from './components/Form';
 export * from './components/FormErrorMessage';
 export * from './components/Link';
 export * from './components/Navbar';
