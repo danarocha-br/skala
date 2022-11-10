@@ -11,6 +11,7 @@
 
 .tokens-table tbody td {
   padding: 0.7rem 1rem;
+  font-size: 14px;
 }
 
 .tokens-table tbody td:first-child {

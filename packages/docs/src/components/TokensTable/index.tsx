@@ -1,4 +1,4 @@
-import { Box } from '@skala/react';
+import { Box, Text } from '@skala/react';
 import './styles.css';
 
 type TokensTableProps = {
@@ -13,59 +13,80 @@ export function TokensTable({
   type = 'general',
 }: TokensTableProps) {
   return (
-    <Box as="table" className="tokens-table" css={{ my: '$spacing-6' }}>
-      <thead>
-        <Box
-          as="tr"
-          css={{
-            '& th': {
-              color: '$color-neutral-400',
-              opacity: 0.8,
-              fontSize: '$font-size-xs',
-              letterSpacing: '1.3px',
-              textTransform: 'uppercase',
-              borderBottom: '3px solid $color-neutral-200',
-            },
-          }}
-        >
-          <th>Name</th>
-          {type === 'spacing' && <th />}
-          {type === 'radii' && <th />}
-          <th>{unity !== 'none' ? 'Pixel' : 'Value'}</th>
-          {unity !== 'none' && <th>Rem</th>}
+    <Box
+      css={{
+        my: '$spacing-6',
+        border: '1px solid',
+        borderColor: '$color-neutral-400',
+        borderRadius: '$radii-md !important',
+      }}
+    >
+      <Box as="table" className="tokens-table" css={{}}>
+        <Box as="thead" css={{}}>
+          <Box
+            as="tr"
+            css={{
+              '& th': {
+                color: '$color-neutral-500',
+                opacity: 0.8,
+                fontSize: '$font-size-xs',
+                letterSpacing: '1.3px',
+                textTransform: 'uppercase',
+                borderBottom: '2px solid $color-neutral-200',
+              },
+            }}
+          >
+            <th>Name</th>
+            {type === 'spacing' && <th />}
+            {type === 'radii' && <th />}
+            <th>{unity !== 'none' ? 'Pixel' : 'Value'}</th>
+            {unity !== 'none' && <th>Rem</th>}
+          </Box>
         </Box>
-      </thead>
 
-      <tbody>
-        {Object.entries(tokens).map(([key, value]) => {
-          return (
-            <Box
-              as="tr"
-              key={key}
-              css={{
-                color: '$color-neutral-600',
-                '&:nth-child(even) td': {
-                  backgroundColor: '$color-neutral-100',
-                },
-              }}
-            >
-              <Box as="td" css={{ color: '$color-froly-500' }}>
-                ${key}
-              </Box>
-
-              {type === 'spacing' && (
-                <td>
-                  <Box
+        <tbody>
+          {Object.entries(tokens).map(([key, value]) => {
+            return (
+              <Box
+                as="tr"
+                key={key}
+                css={{
+                  color: '$color-neutral-600',
+                  borderBottom: '1px solid',
+                  borderColor: '$color-neutral-200',
+                  '&:nth-child(even) td': {
+                    // backgroundColor: '$color-neutral-100',
+                  },
+                }}
+              >
+                <Box as="td">
+                  <Text
+                    size="sm"
+                    color="danger"
                     css={{
                       bg: '$color-neutral-200',
-                      height: '$spacing-5',
-                      width: value,
+                      borderRadius: '$radii-sm',
+                      w: 'fit-content',
+                      px: '$3',
                     }}
-                  />
-                </td>
-              )}
+                  >
+                    ${key}
+                  </Text>
+                </Box>
 
-              {/* {type === 'shadow' && (
+                {type === 'spacing' && (
+                  <td>
+                    <Box
+                      css={{
+                        bg: '$color-neutral-200',
+                        height: '$spacing-5',
+                        width: value,
+                      }}
+                    />
+                  </td>
+                )}
+
+                {/* {type === 'shadow' && (
                 <td>
                   <div
                     style={{
@@ -78,32 +99,33 @@ export function TokensTable({
                 </td>
               )} */}
 
-              {type === 'radii' && (
-                <td>
-                  <Box
-                    css={{
-                      bg: '$color-neutral-200',
-                      height: '$spacing-5',
-                      width: key !== 'circle' ? 64 : 32,
-                      borderRadius: value,
-                    }}
-                  />
-                </td>
-              )}
+                {type === 'radii' && (
+                  <td>
+                    <Box
+                      css={{
+                        bg: '$color-neutral-200',
+                        height: '$spacing-5',
+                        width: key !== 'circle' ? 64 : 32,
+                        borderRadius: value,
+                      }}
+                    />
+                  </td>
+                )}
 
-              <td>{value}</td>
+                <td>{value}</td>
 
-              {unity !== 'none' && (
-                <td>
-                  {unity !== 'rem'
-                    ? Number(value.replace('px', '')) / 16 + 'rem'
-                    : Number(value.replace('rem', '')) * 16 + 'px'}
-                </td>
-              )}
-            </Box>
-          );
-        })}
-      </tbody>
+                {unity !== 'none' && (
+                  <td>
+                    {unity !== 'rem'
+                      ? Number(value.replace('px', '')) / 16 + 'rem'
+                      : Number(value.replace('rem', '')) * 16 + 'px'}
+                  </td>
+                )}
+              </Box>
+            );
+          })}
+        </tbody>
+      </Box>
     </Box>
   );
 }
