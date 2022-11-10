@@ -19,6 +19,7 @@ export * from './components/Navigation';
 export * from './components/NumberInput';
 export * from './components/Panel';
 export * from './components/PasswordInput';
+export * from './components/RadioGroup';
 export * from './components/ScrollView';
 export * from './components/SelectMenu';
 export * from './components/Separator';
