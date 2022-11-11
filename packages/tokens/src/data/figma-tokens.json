@@ -1081,7 +1081,7 @@
       "gradient": {
         "color": {
           "background": {
-            "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%)",
+            "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4ED 99.99%)",
             "type": "other"
           }
         }
