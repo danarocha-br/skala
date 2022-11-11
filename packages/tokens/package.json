@@ -1,6 +1,6 @@
 {
   "name": "@skala/design-tokens",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -13,7 +13,7 @@
     "transform-tokens": "npm run token-transform-global && npm run token-transform-dark && npm run token-transform-light",
     "generate-tokens": "style-dictionary build --config ./style-dictionary-config.js && npm run lint",
     "build-tokens": "npm run transform-tokens && npm run generate-tokens",
-    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "build": "npm rund build-tokens && tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
