@@ -8,6 +8,7 @@ import {
   OptionsOrGroups,
   LoadingIndicatorProps,
   DropdownIndicatorProps,
+  ActionMeta,
 } from 'react-select';
 
 import { Icon, iconPath } from '../Icon';
@@ -39,12 +40,22 @@ export type SelectCreatableProps = {
   cacheOptions?: boolean;
   defaultOptions?: boolean;
   isClearable?: boolean;
-  onChange?: (value: Option) => void;
+  onChange?: (
+    newValue: unknown,
+    actionMeta: ActionMeta<unknown>
+  ) => void | undefined;
   onCreateOption?: (value: string) => void;
   setValue?: () => void;
   isMulti: boolean;
   options?: OptionsOrGroups<unknown, GroupBase<unknown>> | undefined;
-  loadOptions?: OptionsOrGroups<unknown, GroupBase<unknown>> | undefined;
+  loadOptions?:
+    | ((
+        inputValue: string,
+        callback: (
+          options: OptionsOrGroups<unknown, GroupBase<unknown>>
+        ) => void
+      ) => void | Promise<OptionsOrGroups<unknown, GroupBase<unknown>>>)
+    | undefined;
   variant?: 'default' | 'table';
   buttonLabel?: string;
   icon?: keyof typeof iconPath;
