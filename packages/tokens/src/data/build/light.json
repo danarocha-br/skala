@@ -3,7 +3,7 @@
     "gradient": {
       "color": {
         "background": {
-          "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4EC 99.99%)",
+          "value": "linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4ED 99.99%)",
           "type": "other"
         }
       }
@@ -227,6 +227,24 @@
               "type": "color"
             }
           },
+          "danger": {
+            "enabled": {
+              "value": "#d63d29",
+              "type": "color"
+            },
+            "hover": {
+              "value": "#c33218",
+              "type": "color"
+            },
+            "pressed": {
+              "value": "#9e200a",
+              "type": "color"
+            },
+            "disabled": {
+              "value": "#efdcdc",
+              "type": "color"
+            }
+          },
           "transparent": {
             "enabled": {
               "value": "transparent",
@@ -267,6 +285,16 @@
               "type": "color"
             }
           },
+          "danger": {
+            "enabled": {
+              "value": "#f79792",
+              "type": "color"
+            },
+            "pressed": {
+              "value": "#efdcdc",
+              "type": "color"
+            }
+          },
           "transparent": {
             "enabled": {
               "value": "#e0e1e0",
@@ -296,6 +324,16 @@
             },
             "disabled": {
               "value": "#405fed",
+              "type": "color"
+            }
+          },
+          "danger": {
+            "enabled": {
+              "value": "#faf4f6",
+              "type": "color"
+            },
+            "disabled": {
+              "value": "#f79792",
               "type": "color"
             }
           },

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 09 Nov 2022 13:06:14 GMT
+ * Generated on Fri, 11 Nov 2022 15:56:44 GMT
  */
 
 :root {
@@ -39,12 +39,16 @@
   --dark-interactive-color-background-enabled: #405fed;
   --dark-action-color-text-transparent-disabled: #c0c5c9;
   --dark-action-color-text-transparent-enabled: #ffffff;
+  --dark-action-color-text-danger-disabled: #f79792;
+  --dark-action-color-text-danger-enabled: #151c1e;
   --dark-action-color-text-secondary-disabled: #405fed;
   --dark-action-color-text-secondary-enabled: #ffffff;
   --dark-action-color-text-primary-disabled: #8b969c;
   --dark-action-color-text-primary-enabled: #151c1e;
   --dark-action-color-border-transparent-pressed: #e0e1e00a;
   --dark-action-color-border-transparent-enabled: #323d43;
+  --dark-action-color-border-danger-pressed: #c33218;
+  --dark-action-color-border-danger-enabled: #f55c56;
   --dark-action-color-border-secondary-pressed: #81a1da2e;
   --dark-action-color-border-secondary-enabled: #271ed2;
   --dark-action-color-border-primary-pressed: #323d43;
@@ -53,6 +57,10 @@
   --dark-action-color-background-transparent-pressed: #4c575d;
   --dark-action-color-background-transparent-hover: #e0e1e00f;
   --dark-action-color-background-transparent-enabled: transparent;
+  --dark-action-color-background-danger-disabled: #f79792;
+  --dark-action-color-background-danger-pressed: #c33218;
+  --dark-action-color-background-danger-hover: #d63d29;
+  --dark-action-color-background-danger-default: #f55c56;
   --dark-action-color-background-secondary-disabled: #b5cffd;
   --dark-action-color-background-secondary-pressed: #271ed2;
   --dark-action-color-background-secondary-hover: #3b41e8;
@@ -96,11 +104,7 @@
   --dark-feedback-color-background-success-subdued: #6ec95e;
   --dark-feedback-color-background-success-default: #37b135;
   --dark-background-default: #151c1e;
-  --dark-gradient-background: linear-gradient(
-    89.99deg,
-    #303030 13.34%,
-    #4a4a4a 99.99%
-  );
+  --dark-gradient-background: linear-gradient(89.99deg, #303030 13.34%, #4A4A4A 99.99%);
   --light-brand-color-primary: #f1786f;
   --light-overlay-color-background-subdued: #202a2d;
   --light-overlay-color-background-default: #151c1e;
@@ -135,12 +139,16 @@
   --light-interactive-color-background-enabled: #271ed2;
   --light-action-color-text-transparent-disabled: #8b969c;
   --light-action-color-text-transparent-enabled: #202a2d;
+  --light-action-color-text-danger-disabled: #f79792;
+  --light-action-color-text-danger-enabled: #faf4f6;
   --light-action-color-text-secondary-disabled: #405fed;
   --light-action-color-text-secondary-enabled: #f0f7ff;
   --light-action-color-text-primary-disabled: #4c575d;
   --light-action-color-text-primary-enabled: #ffffff;
   --light-action-color-border-transparent-pressed: #e0e1e04d;
   --light-action-color-border-transparent-enabled: #e0e1e0;
+  --light-action-color-border-danger-pressed: #efdcdc;
+  --light-action-color-border-danger-enabled: #f79792;
   --light-action-color-border-secondary-pressed: #405fed59;
   --light-action-color-border-secondary-enabled: #405fed;
   --light-action-color-border-primary-pressed: #c0c5c9;
@@ -149,6 +157,10 @@
   --light-action-color-background-transparent-pressed: #e0e1e0;
   --light-action-color-background-transparent-hover: #e0e1e04d;
   --light-action-color-background-transparent-enabled: transparent;
+  --light-action-color-background-danger-disabled: #efdcdc;
+  --light-action-color-background-danger-pressed: #9e200a;
+  --light-action-color-background-danger-hover: #c33218;
+  --light-action-color-background-danger-enabled: #d63d29;
   --light-action-color-background-secondary-disabled: #b5cffd;
   --light-action-color-background-secondary-pressed: #182586;
   --light-action-color-background-secondary-hover: #1f18aa;
@@ -192,13 +204,8 @@
   --light-feedback-color-background-success-subdued: #37b135;
   --light-feedback-color-background-success-default: #0a8708;
   --light-background-default: #f6f6f4;
-  --light-gradient-color-background: linear-gradient(
-    89.99deg,
-    #fbf8f6 13.34%,
-    #f4f4ec 99.99%
-  );
-  --elevation-high: 0px -1px 2.5px 0px #00000014, 0px 6.3px 8.5px 0px #00000000,
-    0px 30px 48px 0px #00000026;
+  --light-gradient-color-background: linear-gradient(89.99deg, #FBF8F6 13.34%, #F4F4ED 99.99%);
+  --elevation-high: 0px -1px 2.5px 0px #00000014, 0px 6.3px 8.5px 0px #00000000, 0px 30px 48px 0px #00000026;
   --elevation-medium: 0px 0px 5.8px 3px #00000008, 0px 24px 38px 0px #0000001a;
   --elevation-low: 0px -3px 2px 0px #00000005, 0px 6px 10px 0px #00000014;
   --border-width-3: 0.25rem;
@@ -345,9 +352,7 @@
   --line-height-3: 1.4rem;
   --line-height-2: 1.2rem;
   --line-height-1: 1.0625rem;
-  --font-family-sans: 'effra', -apple--apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif;
+  --font-family-sans: 'effra', -apple--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-family-effra: Effra;
   --size-12: var(--spacing-12);
   --size-11: var(--spacing-11);
