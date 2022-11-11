@@ -10,20 +10,22 @@ import {
   DropdownIndicatorProps,
 } from 'react-select';
 
-import * as S from './styles';
 import { Icon, iconPath } from '../Icon';
 import { FormErrorMessage } from '../FormErrorMessage';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import { Spinner } from '../Spinner';
 import { Stack } from '../Stack';
+import * as StyledSelect from '../Select/styles';
+
+import * as S from './styles';
 
 type Option = {
   readonly label: string;
   readonly value: string;
 };
 
-export type SelectProps = {
+export type SelectCreatableProps = {
   label?: string;
   name: string;
   value: Option | null | undefined;
@@ -34,10 +36,15 @@ export type SelectProps = {
   readOnly?: boolean;
   hasValue?: boolean;
   isSearchable?: boolean;
+  cacheOptions?: boolean;
+  defaultOptions?: boolean;
   isClearable?: boolean;
+  onChange?: (value: Option) => void;
+  onCreateOption?: (value: string) => void;
   setValue?: () => void;
   isMulti: boolean;
   options?: OptionsOrGroups<unknown, GroupBase<unknown>> | undefined;
+  loadOptions?: OptionsOrGroups<unknown, GroupBase<unknown>> | undefined;
   variant?: 'default' | 'table';
   buttonLabel?: string;
   icon?: keyof typeof iconPath;
@@ -51,7 +58,7 @@ export type SelectProps = {
   css?: CSS;
 };
 
-export function Select({
+export function SelectCreatable({
   name,
   label,
   disabled = false,
@@ -71,7 +78,7 @@ export function Select({
   css,
   value,
   ...props
-}: SelectProps) {
+}: SelectCreatableProps) {
   const Menu = (props: MenuProps) => {
     return (
       <components.Menu {...props}>
@@ -79,10 +86,10 @@ export function Select({
           <div>{props.children}</div>
         </div>
         {Boolean(buttonLabel) && (
-          <S.ActionMenuButton onClick={onAction} type="button">
+          <StyledSelect.ActionMenuButton onClick={onAction} type="button">
             <Icon label="icon" name={actionIcon} color="current" size="sm" />
             {buttonLabel}
-          </S.ActionMenuButton>
+          </StyledSelect.ActionMenuButton>
         )}
       </components.Menu>
     );
@@ -124,13 +131,13 @@ export function Select({
 
   return (
     <Box css={{ w: '100%', css }}>
-      <S.Container
+      <StyledSelect.Container
         hasError={Boolean(errors) && !areErrorsEmpty ? true : false}
         isDisabled={disabled}
         isTable={variant === 'table' ? true : false}
       >
         {variant === 'default' && (
-          <S.Label htmlFor={name}>
+          <StyledSelect.Label htmlFor={name}>
             <Stack gap="1">
               {Boolean(icon) && (
                 <Icon
@@ -142,7 +149,7 @@ export function Select({
               )}
               {label}
             </Stack>
-            {loading && <Spinner size="sm" css={{ mr: -2 }} />}
+            {loading && <Spinner size="xs" css={{ mr: -2 }} />}
 
             {Boolean(errors) && !areErrorsEmpty && (
               <Icon
@@ -153,7 +160,7 @@ export function Select({
                 className="c-select__icon--error"
               />
             )}
-          </S.Label>
+          </StyledSelect.Label>
         )}
 
         <S.CustomSelect
@@ -177,7 +184,7 @@ export function Select({
           isTable={variant === 'table'}
           {...props}
         />
-      </S.Container>
+      </StyledSelect.Container>
 
       {Boolean(errors) && !areErrorsEmpty ? (
         <FormErrorMessage>{errors.message}</FormErrorMessage>
@@ -186,4 +193,4 @@ export function Select({
   );
 }
 
-Select.displayName = 'Select';
+SelectCreatable.displayName = 'SelectCreatable';

@@ -24,6 +24,7 @@ export * from './components/PasswordInput';
 export * from './components/RadioGroup';
 export * from './components/ScrollView';
 export * from './components/Select';
+export * from './components/SelectCreatable';
 export * from './components/SelectMenu';
 export * from './components/Separator';
 export * from './components/Shortcut';

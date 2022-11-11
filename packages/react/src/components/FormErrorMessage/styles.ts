@@ -9,7 +9,7 @@ export const Container = styled('div', {
   px: '$spacing-3',
 
   position: 'relative',
-  zIndex: '1',
+  zIndex: '-1',
 
   color: '$text-color-danger',
   bg: '$color-froly-100',

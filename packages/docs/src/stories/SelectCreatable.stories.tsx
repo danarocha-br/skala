@@ -1,10 +1,16 @@
 import { Story, Meta } from '@storybook/react';
-import { Form, Select, SelectProps, Stack } from '@skala/react';
+import {
+  Form,
+  SelectCreatable,
+  SelectCreatableProps,
+  Stack,
+} from '@skala/react';
 import { BADGE } from '@geometricpanda/storybook-addon-badges';
+import { useState } from 'react';
 
 export default {
-  title: 'Form/Select',
-  component: Select,
+  title: 'Form/SelectCreatable',
+  component: SelectCreatable,
   parameters: {
     layout: 'centered',
     badges: [BADGE.STABLE],
@@ -24,7 +30,7 @@ export default {
     isClearable: true,
     noOptionMessage: 'No options found',
     placeholder: 'Select one option',
-    options: [
+    loadOptions: [
       { label: 'Option 1', value: 'Option 1' },
       { label: 'Option 2', value: 'Option 2' },
     ],
@@ -89,9 +95,14 @@ export default {
         category: 'Modifiers',
       },
     },
-    options: {
+    loadOptions: {
       table: {
         category: 'Text',
+      },
+    },
+    cacheOptions: {
+      table: {
+        category: 'Modifiers',
       },
     },
   },
@@ -104,13 +115,54 @@ export default {
       );
     },
   ],
-} as Meta<SelectProps>;
+} as Meta<SelectCreatableProps>;
 
-export const Default: Story<SelectProps> = (args) => {
+interface Option {
+  readonly label: string;
+  readonly value: string;
+}
+
+const createOption = (label: string) => ({
+  label,
+  value: label.toLowerCase().replace(/\W/g, ''),
+});
+
+const defaultOptions = [
+  createOption('One'),
+  createOption('Two'),
+  createOption('Three'),
+];
+
+export const Default: Story<SelectCreatableProps> = (args) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [options, setOptions] = useState(defaultOptions);
+  const [value, setValue] = useState<Option | null>();
+
+  const handleCreate = (inputValue: string) => {
+    setIsLoading(true);
+    setTimeout(() => {
+      const newOption = createOption(inputValue);
+      setIsLoading(false);
+      setOptions((prev) => [...prev, newOption]);
+      setValue(newOption);
+    }, 1000);
+  };
+
   return (
     <Form>
-      <Select {...args} />
-      <Select {...args} icon="business" />
+      <SelectCreatable {...args} disabled={isLoading} loading={isLoading} />
+      <SelectCreatable
+        {...args}
+        icon="business"
+        disabled={isLoading}
+        loading={isLoading}
+        onChange={(newValue: Option) => setValue(newValue)}
+        onCreateOption={handleCreate}
+        value={value}
+        cacheOptions
+        // defaultOptions
+        loadOptions={options}
+      />
     </Form>
   );
 };

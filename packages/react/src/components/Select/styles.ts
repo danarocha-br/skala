@@ -10,7 +10,7 @@ export const Container = styled('div', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'flex-start',
-  zIndex: 2,
+  zIndex: 'auto',
 
   w: '100% !important',
   position: 'relative',
