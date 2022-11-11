@@ -44,7 +44,7 @@ export const dark = {
   'action-color-background-secondary-hover': '#3b41e8',
   'action-color-background-secondary-pressed': '#271ed2',
   'action-color-background-secondary-disabled': '#b5cffd',
-  'action-color-background-danger-default': '#f55c56',
+  'action-color-background-danger-enabled': '#f55c56',
   'action-color-background-danger-hover': '#d63d29',
   'action-color-background-danger-pressed': '#c33218',
   'action-color-background-danger-disabled': '#f79792',

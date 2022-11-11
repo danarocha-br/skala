@@ -226,7 +226,7 @@
             }
           },
           "danger": {
-            "default": {
+            "enabled": {
               "value": "#f55c56",
               "type": "color"
             },
