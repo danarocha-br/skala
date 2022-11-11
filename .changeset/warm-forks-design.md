@@ -2,4 +2,4 @@
 "@skala/design-tokens": patch
 ---
 
-Adding action danger tokens
+Changing some design tokens
