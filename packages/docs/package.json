@@ -8,7 +8,8 @@
     "build": "build-storybook",
     "lint": "eslint src/**/*.ts* --fix",
     "commit": "git-cz",
-    "chromatic": "npx chromatic --project-token=f81f00dd3e9c"
+    "chromatic": "npx chromatic --project-token=f81f00dd3e9c",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "lint-staged": {
     "src/**/*": [
@@ -29,6 +30,7 @@
     "@storybook/addon-viewport": "^6.5.12",
     "@storybook/builder-vite": "^0.2.4",
     "@storybook/react": "^6.5.12",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.13",
     "@vitejs/plugin-react": "^2.1.0",
     "babel-loader": "^8.2.5",
