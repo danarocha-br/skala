@@ -1289,15 +1289,15 @@
             },
             "secondary": {
               "enabled": {
-                "value": "{color.royal.600}",
+                "value": "{color.forest.600}",
                 "type": "color"
               },
               "hover": {
-                "value": "{color.royal.700}",
+                "value": "{color.forest.700}",
                 "type": "color"
               },
               "pressed": {
-                "value": "{color.royal.800}",
+                "value": "{color.forest.800}",
                 "type": "color"
               },
               "disabled": {
@@ -1824,7 +1824,7 @@
               }
             },
             "danger": {
-              "default": {
+              "enabled": {
                 "value": "{color.froly.600}",
                 "type": "color"
               },
@@ -2120,6 +2120,10 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": ["global", "light", "dark"]
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark"
+    ]
   }
 }
